@@ -11,6 +11,11 @@
 .badge {
   padding: 0.1rem;
   margin: 0.1rem;
+  line-height: 1.7;
   border-radius: 3px;
-  background-color: mix($primary-color, $form-background-color, 50%);
+  background-color: mix($primary-color, $form-background-color, 30%);
+}
+
+.clickable {
+  cursor: pointer;
 }

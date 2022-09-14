@@ -19,45 +19,38 @@ div.timeline {
   div.timeline-content-wrapper {
     display: grid;
     grid-template-columns: 150px 1fr;
-    position: relative;
-
-    >div.period {
-      margin: 10px 20px 20px 0;
-
-      &::before {
-        content: "";
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        background: $background-color;
-        border-radius: 999px;
-        left: 141px;
-        border: 3px solid $danger-color;
-        box-sizing: content-box;
-      }
-    }
-
-    >div.content {
-      margin: 0 0 20px 20px;
-      padding: 15px;
-      border-radius: 8px;
-      background-color: $form-background-color;
-
-      >h3 {
-        margin: 0.5em 0 0.5em;
-      }
-    }
 
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
+    }
 
-      div.period {
+    > div.label {
+      margin: 10px 20px 20px 0;
+      @media (max-width: 768px) {
         margin: 10px 0 10px 20px;
-
+      }
+      > div.period {
+        position: relative;
         &::before {
-          left: -9px;
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background: $background-color;
+          border-radius: 999px;
+          top: 30%;
+          left: 141px;
+          border: 3px solid $danger-color;
+          box-sizing: content-box;
+          @media (max-width: 768px) {
+            left: -30px;
+          }
         }
       }
+    }
+
+    > div.content {
+      margin: 0 0 20px 20px;
     }
   }
 }

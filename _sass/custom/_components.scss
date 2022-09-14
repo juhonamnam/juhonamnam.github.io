@@ -1,0 +1,16 @@
+.card {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: $form-background-color;
+
+  > h3 {
+    margin: 0.5em 0 0.5em;
+  }
+}
+
+.badge {
+  padding: 0.1rem;
+  margin: 0.1rem;
+  border-radius: 3px;
+  background-color: mix($primary-color, $form-background-color, 50%);
+}

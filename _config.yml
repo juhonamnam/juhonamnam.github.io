@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Ju Ho Nam"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/profile.jpg"
   bio              : "Software Engineer"
   location         : "Seongnam, Republic of Korea"
   email            :

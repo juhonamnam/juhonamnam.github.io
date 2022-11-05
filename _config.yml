@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "Ju Ho Nam's Blog"
+title                    : "IT's my life"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Ju Ho Nam's Blog"
 name                     : "Ju Ho Nam"
 description              : "Ju Ho Nam's Blog"
 url                      : "https://juhonamnam.github.io"

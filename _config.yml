@@ -306,3 +306,20 @@ defaults:
       layout: single
       author_profile: true
       classes: wide
+
+# Custom Variables
+icon:
+  react: "<a href=\"/7/\"><i class=\"icon-react\"></i>React JS</a>"
+  nextjs: "<i class=\"icon-nextjs\"></i>Next.js"
+  typescript: "<i class=\"icon-typescript\"></i>Typescript"
+  graphql: "<a href=\"/4/\"><i class=\"icon-graphql\"></i>GraphQL</a>"
+  spring: "<i class=\"icon-spring\"></i>Spring"
+  mysql: "<i class=\"icon-mysql\"></i>MySQL"
+  nginx: "<a href=\"/5/\"><i class=\"icon-nginx\"><span class=\"path1\"></span><span class=\"path2\"></span></i>Nginx</a>"
+  python: "<i class=\"icon-python\"><span class=\"path1\"></span><span class=\"path2\"></span></i>Python"
+  telegram: "<i class=\"icon-telegram\"><span class=\"path1\"></span><span class=\"path2\"></span><span class=\"path3\"></span></i>Telegram"
+  docker: "<i class=\"icon-docker\"><span class=\"path1\"></span><span class=\"path2\"></span><span class=\"path3\"></span><span class=\"path4\"></span><span class=\"path5\"></span><span class=\"path6\"></span><span class=\"path7\"></span><span class=\"path8\"></span><span class=\"path9\"></span><span class=\"path10\"></span><span class=\"path11\"></span><span class=\"path12\"></span><span class=\"path13\"></span><span class=\"path14\"></span><span class=\"path15\"></span><span class=\"path16\"></span></i>Docker"
+  jekyll: "<i class=\"icon-jekyll\"><span class=\"path1\"></span><span class=\"path2\"><span class=\"path3\"></span><span class=\"path4\"></span><span class=\"path5\"></span><span class=\"path6\"></span><span class=\"path7\"></span><span class=\"path8\"></span><span class=\"path9\"></span><span class=\"path10\"></span></span></i>Jekyll"
+  html: "<i class=\"icon-html5\"><span class=\"path1\"></span><span class=\"path2\"></span><span class=\"path3\"></span></span><span class=\"path4\"></span></i>Html"
+  md: "<i class=\"icon-markdown\"></i>Markdown"
+  sass: "<i class=\"icon-sass\"></i>Sass"

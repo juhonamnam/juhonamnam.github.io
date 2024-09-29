@@ -325,3 +325,4 @@ icon:
   sass: "<img src=\"/images/icons/sass.svg\" style=\"height:1em;\" alt=\"\"></img>Sass"
   go: "<img src=\"/images/icons/go.svg\" style=\"height:1em;\" alt=\"\"></img>Go"
   mongodb: "<img src=\"/images/icons/mongodb.svg\" style=\"height:1em;\" alt=\"\"></img>MongoDB"
+  sqlite: "<img src=\"/images/icons/sqlite.svg\" style=\"height:1em;\" alt=\"\"></img>SQLite"

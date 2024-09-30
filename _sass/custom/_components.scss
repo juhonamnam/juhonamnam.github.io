@@ -3,6 +3,8 @@
   border-radius: 8px;
   border: 1px solid mix($primary-color, $background-color, 30%);
   background-color: mix($primary-color, $background-color, 10%);
+  word-wrap: break-word;
+  overflow-x: hidden;
 
   > h3 {
     margin: 0.5em 0 0.5em;

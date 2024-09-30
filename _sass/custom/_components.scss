@@ -1,5 +1,5 @@
 .card {
-  padding: 15px;
+  padding: 1em;
   border-radius: 8px;
   border: 1px solid mix($primary-color, $background-color, 30%);
   background-color: mix($primary-color, $background-color, 10%);
@@ -10,9 +10,9 @@
 }
 
 .badge {
-  padding: 0.4em;
-  line-height: 2.3;
-  border-radius: 5px;
+  padding: 0.5em;
+  line-height: 2.7;
+  border-radius: 0.4em;
   background-color: mix($primary-color, $background-color, 30%);
   white-space: nowrap;
 }

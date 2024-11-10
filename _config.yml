@@ -261,6 +261,10 @@ pagination:
     before: 2
     after: 2
 
+# Custom Pagination
+custom_pagination:
+  posts_per_page: 5
+  trailing: 2
 
 # Plugins (previously gems:)
 plugins:

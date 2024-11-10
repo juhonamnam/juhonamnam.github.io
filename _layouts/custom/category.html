@@ -1,0 +1,73 @@
+---
+layout: archive
+---
+
+{{ content }}
+
+{% assign all_posts = site.categories[page.category] %}
+{% assign total_pages = all_posts | size | divided_by: site.custom_pagination.posts_per_page | plus: 1 %}
+
+{% assign entries_layout = page.entries_layout | default: 'list' %}
+
+{% for page_num in (1..total_pages) %}
+  {% assign offset = page_num | minus: 1 | times: site.custom_pagination.posts_per_page %}
+  {% assign posts = all_posts | slice: offset, site.custom_pagination.posts_per_page %}
+
+  {% if page_num == 1 %}
+    <input type="radio" class="custom-pagination-page-filter" name="category-{{ page.category }}-page" id="category-{{ page.category }}-page-{{ page_num }}" checked />
+  {% else %}
+    <input type="radio" class="custom-pagination-page-filter" name="category-{{ page.category }}-page" id="category-{{ page.category }}-page-{{ page_num }}" />
+  {% endif %}
+  <div class="custom-pagination-page entries-{{ entries_layout }}">
+    {% include documents-collection.html entries=posts type=entries_layout %}
+  </div>
+
+  <nav class="custom-pagination-page-group">
+    <ul>
+      {% if page_num > 1 %}
+        <li><label for="category-{{ page.category }}-page-{{ page_num | minus: 1 }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a></li>
+      {% else %}
+        <li><label class="disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a></li>
+      {% endif %}
+
+      {% assign start_page = page_num | minus: site.custom_pagination.trailing %}
+      {% if start_page < 1 %}
+        {% assign start_page = 1 %}
+      {% endif %}
+
+      {% assign end_page = page_num | plus: site.custom_pagination.trailing %}
+      {% if end_page > total_pages %}
+        {% assign end_page = total_pages %}
+      {% endif %}
+
+      {% if start_page > 1 %}
+        <li><label for="category-{{ page.category }}-page-1">1</label></li>
+        {% if start_page > 2 %}
+          <li><label class="disabled">...</label></li>
+        {% endif %}
+      {% endif %}
+
+      {% for page_num_choice in (start_page..end_page) %}
+        {% if page_num_choice == page_num %}
+          <li><label class="active">{{ page_num_choice }}</label></li>
+        {% else %}
+          <li><label for="category-{{ page.category }}-page-{{ page_num_choice }}">{{ page_num_choice }}</label></li>
+        {% endif %}
+      {% endfor %}
+
+      {% if end_page < total_pages %}
+        {% assign end_skip = total_pages | minus: 1 %}
+        {% if end_page < end_skip %}
+          <li><label class="disabled">...</label></li>
+        {% endif %}
+        <li><label for="category-{{ page.category }}-page-{{ total_pages }}">{{ total_pages }}</label></li>
+      {% endif %}
+
+      {% if page_num < total_pages %}
+        <li><label for="category-{{ page.category }}-page-{{ page_num | plus: 1 }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a></li>
+      {% else %}
+        <li><label class="disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a></li>
+      {% endif %}
+    </ul>
+  </nav>
+{% endfor %}

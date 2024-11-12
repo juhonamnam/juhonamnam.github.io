@@ -117,7 +117,7 @@ author:
   avatar           : "/images/profile.jpg"
   bio              : "Software Engineer"
   location         : "Seoul, Republic of Korea"
-  email            : "jhnamnam@gmail.com"
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -327,7 +327,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: custom/single
       author_profile: true
       read_time: false
       comments: true
@@ -335,12 +335,14 @@ defaults:
       related: true
       show_date: true
       toc: true
+      custom_sidebar:
+        show_categories: true
   # _pages
   - scope:
       path: ""
       type: pages
     values:
-      layout: single
+      layout: custom/single
       author_profile: true
       classes: wide
 

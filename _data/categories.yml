@@ -1,0 +1,11 @@
+frontend-javascript:
+  name: "Frontend / JavaScript"
+  url: "/category/frontend-javascript"
+
+data-ai:
+  name: "데이터분석 / AI"
+  url: "/category/frontend-javascript"
+
+project:
+  name: "프로젝트 후기"
+  url: "/category/frontend-javascript"

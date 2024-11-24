@@ -1,0 +1,7 @@
+<div class="sidebar sticky">
+  {%- if page.page_type == 'blog' or page.page_type == 'blog_post' -%}
+    {%- include blog/side-nav.html -%}
+  {%- elsif page.page_type == 'about-me' -%}
+    {%- include about-me/side-nav.html -%}
+  {%- endif -%}
+</div>

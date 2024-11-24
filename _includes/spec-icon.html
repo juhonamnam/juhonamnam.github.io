@@ -1,0 +1,12 @@
+{%- assign spec_key = include.spec_key -%}
+{%- assign icon_url = site.data.spec-icon.icon_base_url | append: spec_key | append: '.svg' -%}
+{%- assign spec_name = site.data.spec-icon.data[spec_key].name -%}
+{%- assign post_id = site.data.spec-icon.data[spec_key].post_id -%}
+
+{%- if post_id -%}
+  <a href="{{ post_id | prepend: site.data.spec-icon.post_base_url }}">
+{%- endif -%}
+<img src="{{ icon_url }}" style="height:1em;" alt="" /> {{ spec_name -}}
+{%- if post_id -%}
+  </a>
+{%- endif -%}

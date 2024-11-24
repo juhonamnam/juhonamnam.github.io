@@ -1,0 +1,45 @@
+icon_base_url: "/images/icons/"
+post_base_url: "/blog/post/"
+
+data:
+  react:
+    name: "React JS"
+    post_id: 7
+  nextjs:
+    name: "Next.js"
+  typescript:
+    name: "TypeScript"
+  graphql:
+    name: "GraphQL"
+    post_id: 4
+  spring:
+    name: "Spring"
+  mysql:
+    name: "MySQL"
+  nginx:
+    name: "Nginx"
+    post_id: 5
+  python:
+    name: "Python"
+  docker:
+    name: "Docker"
+  jekyll:
+    name: "Jekyll"
+  html:
+    name: "Html"
+  markdown:
+    name: "Markdown"
+  sass:
+    name: "Sass"
+  go:
+    name: "Go"
+  mongodb:
+    name: "MongoDB"
+  sqlite:
+    name: "SQLite"
+  express:
+    name: "Express"
+  pytorch:
+    name: "PyTorch"
+  aws:
+    name: "AWS"

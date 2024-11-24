@@ -1,0 +1,4 @@
+enabled: true
+
+disqus:
+  shortname: "ju-ho-nams-blog" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-

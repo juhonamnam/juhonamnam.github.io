@@ -1,0 +1,17 @@
+base_url: "/blog/category/"
+
+main:
+  all:
+    name: "전체 글"
+
+  frontend-javascript:
+    name: "Frontend / JavaScript"
+
+  data-ai:
+    name: "데이터분석 / AI"
+
+  project:
+    name: "프로젝트 후기"
+
+  backend-system:
+    name: "Backend / System"

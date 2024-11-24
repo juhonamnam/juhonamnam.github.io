@@ -1,0 +1,23 @@
+{%- assign excerpt_elements = [] -%}
+
+{%- if site.data.site_info.enable_excerpt -%}
+  {%- assign excerpt_open = include.content | split: site.data.site_info.excerpt_open -%}
+
+  {%- for excerpt_opened in excerpt_open offset: 1 -%}
+    {%- assign excerpt_closed = excerpt_opened | split: site.data.site_info.excerpt_close | first -%}
+    {%- assign excerpt_elements = excerpt_elements | append: excerpt_closed -%}
+  {%- endfor -%}
+
+{%- else -%}
+  {%- assign excerpt_elements = excerpt_elements | append: include.content -%}
+{%- endif -%}
+
+{%- for excerpt_element in excerpt_elements -%}
+  {%- assign excerpt_split = excerpt_element | strip_html | split: " " -%}
+  {%- for excerpt_word in excerpt_split -%}
+    {{- excerpt_word -}}
+    {%- unless forloop.last -%}
+      {{- " " -}}
+    {%- endunless -%}
+  {%- endfor -%}
+{%- endfor -%}

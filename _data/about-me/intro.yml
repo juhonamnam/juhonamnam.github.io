@@ -1,0 +1,65 @@
+translation:
+  gpa:
+    ko: "학점"
+    en: "GPA"
+
+main:
+  title:
+    ko: "소프트웨어 엔지니어 남주호입니다."
+    en: "Hi, I'm Ju Ho Nam, a software engineer."
+  lines:
+    - ko: "수학을 좋아하던 아이가 성인이 되어 인공지능 수학을 공부하며 소프트웨어에 입문하게 되었습니다. 프론트엔드, 백엔드, 인공지능 등 여러 분야에 능숙한 제너럴리스트로 성장중입니다."
+      en: "Growing up as boy who loved mathematics, I have entered the world of software through AI mathematics. I am learning to become a generalist who is proficient in various fields such as front-end, back-end, and AI."
+    - ko: "개발은 저의 직업이자 취미이기도 합니다. 저의 다양한 생각을 공유할 목적으로 개인 웹사이트를 개시하였습니다. 재밌게 봐주시기 바랍니다."
+      en: "Software engineering is not only my profession but also my hobby. I started this personal website to share my various thoughts. I hope you enjoy what we have here in this website."
+  info:
+    educations:
+      - title:
+          ko: "수학과 학사 학위"
+          en: "Bachelor's degree in Mathematics"
+        association:
+          ko: "University of Massachusetts Amherst<br />Commonwealth Honors College"
+          en: "University of Massachusetts Amherst<br />Commonwealth Honors College"
+        period: "August 2014 - May 2020"
+        gpa: "3.7 / 4.0"
+    certificates:
+      - title:
+          ko: "PCCP Python Lv.4"
+          en: "PCCP Python Lv.4"
+        agency:
+          ko: "그렙"
+          en: "Grepp"
+        period: "2023"
+      - title:
+          ko: "데이터분석 준전문가 (ADsP)"
+          en: "Advanced Data Analytics Semi-Professional (ADsP)"
+        agency:
+          ko: "한국데이터산업진흥원"
+          en: "Korea Data Agency"
+        period: "2021"
+      - title:
+          ko: "SQL 개발자 (SQLD)"
+          en: "SQL Developer (SQLD)"
+        agency:
+          ko: "한국데이터산업진흥원"
+          en: "Korea Data Agency"
+        period: "2021"
+    skills:
+      - typescript
+      - go
+      - python
+      - react
+      - docker
+      - aws
+      - express
+      - pytorch
+    contacts:
+      - label: "Email"
+        icon: "fas faa-fw fa-envelope"
+        url: "mailto:jhnamnam@gmail.com"
+      - label: "GitHub"
+        icon: "fab fa-fw fa-github"
+        url: "https://github.com/juhonamnam"
+      - label: "LinkedIn"
+        icon: "fab fa-fw fa-linkedin"
+        url: "https://www.linkedin.com/in/ju-ho-nam-a28057254/"

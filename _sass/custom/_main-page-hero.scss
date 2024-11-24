@@ -1,0 +1,51 @@
+$main-page-hero-background-opacity: 0.2;
+
+.custom-main-page-hero {
+  position: relative;
+  margin-bottom: 2em;
+  @include clearfix;
+  -webkit-animation: $intro-transition;
+  animation: $intro-transition;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+  padding: 3em 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, $main-page-hero-background-opacity),
+      rgba(0, 0, 0, $main-page-hero-background-opacity)
+    ),
+    url("/images/main_page_hero.jpg");
+  color: #fff;
+
+  .wrapper {
+    padding-inline: 1em;
+
+    @include breakpoint($x-large) {
+      max-width: $x-large;
+    }
+  }
+
+  .custom-title,
+  .custom-pretitle,
+  .custom-lead,
+  .btn {
+    color: #fff;
+    text-shadow: 1px 1px 4px rgba(#000, 0.5);
+  }
+
+  .custom-title {
+    font-weight: bold;
+    color: #f9dcbe;
+    font-size: $type-size-2;
+
+    @include breakpoint($small) {
+      font-size: $type-size-1;
+    }
+  }
+
+  .custom-lead {
+    max-width: $medium;
+  }
+}

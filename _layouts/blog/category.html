@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+{% include breadcrumbs.html %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  {% assign category_key = page.category_key %}
+  {% assign category_name = site.data.blog.categories.main[category_key].name | default: category_key %}
+  {% if category_key == 'all' %}
+    {% assign posts = site.posts %}
+  {% else %}
+    {% assign posts = site.categories[category_key] %}
+  {% endif %}
+  {% assign pagination_key = 'category-' | append: category_key %}
+
+  <div class="archive">
+    <h1 id="page-title" class="page__title"{% if page.locale %} lang="{{ page.locale }}"{% endif %}>{{ category_name }}</h1>
+    {% include blog/post-pagination.html posts=posts key=pagination_key %}
+  </div>
+</div>

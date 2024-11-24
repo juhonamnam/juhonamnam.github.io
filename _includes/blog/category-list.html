@@ -1,0 +1,13 @@
+{%- assign categories_sorted = page.categories | sort_natural -%}
+
+<p class="page__taxonomy">
+  <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].categories_label | default: "Categories:" }} </strong>
+  <span itemprop="keywords">
+  {%- for category_key in categories_sorted -%}
+    {%- assign category_name = site.data.blog.categories.main[category_key].name | default: category_key -%}
+    {%- assign category_url = site.data.blog.categories.base_url | append: category_key -%}
+    <a href="{{ category_url }}" class="page__taxonomy-item p-category" rel="tag">{{ category_name }}</a>
+    {%- unless forloop.last %}<span class="sep">, </span>{% endunless -%}
+  {%- endfor -%}
+  </span>
+</p>

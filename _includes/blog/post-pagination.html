@@ -1,0 +1,73 @@
+{%- assign posts = include.posts -%}
+{%- assign key = include.key -%}
+
+{%- assign entries_layout = 'list' -%}
+
+{%- assign posts_per_page = 5 -%}
+{%- assign page_trailing = 2 -%}
+
+{%- assign total_pages = posts | size | divided_by: posts_per_page | plus: 1 -%}
+
+
+{%- for page_num in (1..total_pages) -%}
+  {%- assign offset = page_num | minus: 1 | times: posts_per_page -%}
+  {%- assign page_posts = posts | slice: offset, posts_per_page -%}
+
+  {%- if page_num == 1 -%}
+    <input type="radio" class="custom-pagination-page-filter" name="{{ key }}-page" id="{{ key }}-page-{{ page_num }}" checked />
+  {%- else -%}
+    <input type="radio" class="custom-pagination-page-filter" name="{{ key }}-page" id="{{ key }}-page-{{ page_num }}" />
+  {%- endif -%}
+  <div class="custom-pagination-page entries-{{ entries_layout }}">
+    {%- include blog/documents-collection.html entries=page_posts type=entries_layout -%}
+  </div>
+
+  <nav class="custom-pagination-page-group">
+    <ul>
+      {%- if page_num > 1 -%}
+        <li><label for="{{ key }}-page-{{ page_num | minus: 1 }}">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a></li>
+      {%- else -%}
+        <li><label class="disabled">{{ site.data.ui-text[site.locale].pagination_previous | default: "Previous" }}</a></li>
+      {%- endif -%}
+
+      {%- assign start_page = page_num | minus: page_trailing -%}
+      {%- if start_page < 1 -%}
+        {%- assign start_page = 1 -%}
+      {%- endif -%}
+
+      {%- assign end_page = page_num | plus: page_trailing -%}
+      {%- if end_page > total_pages -%}
+        {%- assign end_page = total_pages -%}
+      {%- endif -%}
+
+      {%- if start_page > 1 -%}
+        <li><label for="{{ key }}-page-1">1</label></li>
+        {%- if start_page > 2 -%}
+          <li><label class="disabled">...</label></li>
+        {%- endif -%}
+      {%- endif -%}
+
+      {%- for page_num_choice in (start_page..end_page) -%}
+        {%- if page_num_choice == page_num -%}
+          <li><label class="active">{{ page_num_choice }}</label></li>
+        {%- else -%}
+          <li><label for="{{ key }}-page-{{ page_num_choice }}">{{ page_num_choice }}</label></li>
+        {%- endif -%}
+      {% endfor %}
+
+      {%- if end_page < total_pages -%}
+        {%- assign end_skip = total_pages | minus: 1 -%}
+        {%- if end_page < end_skip -%}
+          <li><label class="disabled">...</label></li>
+        {%- endif -%}
+        <li><label for="{{ key }}-page-{{ total_pages }}">{{ total_pages }}</label></li>
+      {%- endif -%}
+
+      {%- if page_num < total_pages -%}
+        <li><label for="{{ key }}-page-{{ page_num | plus: 1 }}">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a></li>
+      {%- else -%}
+        <li><label class="disabled">{{ site.data.ui-text[site.locale].pagination_next | default: "Next" }}</a></li>
+      {%- endif -%}
+    </ul>
+  </nav>
+{%- endfor -%}

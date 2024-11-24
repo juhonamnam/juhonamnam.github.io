@@ -1,0 +1,9 @@
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.data.site_info.name | jsonify }},
+  "url": {{ '/' | absolute_url | jsonify }}{% if site.data.site_info.social_links %},
+  "sameAs": {{ site.data.site_info.social_links | jsonify }}{% endif %}
+}
+</script>

@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+
+{%- include seo.html -%}
+
+{%- unless site.data.site_info.atom_feed.hide -%}
+  <link href="{% if site.data.site_info.atom_feed.path %}{{ site.data.site_info.atom_feed.path }}{% else %}{{ '/feed.xml' | relative_url }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ site.data.site_info.title }} Feed">
+{%- endunless -%}
+
+{%- comment %} https://docs.google.com/presentation/d/1rmxwWa9P6_xHqonmh5ONXRS-jPc5XKbnv99Rjkhe04s/present {% endcomment -%}
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  {% if site.data.site_info.enable_copy_code_button -%}
+    window.enable_copy_code_button = true;
+  {%- endif %}
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+{%- if site.head_scripts -%}
+  {%- for script in site.head_scripts -%}
+    <script src="{{ script | relative_url }}"></script>
+  {%- endfor -%}
+{%- endif -%}
+
+<link rel="apple-touch-icon" sizes="76x76" href="/assets/logo/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/logo/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/logo/favicon-16x16.png">
+<link rel="manifest" href="/assets/logo/site.webmanifest">
+<link rel="mask-icon" href="/assets/logo/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">

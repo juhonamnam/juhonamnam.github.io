@@ -1,0 +1,27 @@
+---
+---
+
+{% for category in site.data.blog.categories.main %}
+  {% assign category_key = category[0] %}
+
+  {% assign category_name = category[1].name %}
+
+  {% if category_key == "all" %}
+    {% assign category_all_posts = site.posts %}
+  {% else %}
+    {% assign category_all_posts = site.categories[category_key] %}
+  {% endif %}
+
+  {% assign category_posts = category_all_posts | slice: 0, 4 %}
+
+  {% assign category_url = site.data.blog.categories.base_url | append: category_key %}
+
+  <section class="taxonomy__section">
+    <h3 class="archive__subtitle">{{ category_name }}</h3>
+    <div class="entries-grid">
+      {% include blog/documents-collection.html entries=category_posts type='grid' %}
+    </div>
+    <a href="{{ category_url }}" class="back-to-top">더보기</a>
+  </section>
+
+{% endfor %}

@@ -1,0 +1,18 @@
+<nav class="custom-nav-list">
+  <input id="category-toggle" name="category-toggle" class="toggler" type="checkbox" checked />
+  <label for="category-toggle" class="nav__sub-title toggler">목록 <span class="toggle-icon"></span></label>
+  <input id="category-toggle-m" name="category-toggle-m" class="toggler-m" type="checkbox" />
+  <label for="category-toggle-m" class="nav__sub-title toggler-m">목록 <span class="toggle-icon"></span></label>
+  <ul class="togglable togglable-m">
+    {%- assign base_url = '/about-me/' -%}
+    <li>
+      <a href="{{ base_url }}"><span class="active">About Me</span></a>
+    </li>
+    <li>
+      <a href="{{ base_url | append: 'work-experience' }}"><span class="active">Work Experience</span></a>
+    </li>
+    <li>
+      <a href="{{ base_url | append: 'project' }}"><span class="active">Project</span></a>
+    </li>
+  </ul>
+</nav>

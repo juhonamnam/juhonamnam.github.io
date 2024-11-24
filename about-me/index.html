@@ -1,0 +1,64 @@
+---
+title: About Me
+classname: about-me
+---
+
+{% assign language = "ko" %}
+
+<div class="intro">
+  <img src="/images/profile.jpg" alt="" />
+  <div>
+    <!--excerpt open-->
+    <h2>{{ site.data.about-me.intro.main.title[language] }}</h2>
+    {% for line in site.data.about-me.intro.main.lines %}
+      <p>{{ line[language] }}</p>
+    {% endfor %}
+    <!--excerpt close-->
+  </div>
+</div>
+<div class="info-grid">
+  <div class="info-box">
+    <h3>Education</h3>
+    {% for education in site.data.about-me.intro.main.info.educations %}
+      <div class="info-item">
+        <b>{{ education.title[language] }}</b>
+        <br />
+        <em>{{ education.association[language] }}</em>
+        <br />
+        {{ education.period }}
+        <br />
+        {% if education.gpa %}
+          {{ site.data.about-me.intro.translation.gpa[language] }}: {{ education.gpa }}
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+  <div class="info-box">
+    <h3>Certificate</h3>
+    {% for certificate in site.data.about-me.intro.main.info.certificates %}
+      <div class="info-item">
+        <b>{{ certificate.title[language] }}</b>
+        <br />
+        <em>{{ certificate.agency[language] }}, {{ certificate.period }}</em>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="info-box">
+    <h3>Skills</h3>
+    {% for skill in site.data.about-me.intro.main.info.skills %}
+      <small class="badge">{% include spec-icon.html spec_key=skill %}</small>
+    {% endfor %}
+  </div>
+  <div class="info-box">
+    <h3>Contact</h3>
+    <ul class="social-icons">
+    {% for contact in site.data.about-me.intro.main.info.contacts %}
+      <li>
+        <a href="{{ contact.url }}" rel="nofollow noopener noreferrer me">
+          <i class="{{ contact.icon }}" aria-hidden="true"></i> {{ contact.label }}
+        </a>
+      </li>
+    {% endfor %}
+    </ul>
+  </div>
+</div>

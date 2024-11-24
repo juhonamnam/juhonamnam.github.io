@@ -1,0 +1,7 @@
+{%- if include.page_info.page_type == "blog" -%}
+    {%- if include.page_info.category_key -%}
+        Category: {{ site.data.blog.categories.main[include.page_info.category_key].name -}}
+    {%- else -%}
+        Blog
+    {%- endif -%}
+{%- endif -%}

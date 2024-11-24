@@ -1,0 +1,5 @@
+enable: true
+
+google:
+  tracking_id: G-47M1PDE8KC
+  anonymize_ip: false

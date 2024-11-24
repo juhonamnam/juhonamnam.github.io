@@ -1,0 +1,123 @@
+.custom-nav-list {
+  @include breakpoint(max-width $large - 1px) {
+    padding: 0 0.5em;
+    border: 1px solid $border-color;
+    border-radius: $border-radius;
+  }
+
+  a {
+    color: inherit;
+  }
+
+  .active {
+    margin-inline-start: -0.5em;
+    padding-inline: 0.5em;
+    font-weight: bold;
+  }
+
+  label {
+    .toggle-icon {
+      display: inline-block;
+      position: relative;
+      height: 0.75em;
+      width: 0.75em;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.125em;
+        left: 50%;
+        top: 50%;
+        line-height: 1;
+        background-color: $gray;
+        -webkit-transition: 0.2s ease-out;
+        transition: 0.2s ease-out;
+      }
+
+      // &:after {
+      //   -webkit-transform: rotate(90deg);
+      //   -ms-transform: rotate(90deg);
+      //   transform: rotate(90deg);
+      // }
+    }
+  }
+
+  input[type="checkbox"] {
+    &.toggler,
+    &.toggler-m {
+      display: none;
+
+      &:not(:checked) + label {
+        border-bottom: none;
+        .toggle-icon::before {
+          -webkit-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+        }
+      }
+    }
+  }
+  @include breakpoint(max-width $large - 1px) {
+    .togglable-m {
+      position: relative;
+      max-height: 0;
+      opacity: 0%;
+      overflow: hidden;
+      z-index: 10;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      -webkit-transform: translate(0, -10%);
+      -ms-transform: translate(0, -10%);
+      transform: translate(0, -10%);
+      li {
+        padding: 0.3em 0;
+      }
+    }
+    label.toggler {
+      display: none;
+    }
+    input.toggler-m:checked ~ .togglable-m {
+      margin-bottom: 0.5em;
+      -webkit-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
+      max-height: 9999px; /* exaggerate max-height to accommodate tall lists*/
+      overflow: hidden;
+      opacity: 1;
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+  }
+
+  @include breakpoint(min-width $large) {
+    .togglable {
+      position: relative;
+      max-height: 0;
+      opacity: 0%;
+      overflow: hidden;
+      z-index: 10;
+      -webkit-transition: 0.3s ease-in-out;
+      transition: 0.3s ease-in-out;
+      -webkit-transform: translate(0, -10%);
+      -ms-transform: translate(0, -10%);
+      transform: translate(0, -10%);
+      li {
+        padding: 0.1em 0;
+      }
+    }
+    label.toggler-m {
+      display: none;
+    }
+    input.toggler:checked ~ .togglable {
+      -webkit-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
+      max-height: 9999px; /* exaggerate max-height to accommodate tall lists*/
+      overflow: hidden;
+      opacity: 1;
+      -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+      transform: translate(0, 0);
+    }
+  }
+}

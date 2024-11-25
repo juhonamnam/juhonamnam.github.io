@@ -210,8 +210,8 @@ main:
         en: "UI development for article management, banner management, and article series management pages"
       - ko: "SmartEditor ONE API을 이용한 기사 편집 페이지 개발"
         en: "Development of article editing page using SmartEditor ONE API"
-      - ko: "Drag&Drop, SmartEditor ONE 등 복합적인 Event 기반 UI 기능 개발"
-        en: "Developing complex event based UI features such as Drag&Drop and SmartEditor ONE"
+      - ko: "Drag&Drop, SmartEditor ONE 등 복잡한 사용자 이벤트 처리"
+        en: "Processing complex user event such as Drag&Drop and SmartEditor ONE"
       - ko: "사용자 권한에 따른 UI 노출 구분"
         en: "Differentiating UI exposure according to user roles"
 

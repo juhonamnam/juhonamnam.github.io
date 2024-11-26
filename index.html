@@ -20,11 +20,11 @@ layout: default
 </div>
 
 <div id="main" role="main">
-  {% assign posts = site.posts | slice: 0, 4 %}
   <section class="taxonomy__section">
     <h3 class="archive__subtitle">최근 블로그 포스트</h3>
     <div class="entries-grid">
-      {% include blog/documents-collection.html entries=posts type='grid' %}
+      {%- assign posts = site.posts | slice: 0, 4 -%}
+      {%- include blog/documents-collection.html entries=posts type='grid' -%}
     </div>
     <a href="/blog" class="back-to-top">더보기</a>
   </section>

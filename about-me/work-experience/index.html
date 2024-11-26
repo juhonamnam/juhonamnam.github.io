@@ -3,10 +3,10 @@ title: Work Experience
 description: "소프트웨어 엔지니어 남주호의 경력"
 ---
 
-{% assign language = "ko" %}
+{%- assign language = "ko" -%}
 
 <div class="timeline">
-  {% for work_experience in site.data.about-me.work-experiences.main %}
+  {%- for work_experience in site.data.about-me.work-experiences.main -%}
     <div class="timeline-content-wrapper">
       <div class="label">
         <div class="period">{{ work_experience.period }}</div>
@@ -15,25 +15,27 @@ description: "소프트웨어 엔지니어 남주호의 경력"
         <h3>{{ work_experience.company }}</h3>
         <p>{{ site.data.about-me.work-experiences.translation.job_title[language] }}: {{ work_experience.job_title[language] }}</p>
         <p>
-          {% for work_spec_key in work_experience.specs %}
+          {%- for work_spec_key in work_experience.specs -%}
             <small class="badge">{% include spec-icon.html spec_key=work_spec_key %}</small>
-          {% endfor %}
+            {{- " " -}}
+          {%- endfor -%}
         </p>
-        {% if work_experience.link_buttons %}
-          {% for link_button in work_experience.link_buttons %}
+        {%- if work_experience.link_buttons -%}
+          {%- for link_button in work_experience.link_buttons -%}
             <a
               class="btn btn--inverse"
               href="{{ link_button.url }}"
               target="_blank"
               >{{ link_button.text[language] }}</a
             >
-          {% endfor %}
-        {% endif %}
+            {{- " " -}}
+          {%- endfor -%}
+        {%- endif -%}
         <h4>{{ site.data.about-me.work-experiences.translation.main_tasks[language] }}</h4>
         <ul>
-          {% for task in work_experience.main_tasks %}
+          {%- for task in work_experience.main_tasks -%}
             <li>{{ task[language] }}</li>
-          {% endfor %}
+          {%- endfor -%}
         </ul>
       </div>
     </div>

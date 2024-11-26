@@ -3,63 +3,65 @@ title: Project
 description: "소프트웨어 엔지니어 남주호의 프로젝트 경험"
 ---
 
-{% assign language = "ko" %}
+{%- assign language = "ko" -%}
 
-{% for project in site.data.about-me.projects.main %}
+{%- for project in site.data.about-me.projects.main -%}
   <div class="card">
     <h3>{{ project.title[language] }}</h3>
     <p>
       <span>{{ site.data.about-me.projects.translation.affiliation[language] }}: {{ project.affiliation[language] }}</span>
       <br />
-      {% if project.team_size %}
+      {%- if project.team_size -%}
         <span>{{ site.data.about-me.projects.translation.team_size[language] }}: {{ project.team_size }}</span>
         <br />
-      {% endif %}
-      {% if project.development_period %}
+      {%- endif -%}
+      {%- if project.development_period -%}
         <span>{{ site.data.about-me.projects.translation.development_period[language] }}: {{ project.development_period }}</span>
         <br />
-      {% endif %}
-      {% if project.participated_period %}
+      {%- endif -%}
+      {%- if project.participated_period -%}
         <span>{{ site.data.about-me.projects.translation.participated_period[language] }}: {{ project.participated_period }}</span>
         <br />
-      {% endif %}
-      {% if project.service_status %}
+      {%- endif -%}
+      {%- if project.service_status -%}
         <span>{{ site.data.about-me.projects.translation.service_status[language] }}: {{ site.data.about-me.projects.translation[project.service_status][language] }}</span>
         <br />
-      {% endif %}
+      {%- endif -%}
     </p>
     <p>
-      {% for project_spec_key in project.specs %}
+      {%- for project_spec_key in project.specs -%}
         <small class="badge">{% include spec-icon.html spec_key=project_spec_key %}</small>
-      {% endfor %}
+        {{- " " -}}
+      {%- endfor -%}
     </p>
-    {% if project.link_buttons %}
-      {% for link_button in project.link_buttons %}
+    {%- if project.link_buttons -%}
+      {%- for link_button in project.link_buttons -%}
         <a
           class="btn btn--inverse"
           href="{{ link_button.url }}"
           target="_blank"
           >{{ link_button.text[language] }}</a
         >
-      {% endfor %}
-    {% endif %}
+        {{- " " -}}
+      {%- endfor -%}
+    {%- endif -%}
     <p>{{ project.description[language] }}</p>
-    {% if project.main_features %}
+    {%- if project.main_features -%}
       <h4>{{ site.data.about-me.projects.translation.main_features[language] }}:</h4>
       <ul>
-        {% for main_feature in project.main_features %}
+        {%- for main_feature in project.main_features -%}
           <li>{{ main_feature[language] }}</li>
-        {% endfor %}
+        {%- endfor -%}
       </ul>
-    {% endif %}
-    {% if project.my_role %}
+    {%- endif -%}
+    {%- if project.my_role -%}
       <h4>{{ site.data.about-me.projects.translation.my_role[language] }}:</h4>
       <ul>
-        {% for role in project.my_role %}
+        {%- for role in project.my_role -%}
           <li>{{ role[language] }}</li>
-        {% endfor %}
+        {%- endfor -%}
       </ul>
-    {% endif %}
+    {%- endif -%}
   </div>
   <br />
-{% endfor %}
+{%- endfor -%}

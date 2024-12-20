@@ -1,14 +1,34 @@
 {
-    "name": "",
-    "short_name": "",
-    "icons": [
-        {
-            "src": "/assets/logo/android-chrome-96x96.png",
-            "sizes": "96x96",
-            "type": "image/png"
-        }
-    ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
-    "display": "standalone"
+  "name": "Ju Ho Nam's Bits & Bytes",
+  "short_name": "Ju Ho Nam",
+  "icons": [
+    {
+      "src": "/assets/logo/favicon.ico",
+      "sizes": "48x48 32x32 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/assets/logo/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/logo/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/logo/ apple-touch-icon.png",
+      "sizes": "76x76",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/logo/android-chrome-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
 }

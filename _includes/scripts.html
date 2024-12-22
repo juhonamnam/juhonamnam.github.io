@@ -14,3 +14,7 @@
     <script src="{{ script | relative_url }}"></script>
   {%- endfor -%}
 {%- endif -%}
+
+{%- if page.use_mathjax -%}
+  {%- include mathjax-script.html -%}
+{%- endif -%}

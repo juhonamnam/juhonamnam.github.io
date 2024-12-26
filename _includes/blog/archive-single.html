@@ -1,4 +1,4 @@
-{%- assign teaser = post.header.teaser -%}
+{%- assign teaser = post.teaser -%}
 
 {%- if post.id -%}
   {%- assign title = post.title | markdownify | remove: "<p>" | remove: "</p>" -%}

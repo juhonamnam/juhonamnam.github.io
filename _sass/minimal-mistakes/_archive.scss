@@ -220,12 +220,17 @@
   }
 
   .archive__item-teaser {
-    @include breakpoint($small) {
-      max-height: 200px;
-    }
+    max-height: 120px;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: center;
 
-    @include breakpoint($medium) {
+    img {
+      background-color: $background-color;
+      width: auto;
       max-height: 120px;
+      height: auto;
+      object-fit: contain;
     }
   }
 }

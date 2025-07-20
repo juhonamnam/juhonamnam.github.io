@@ -98,8 +98,8 @@ main:
         en: "Simple CRUD server"
 
   - title:
-      ko: "RetailTrend"
-      en: "RetailTrend"
+      ko: "RetailTrend 웹 서비스"
+      en: "RetailTrend Web Service"
     affiliation:
       ko: "CPRO"
       en: "CPRO"
@@ -123,12 +123,14 @@ main:
       ko: "RetailTrend는 인공지능 카메라 기반의 오프라인 매장 방문객 분석 서비스입니다. 피플 카운팅, 동선 분석, 성별 연령, 관심 영역 등 다양한 데이터를 클라이언트에게 제공합니다."
       en: "RetailTrend is an AI camera based offline store visitor analysis service. It provides various data such as people counting, path analysis, gender age ratio, and region of interest to clients."
     my_role:
-      - ko: "유지보수 및 신규 기능 개발 참여"
-        en: "Maintenance and new feature development"
-      - ko: "백엔드와 인공지능을 주 업무로 수행하며, 카메라 내장 플러그인, 웹 UI, DevOps 등 나머지 영역에 대해 보조 업무 수행"
-        en: "Main role in backend and AI engineering, and secondary role in other areas such as camera embedded plugins, web UI, and DevOps"
+      - ko: "백엔드 유지보수 및 신규 기능 개발 참여"
+        en: "Backend maintenance and new feature development"
       - ko: "카메라의 raw 데이터를 사용자에게 유의미한 통계 데이터로 변환하기 위한 시계열 샘플링 및 리샘플링 알고리즘 개발"
         en: "Developing time series sampling and resampling algorithms to convert raw data from cameras into meaningful statistical data for users"
+      - ko: "장애 대응을 위한 통계 데이터 수동 재집계 시스템 개발"
+        en: "Developing a manual statistical data re-aggregation system to respond to failures"
+      - ko: "캐싱 및 통계 배치를 통해 서비스 성능 개선"
+        en: "Improving service performance through caching and statistical batching"
       - ko: "AWS S3 가비지 제거 및 storage class 등의 정책 도입으로 비용 절감"
         en: "Reducing AWS S3 costs by introducing policies such as removing garbage and storage class"
 

@@ -16,6 +16,7 @@ classname: about-me
     <!--excerpt close-->
   </div>
 </div>
+
 <div class="info-grid">
   <div class="info-box">
     <h3>Education</h3>
@@ -61,5 +62,37 @@ classname: about-me
       </li>
     {%- endfor -%}
     </ul>
+  </div>
+</div>
+
+<div class="work-experience">
+  <h3>Work Experience</h3>
+
+  <div class="work-experience-timeline">
+    {%- for work_experience in site.data.about-me.intro.main.work_experiences -%}
+      <div class="work-experience-timeline-content-wrapper">
+        <div class="work-experience-timeline-label">
+          <div class="work-experience-timeline-period">{{ work_experience.period }}</div>
+        </div>
+        <div class="work-experience-timeline-content">
+          <b>{{ work_experience.job_title[language] }}</b>
+          <br />
+          <small>
+            {{ work_experience.company }} {{ work_experience.affiliation[language] }}
+            <br />
+            {%- for work_spec_key in work_experience.specs -%}
+            <small class="badge">{% include spec-icon.html spec_key=work_spec_key %}</small>
+              {{- " " -}}
+            {%- endfor -%}
+            <br />
+            <ul>
+              {%- for main_task in work_experience.main_tasks -%}
+                <li>{{ main_task[language] }}</li>
+              {%- endfor -%}
+            </ul>
+          </small>
+        </div>
+      </div>
+    {%- endfor -%}
   </div>
 </div>

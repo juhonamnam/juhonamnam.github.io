@@ -60,4 +60,71 @@
       }
     }
   }
+
+  .work-experience {
+    > h3 {
+      margin: 0.5em 0 0.5em;
+      border-bottom: 1px solid $primary-color;
+    }
+
+    div.work-experience-timeline {
+      margin: 20px auto;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        height: 100%;
+        width: 2px;
+        left: calc(7.5em - 2px);
+        background-color: $primary-color;
+        box-shadow: 0 0 10px 2px #0003;
+
+        @media (max-width: 768px) {
+          left: 8px;
+        }
+      }
+
+      div.work-experience-timeline-content-wrapper {
+        display: grid;
+        grid-template-columns: 7.5em 1fr;
+
+        @media (max-width: 768px) {
+          grid-template-columns: 1fr;
+        }
+
+        > div.work-experience-timeline-label {
+          margin: 0px 20px 20px 0;
+          font-size: 0.75em;
+          @media (max-width: 768px) {
+            margin: 0px 0 10px 20px;
+          }
+          > div.work-experience-timeline-period {
+            position: relative;
+            text-shadow: 1px 1px 3px #0003;
+            &::before {
+              content: "";
+              position: absolute;
+              width: 10px;
+              height: 10px;
+              background: $background-color;
+              border-radius: 999px;
+              top: 20%;
+              left: calc(7.5em / 0.75 - 9px);
+              border: 3px solid $danger-color;
+              box-shadow: 0 0 10px 1px #0003;
+              box-sizing: content-box;
+              @media (max-width: 768px) {
+                left: -19px;
+              }
+            }
+          }
+        }
+
+        > div.work-experience-timeline-content {
+          margin: 0 0 20px 20px;
+        }
+      }
+    }
+  }
 }

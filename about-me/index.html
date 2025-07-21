@@ -6,11 +6,13 @@ classname: about-me
 {%- assign language = "ko" -%}
 
 <div class="intro">
-  <img src="/images/profile.jpg" alt="" />
-  <div>
+  <div class="profile-container">
+    <img src="/images/profile.jpg" alt="" />
+  </div>
+  <div class="intro-text">
     <!--excerpt open-->
-    <h2>{{ site.data.about-me.intro.main.title[language] }}</h2>
-    {%- for line in site.data.about-me.intro.main.lines -%}
+    <h2>{{ site.data.about-me.main.title[language] }}</h2>
+    {%- for line in site.data.about-me.main.lines -%}
       <p>{{ line[language] }}</p>
     {%- endfor -%}
     <!--excerpt close-->
@@ -20,7 +22,7 @@ classname: about-me
 <div class="info-grid">
   <div class="info-box">
     <h3>Education</h3>
-    {%- for education in site.data.about-me.intro.main.info.educations -%}
+    {%- for education in site.data.about-me.main.info.educations -%}
       <div class="info-item">
         <b>{{ education.title[language] }}</b>
         <br />
@@ -29,14 +31,14 @@ classname: about-me
         {{ education.period }}
         <br />
         {%- if education.gpa -%}
-          {{- site.data.about-me.intro.translation.gpa[language] }}: {{ education.gpa -}}
+          {{- site.data.about-me.main.translation.gpa[language] }}: {{ education.gpa -}}
         {%- endif -%}
       </div>
     {%- endfor -%}
   </div>
   <div class="info-box">
     <h3>Certificate</h3>
-    {%- for certificate in site.data.about-me.intro.main.info.certificates -%}
+    {%- for certificate in site.data.about-me.main.info.certificates -%}
       <div class="info-item">
         <b>{{ certificate.title[language] }}</b>
         <br />
@@ -46,7 +48,7 @@ classname: about-me
   </div>
   <div class="info-box">
     <h3>Skills</h3>
-    {%- for skill in site.data.about-me.intro.main.info.skills -%}
+    {%- for skill in site.data.about-me.main.info.skills -%}
       <small class="badge">{% include spec-icon.html spec_key=skill %}</small>
       {{- " " -}}
     {%- endfor -%}
@@ -54,7 +56,7 @@ classname: about-me
   <div class="info-box">
     <h3>Contact</h3>
     <ul class="social-icons">
-    {%- for contact in site.data.about-me.intro.main.info.contacts -%}
+    {%- for contact in site.data.about-me.main.info.contacts -%}
       <li>
         <a href="{{ contact.url }}" rel="nofollow noopener noreferrer me">
           <i class="{{ contact.icon }}" aria-hidden="true"></i> {{ contact.label }}
@@ -69,16 +71,17 @@ classname: about-me
   <h3>Work Experience</h3>
 
   <div class="work-experience-timeline">
-    {%- for work_experience in site.data.about-me.intro.main.work_experiences -%}
+    {%- for work_experience in site.data.about-me.main.work_experiences -%}
       <div class="work-experience-timeline-content-wrapper">
         <div class="work-experience-timeline-label">
           <div class="work-experience-timeline-period">{{ work_experience.period }}</div>
         </div>
         <div class="work-experience-timeline-content">
-          <b>{{ work_experience.job_title[language] }}</b>
-          <br />
-          <small>
-            {{ work_experience.company }} {{ work_experience.affiliation[language] }}
+          <div class="work-experience-job-title">
+            {{- work_experience.job_title[language] -}}
+          </div>
+          <div class="work-experience-job-description">
+            <em>{{ work_experience.company }} {{ work_experience.affiliation[language] }}</em>
             <br />
             {%- for work_spec_key in work_experience.specs -%}
             <small class="badge">{% include spec-icon.html spec_key=work_spec_key %}</small>
@@ -90,7 +93,7 @@ classname: about-me
                 <li>{{ main_task[language] }}</li>
               {%- endfor -%}
             </ul>
-          </small>
+          </div>
         </div>
       </div>
     {%- endfor -%}

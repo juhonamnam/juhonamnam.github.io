@@ -22,6 +22,14 @@
     color: inherit;
     text-decoration: none;
   }
+
+  img {
+    display: inline-block;
+  }
+
+  @media print {
+    -webkit-print-color-adjust: exact;
+  }
 }
 
 .clickable {

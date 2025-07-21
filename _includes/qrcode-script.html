@@ -1,0 +1,56 @@
+<script
+  type="text/javascript"
+  id="qrcode-script"
+  src="/assets/js/qrcode/qrcode.min.js"
+></script>
+<script type="text/javascript">
+  document.querySelectorAll("div.qrcode").forEach(function (el) {
+    const text = el.getAttribute("data-text");
+
+    const margin = el.getAttribute("data-margin");
+    const colorDark = el.getAttribute("data-color-dark");
+    const colorLight = el.getAttribute("data-color-light");
+
+    QRCode.toDataURL(
+      text,
+      {
+        margin: margin,
+        color: {
+          dark: colorDark,
+          light: colorLight,
+        },
+      },
+      function (error, url) {
+        if (error) console.error(error);
+        else {
+          const img = document.createElement("img");
+          img.src = url;
+          img.alt = text;
+          el.appendChild(img);
+        }
+      },
+    );
+  });
+  document.querySelectorAll("canvas.qrcode").forEach(function (el) {
+    const text = el.getAttribute("data-text");
+
+    const margin = el.getAttribute("data-margin");
+    const colorDark = el.getAttribute("data-color-dark");
+    const colorLight = el.getAttribute("data-color-light");
+
+    QRCode.toCanvas(
+      el,
+      text,
+      {
+        margin: margin,
+        color: {
+          dark: colorDark,
+          light: colorLight,
+        },
+      },
+      function (error) {
+        if (error) console.error(error);
+      },
+    );
+  });
+</script>

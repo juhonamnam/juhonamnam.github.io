@@ -1,4 +1,10 @@
 .about-me {
+  @media print {
+    a[href]:after {
+      content: "";
+    }
+  }
+
   .intro {
     display: flex;
     justify-content: space-around;
@@ -18,10 +24,10 @@
 
     > .intro-text {
       width: 60%;
-      h2 {
+      h1 {
         margin: 0 0 0.5em 0;
         @media print {
-          font-size: 1.25em;
+          font-size: 1.5em;
         }
       }
       padding: 1em;
@@ -53,11 +59,11 @@
     }
 
     .info-box {
-      > h3 {
+      > h2 {
         margin: 0.5em 0 0.5em;
         border-bottom: 1px solid $primary-color;
         @media print {
-          font-size: 1.125em;
+          font-size: 1.25em;
         }
       }
       .info-item {
@@ -82,10 +88,15 @@
   }
 
   .work-experience {
-    > h3 {
+    > h2 {
       margin: 0.5em 0 0.5em;
       border-bottom: 1px solid $primary-color;
+      @media print {
+        font-size: 1.25em;
+      }
     }
+
+    $work-experience-timeline-period-width: 7.8em;
 
     div.work-experience-timeline {
       margin: 20px auto;
@@ -96,7 +107,7 @@
         position: absolute;
         height: 100%;
         width: 2px;
-        left: calc(7.5em - 2px);
+        left: calc($work-experience-timeline-period-width - 2px);
         background-color: $primary-color;
         box-shadow: 0 0 10px 2px #0003;
 
@@ -111,7 +122,7 @@
 
       div.work-experience-timeline-content-wrapper {
         display: grid;
-        grid-template-columns: 7.5em 1fr;
+        grid-template-columns: $work-experience-timeline-period-width 1fr;
 
         @include breakpoint(max-width $small - 1px) {
           grid-template-columns: 1fr;
@@ -134,7 +145,7 @@
               background: $background-color;
               border-radius: 999px;
               top: 20%;
-              left: calc(7.5em / 0.75 - 9px);
+              left: calc($work-experience-timeline-period-width / 0.75 - 9px);
               border: 3px solid $danger-color;
               box-shadow: 0 0 10px 1px #0003;
               @include breakpoint(max-width $small - 1px) {

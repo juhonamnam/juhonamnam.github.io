@@ -7,10 +7,10 @@ title:
   ko: "소프트웨어 엔지니어 남주호입니다."
   en: "Hi, I'm Ju Ho Nam, a software engineer."
 lines:
-  - ko: "수학을 좋아하던 아이가 성인이 되어 인공지능 수학을 공부하며 소프트웨어에 입문하게 되었습니다. 프론트엔드, 백엔드, 인공지능 등 여러 분야에 능숙한 제너럴리스트로 성장중입니다."
-    en: "Growing up as boy who loved mathematics, I have entered the world of software through AI mathematics. I am learning to become a generalist who is proficient in various fields such as front-end, back-end, and AI."
-  - ko: "개발은 저의 직업이자 취미이기도 합니다. 저의 다양한 생각을 공유할 목적으로 개인 웹사이트를 개시하였습니다. 재밌게 봐주시기 바랍니다."
-    en: "Software engineering is not only my profession but also my hobby. I started this personal website to share my various thoughts. I hope you enjoy what we have here in this website."
+  - ko: "어릴 적부터 수학을 좋아했고, 인공지능 수학을 접한 것을 계기로 소프트웨어 세계에 발을 들이게 되었습니다. 그 후 프론트엔드, 백엔드, 인공지능 등 다양한 분야를 경험하며, 기술 전반에 두루 능숙한 제너럴리스트 소프트웨어 엔지니어로 성장하고 있습니다."
+    en: "I've enjoyed mathematics since I was young, and my interest in mathematical aspects of artificial intelligence led me into the world of software engineering. Since then, I've gained experience in various fields such as frontend, backendm and AI, and have beein growing as a generalist software engineer with a broad and well-rounded skill set."
+  - ko: "개발은 제게 직업인 동시에 취미이기도 합니다. 다양한 생각과 배움을 나누고자 이 개인 웹사이트를 시작하게 되었습니다. 편하게 둘러보시고, 즐겁게 봐주시면 좋겠습니다."
+    en: "For me, programming is both a profession and a passion. I started this personal website to share my thouughts and learnings. Feel free to explore, and I hope you enjoy it."
 info:
   educations:
     - title:
@@ -55,13 +55,16 @@ info:
   contacts:
     - label: "Email"
       icon: "fas faa-fw fa-envelope"
+      value: "jhnamnam@gmail.com"
       url: "mailto:jhnamnam@gmail.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/juhonamnam"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/ju-ho-nam-a28057254/"
+      value: "linkedin.com/in/juhonam"
+      url: "https://www.linkedin.com/in/juhonam"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      value: "github.com/juhonamnam"
+      url: "https://github.com/juhonamnam"
 
 work_experiences:
   - period: "2023.02 ~ Present"

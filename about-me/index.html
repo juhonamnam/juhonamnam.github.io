@@ -1,6 +1,7 @@
 ---
 title: About Me
 classname: about-me
+hide_title: true
 ---
 
 {%- assign language = "ko" -%}
@@ -10,8 +11,9 @@ classname: about-me
     <img src="/images/profile.jpg" alt="" />
   </div>
   <div class="intro-text">
+    {%- assign title = site.data.about-me.main.title[language] -%}
+    {%- include h1.html h1_text=title -%}
     <!--excerpt open-->
-    <h2>{{ site.data.about-me.main.title[language] }}</h2>
     {%- for line in site.data.about-me.main.lines -%}
       <p>{{ line[language] }}</p>
     {%- endfor -%}
@@ -21,7 +23,7 @@ classname: about-me
 
 <div class="info-grid">
   <div class="info-box">
-    <h3>Education</h3>
+    <h2>Education</h2>
     {%- for education in site.data.about-me.main.info.educations -%}
       <div class="info-item">
         <b>{{ education.title[language] }}</b>
@@ -37,7 +39,7 @@ classname: about-me
     {%- endfor -%}
   </div>
   <div class="info-box">
-    <h3>Certificate</h3>
+    <h2>Certificate</h2>
     {%- for certificate in site.data.about-me.main.info.certificates -%}
       <div class="info-item">
         <b>{{ certificate.title[language] }}</b>
@@ -47,14 +49,14 @@ classname: about-me
     {%- endfor -%}
   </div>
   <div class="info-box">
-    <h3>Skills</h3>
+    <h2>Skills</h2>
     {%- for skill in site.data.about-me.main.info.skills -%}
       <small class="badge">{% include spec-icon.html spec_key=skill %}</small>
       {{- " " -}}
     {%- endfor -%}
   </div>
   <div class="info-box">
-    <h3>Contact</h3>
+    <h2>Contact</h2>
     <ul class="social-icons">
     {%- for contact in site.data.about-me.main.info.contacts -%}
       <li>
@@ -68,7 +70,7 @@ classname: about-me
 </div>
 
 <div class="work-experience">
-  <h3>Work Experience</h3>
+  <h2>Work Experience</h2>
 
   <div class="work-experience-timeline">
     {%- for work_experience in site.data.about-me.main.work_experiences -%}

@@ -12,6 +12,7 @@
     > .profile-container {
       display: flex;
       align-items: center;
+      justify-content: center;
       width: 40%;
       > img {
         width: auto;
@@ -97,7 +98,6 @@
     }
 
     $work-experience-timeline-period-width: 7.8em;
-    $work-experience-timeline-period-line-width: 2px;
 
     div.work-experience-timeline {
       margin: 20px auto;
@@ -133,7 +133,7 @@
         > div.work-experience-timeline-label {
           margin: 0px 20px 20px 0;
           @include breakpoint(max-width $small - 1px) {
-            margin: 0px 0 10px 20px;
+            margin: 0px 0 10px 30px;
           }
           > div.work-experience-timeline-period {
             position: relative;
@@ -155,7 +155,7 @@
               border: 3px solid $danger-color;
               box-shadow: 0 0 10px 1px #0003;
               @include breakpoint(max-width $small - 1px) {
-                left: -10px;
+                left: -20px;
               }
             }
           }
@@ -163,6 +163,9 @@
 
         > div.work-experience-timeline-content {
           margin: 0 0 20px 20px;
+          @include breakpoint(max-width $small - 1px) {
+            margin-left: 30px;
+          }
           .work-experience-job-title {
             font-weight: bold;
           }

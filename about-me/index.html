@@ -76,7 +76,9 @@ hide_title: true
     {%- for work_experience in site.data.about-me.main.work_experiences -%}
       <div class="work-experience-timeline-content-wrapper">
         <div class="work-experience-timeline-label">
-          <div class="work-experience-timeline-period">{{ work_experience.period }}</div>
+          <div class="work-experience-timeline-period">
+            <span>{{ work_experience.period }}</span>
+          </div>
         </div>
         <div class="work-experience-timeline-content">
           <div class="work-experience-job-title">

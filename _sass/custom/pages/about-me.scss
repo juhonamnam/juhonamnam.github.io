@@ -97,6 +97,7 @@
     }
 
     $work-experience-timeline-period-width: 7.8em;
+    $work-experience-timeline-period-line-width: 2px;
 
     div.work-experience-timeline {
       margin: 20px auto;
@@ -107,7 +108,8 @@
         position: absolute;
         height: 100%;
         width: 2px;
-        left: calc($work-experience-timeline-period-width - 2px);
+        margin-left: -1px;
+        left: $work-experience-timeline-period-width;
         background-color: $primary-color;
         box-shadow: 0 0 10px 2px #0003;
 
@@ -116,7 +118,7 @@
         }
 
         @include breakpoint(max-width $small - 1px) {
-          left: 8px;
+          left: 10px;
         }
       }
 
@@ -130,26 +132,30 @@
 
         > div.work-experience-timeline-label {
           margin: 0px 20px 20px 0;
-          font-size: 0.75em;
           @include breakpoint(max-width $small - 1px) {
             margin: 0px 0 10px 20px;
           }
           > div.work-experience-timeline-period {
             position: relative;
             text-shadow: 1px 1px 3px #0003;
+            > span {
+              font-size: 0.75em;
+            }
             &::before {
               content: "";
               position: absolute;
               width: 10px;
+              margin-left: -8px;
               height: 10px;
+              margin-top: -8px;
               background: $background-color;
               border-radius: 999px;
-              top: 20%;
-              left: calc($work-experience-timeline-period-width / 0.75 - 9px);
+              top: 50%;
+              left: $work-experience-timeline-period-width;
               border: 3px solid $danger-color;
               box-shadow: 0 0 10px 1px #0003;
               @include breakpoint(max-width $small - 1px) {
-                left: -20px;
+                left: -10px;
               }
             }
           }

@@ -2,6 +2,33 @@ translation:
   gpa:
     ko: "학점"
     en: "GPA"
+  affiliation:
+    ko: "소속"
+    en: "Affiliation"
+  team_size:
+    ko: "팀 규모"
+    en: "Team Size"
+  development_period:
+    ko: "개발 기간"
+    en: "Development Period"
+  participated_period:
+    ko: "참여 기간"
+    en: "Participated Period"
+  service_status:
+    ko: "서비스 현황"
+    en: "Service Status"
+  operating:
+    ko: "운영중"
+    en: "Operating"
+  discontinued:
+    ko: "종료"
+    en: "Discontinued"
+  main_features:
+    ko: "주요 기능"
+    en: "Main Features"
+  my_role:
+    ko: "담당 역할"
+    en: "My Role"
 
 title:
   ko: "소프트웨어 엔지니어 남주호입니다."

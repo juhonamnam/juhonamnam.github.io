@@ -110,13 +110,13 @@ defaults:
       show_date: true
       toc: true
       page_type: blog_post
+
   # default pages
   - scope:
       path: ""
       type: pages
     values:
-      layout: archive
-      classes: wide
+      layout: default
 
   # blog
   - scope:
@@ -124,6 +124,7 @@ defaults:
       type: pages
     values:
       page_type: blog
+      layout: blog/index
   - scope:
       path: "blog/category"
       type: pages

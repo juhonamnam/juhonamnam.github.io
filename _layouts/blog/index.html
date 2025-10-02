@@ -2,12 +2,12 @@
 layout: default
 ---
 
-{%- include breadcrumbs.html -%}
+{%- include breadcrumbs.html sidebar_indent=true -%}
 
-<div id="main" role="main">
-  {%- include sidebar.html -%}
+<div id="main" role="main" class="wide">
+  {%- include blog/sidebar.html -%}
 
-  <div class="archive {{ page.classname }}">
+  <div class="archive">
     {%- unless page.hide_title -%}
       {%- include h1.html h1_text=page.title -%}
     {%- endunless -%}

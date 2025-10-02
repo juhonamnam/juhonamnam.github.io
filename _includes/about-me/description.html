@@ -1,0 +1,35 @@
+{%- for item in include.description -%}
+  {%- if item.type == "paragraph" -%}
+    <p>{{ item.inner[include.language] }}</p>
+  {%- elsif item.type == "heading" -%}
+    <h4>{{ item.inner[include.language] }}</h4>
+  {%- elsif item.type == "link_buttons" -%}
+    <p>
+      {%- for link_button in item.inner -%}
+        <a
+          class="btn btn--inverse"
+          href="{{ link_button.url }}"
+          target="_blank"
+          >{{ link_button.label[include.language] }}</a
+        >
+        {%- unless forloop.last -%}
+          {{- " " -}}
+        {%- endunless -%}
+      {%- endfor -%}
+    </p>
+  {%- elsif item.type == "list" -%}
+    <ul>
+      {%- for list_item in item.inner -%}
+        {%- if list_item.sublist -%}
+          <ul>
+            {%- for sublist_item in list_item.inner -%}
+              <li>{{ sublist_item[include.language] }}</li>
+            {%- endfor -%}
+          </ul>
+        {%- else -%}
+          <li>{{ list_item[include.language] }}</li>
+        {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+{%- endfor -%}

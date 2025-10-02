@@ -1,105 +1,185 @@
 ---
 title: About Me
-classname: about-me
 hide_title: true
 ---
 
 {%- assign language = "ko" -%}
 
-<div class="intro">
-  <div class="profile-container">
-    <img src="/images/profile.jpg" alt="" />
-  </div>
-  <div class="intro-text">
-    {%- assign title = site.data.about-me.main.title[language] -%}
-    {%- include h1.html h1_text=title -%}
-    <!--excerpt open-->
-    {%- for line in site.data.about-me.main.lines -%}
-      <p>{{ line[language] }}</p>
-    {%- endfor -%}
-    <!--excerpt close-->
-  </div>
-</div>
+{%- include breadcrumbs.html -%}
 
-<div class="info-grid">
-  <div class="info-box">
-    <h2>Education</h2>
-    {%- for education in site.data.about-me.main.info.educations -%}
-      <div class="info-item">
-        <b>{{ education.title[language] }}</b>
-        <br />
-        <em>{{ education.association[language] }}</em>
-        <br />
-        {{ education.period }}
-        <br />
-        {%- if education.gpa -%}
-          {{- site.data.about-me.main.translation.gpa[language] }}: {{ education.gpa -}}
-        {%- endif -%}
+<div id="main" role="main">
+  <div class="about-me">
+    <div class="intro">
+      <div class="profile-container">
+        <img src="/images/profile.jpg" alt="" />
       </div>
-    {%- endfor -%}
-  </div>
-  <div class="info-box">
-    <h2>Certificate</h2>
-    {%- for certificate in site.data.about-me.main.info.certificates -%}
-      <div class="info-item">
-        <b>{{ certificate.title[language] }}</b>
-        <br />
-        <em>{{ certificate.agency[language] }}, {{ certificate.period }}</em>
+      <div class="intro-text">
+        {%- assign title = site.data.about-me.main.title[language] -%}
+        {%- include h1.html h1_text=title -%}
+        <!--excerpt open-->
+        {%- for line in site.data.about-me.main.lines -%}
+          <p>{{ line[language] }}</p>
+        {%- endfor -%}
+        <!--excerpt close-->
       </div>
-    {%- endfor -%}
-  </div>
-  <div class="info-box">
-    <h2>Skills</h2>
-    {%- for skill in site.data.about-me.main.info.skills -%}
-      <small class="badge">{% include spec-icon.html spec_key=skill %}</small>
-      {{- " " -}}
-    {%- endfor -%}
-  </div>
-  <div class="info-box">
-    <h2>Contact</h2>
-    <ul class="social-icons">
-    {%- for contact in site.data.about-me.main.info.contacts -%}
-      <li>
-        <a href="{{ contact.url }}" rel="nofollow noopener noreferrer me">
-          <i class="{{ contact.icon }}" aria-hidden="true"></i> {{ contact.label }}
-        </a>
-      </li>
-    {%- endfor -%}
-    </ul>
-  </div>
-</div>
+    </div>
 
-<div class="work-experience">
-  <h2>Work Experience</h2>
-
-  <div class="work-experience-timeline">
-    {%- for work_experience in site.data.about-me.main.work_experiences -%}
-      <div class="work-experience-timeline-content-wrapper">
-        <div class="work-experience-timeline-label">
-          <div class="work-experience-timeline-period">
-            <span>{{ work_experience.period }}</span>
-          </div>
-        </div>
-        <div class="work-experience-timeline-content">
-          <div class="work-experience-job-title">
-            {{- work_experience.job_title[language] -}}
-          </div>
-          <div class="work-experience-job-description">
-            <em>{{ work_experience.company }} {{ work_experience.affiliation[language] }}</em>
+    <div class="info-grid">
+      <div class="info-box">
+        <h2>Education</h2>
+        {%- for education in site.data.about-me.main.info.educations -%}
+          <div class="info-item">
+            <b>{{ education.title[language] }}</b>
             <br />
-            {%- for work_spec_key in work_experience.specs -%}
-            <small class="badge">{% include spec-icon.html spec_key=work_spec_key %}</small>
-              {{- " " -}}
-            {%- endfor -%}
+            <em>{{ education.association[language] }}</em>
             <br />
-            <ul>
-              {%- for main_task in work_experience.main_tasks -%}
-                <li>{{ main_task[language] }}</li>
-              {%- endfor -%}
-            </ul>
+            {{ education.period }}
+            <br />
+            {%- if education.gpa -%}
+              {{- site.data.about-me.main.keywords.gpa[language] }}: {{ education.gpa -}}
+            {%- endif -%}
           </div>
-        </div>
+        {%- endfor -%}
       </div>
-    {%- endfor -%}
+      <div class="info-box">
+        <h2>Certificate</h2>
+        {%- for certificate in site.data.about-me.main.info.certificates -%}
+          <div class="info-item">
+            <b>{{ certificate.title[language] }}</b>
+            <br />
+            <em>{{ certificate.agency[language] }}, {{ certificate.period }}</em>
+          </div>
+        {%- endfor -%}
+      </div>
+      <div class="info-box">
+        <h2>Skills</h2>
+        {%- for skill in site.data.about-me.main.info.skills -%}
+          <small class="badge">{% include spec-icon.html spec_key=skill %}</small>
+          {{- " " -}}
+        {%- endfor -%}
+      </div>
+      <div class="info-box">
+        <h2>Contact</h2>
+        <ul class="social-icons">
+        {%- for contact in site.data.about-me.main.info.contacts -%}
+          <li>
+            <a href="{{ contact.url }}" rel="nofollow noopener noreferrer me">
+              <i class="{{ contact.icon }}" aria-hidden="true"></i> {{ contact.label }}
+            </a>
+          </li>
+        {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+
+    <div class="work-experience">
+      <h2>Work Experience</h2>
+
+      <div class="work-experience-timeline">
+        {%- for work_experience in site.data.about-me.work-experience.data -%}
+          <div class="work-experience-timeline-content-wrapper">
+            <div class="work-experience-timeline-label">
+              <div class="work-experience-timeline-period">
+                <span>{{ work_experience.period }}</span>
+              </div>
+            </div>
+            <div class="work-experience-timeline-content">
+              <h3>{{- work_experience.job_title[language] -}}</h3>
+              <div class="work-experience-job-description">
+                <div>
+                  <em>{{ work_experience.company }} {{ work_experience.affiliation[language] }}</em>
+                </div>
+                <div>
+                  {%- for work_spec_key in work_experience.specs -%}
+                    <small class="badge">{% include spec-icon.html spec_key=work_spec_key %}</small>
+                    {%- unless forloop.last -%}
+                      {{- " " -}}
+                    {%- endunless -%}
+                  {%- endfor -%}
+                </div>
+                <input type="checkbox" id="expand-work-experience-{{ forloop.index }}" class="expand-toggle" />
+                <div class="expandable">
+                  <div class="expandable-content">
+                    {%- include about-me/description.html description=work_experience.description language=language -%}
+                  </div>
+                </div>
+                <label for="expand-work-experience-{{ forloop.index }}" class="expand-label">
+                  <span class="expand-more">자세히 보기</span>
+                  <span class="expand-less">간략히 보기</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+
+    <div class="projects">
+      <h2>Projects</h2>
+      {%- for project in site.data.about-me.projects.data -%}
+        <div class="project">
+          <div class="preview">
+            <div class="image-container">
+              <img class="{{ project.images[0].orientation }}" src="{{ project.images[0].url }}" alt="" />
+            </div>
+            <div class="preview-detail">
+              <h3>{{ project.title[language] }}</h3>
+              {%- if project.team -%}
+                <div>
+                  {{- site.data.about-me.main.keywords.team_name[language] -}}: {{ project.team.name[language] }}
+                </div>
+                <div>
+                  {{- site.data.about-me.main.keywords.team_size[language] -}}: {{ project.team.size }}
+                </div>
+              {%- endif -%}
+              {%- if project.period.type == "development" -%}
+                <div>
+                  {{- site.data.about-me.main.keywords.development_period[language] -}}: {{ project.period.period_str }}
+                </div>
+              {%- elsif project.period.type == "participated" -%}
+                <div>
+                  {{- site.data.about-me.main.keywords.participated_period[language] -}}: {{ project.period.period_str }}
+                </div>
+              {%- endif -%}
+              <div>
+                <small class="badge badge-{{ project.status.color }}">
+                  {{- project.status[language] -}}
+                </small>
+              </div>
+              <div>
+                {%- for spec_key in project.specs -%}
+                  <small class="badge">{% include spec-icon.html spec_key=spec_key %}</small>
+                  {{- " " -}}
+                {%- endfor -%}
+              </div>
+            </div>
+          </div>
+          <input type="checkbox" id="expand-project-{{ forloop.index }}" class="expand-toggle" />
+          <div class="expandable">
+            <div class="expandable-content">
+              {%- if project.images.size > 1 -%}
+                <div class="image-list-container">
+                  {%- for image in project.images -%}
+                    {%- unless forloop.first -%}
+                      <div class="image-container">
+                        <img class="{{ image.orientation }}" src="{{ image.url }}" alt="" />
+                      </div>
+                    {%- endunless -%}
+                  {%- endfor -%}
+                </div>
+              {%- endif -%}
+              <div>{% include about-me/description.html description=project.description language=language %}</div>
+            </div>
+          </div>
+          <label for="expand-project-{{ forloop.index }}" class="expand-label">
+            <span class="expand-more">자세히 보기</span>
+            <span class="expand-less">간략히 보기</span>
+          </label>
+        </div>
+        {%- unless forloop.last -%}
+          <hr />
+        {%- endunless -%}
+      {%- endfor -%}
+    </div>
   </div>
 </div>

@@ -1,34 +1,19 @@
-translation:
+keywords:
   gpa:
     ko: "학점"
     en: "GPA"
-  affiliation:
-    ko: "소속"
-    en: "Affiliation"
   team_size:
     ko: "팀 규모"
     en: "Team Size"
+  team_name:
+    ko: "팀 이름"
+    en: "Team Name"
   development_period:
     ko: "개발 기간"
     en: "Development Period"
   participated_period:
     ko: "참여 기간"
     en: "Participated Period"
-  service_status:
-    ko: "서비스 현황"
-    en: "Service Status"
-  operating:
-    ko: "운영중"
-    en: "Operating"
-  discontinued:
-    ko: "종료"
-    en: "Discontinued"
-  main_features:
-    ko: "주요 기능"
-    en: "Main Features"
-  my_role:
-    ko: "담당 역할"
-    en: "My Role"
 
 title:
   ko: "소프트웨어 엔지니어 남주호입니다."
@@ -92,54 +77,3 @@ info:
       icon: "fab fa-fw fa-github"
       value: "github.com/juhonamnam"
       url: "https://github.com/juhonamnam"
-
-work_experiences:
-  - period: "2023.02 ~ Present"
-    company: "CPRO"
-    job_title:
-      ko: "풀스택 개발자"
-      en: "Full Stack Developer"
-    specs:
-      - typescript
-      - express
-      - go
-      - mongodb
-      - aws
-      - docker
-      - python
-      - react
-      - nextjs
-      - pytorch
-    affiliation:
-      ko: "RetailTrend 개발팀"
-      en: "RetailTrend Development Team"
-    main_tasks:
-      - ko: "B2B 서비스 RetailTrend 유지보수 및 신규 기능 개발 참여"
-        en: "Maintenance and new feature development for RetailTrend, a B2B service"
-      - ko: "주 업무: 백엔드, 인공지능"
-        en: "Main tasks: Backend, AI"
-      - ko: "보조 업무: 프론트엔드, DevOps, 펌웨어, 인턴 관리 및 감독"
-        en: "Auxiliary tasks: Frontend, DevOps, Firmware, Intern management and supervision"
-
-  - period: "2021.12 ~ 2023.01"
-    company: "J&FIRST"
-    job_title:
-      ko: "프론트엔드 개발자"
-      en: "Frontend Developer"
-    specs:
-      - react
-      - nextjs
-      - typescript
-      - graphql
-      - spring
-      - mysql
-      - nginx
-      - python
-    affiliation:
-      ko: "개발팀"
-      en: "Development Team"
-    main_tasks:
-      - ko: "LINE Plus 외주 프로젝트 참여"
-        en: "Participated in outsourced project of LINE Plus"
-      - ko: "프론트엔드 리드 개발자"
-        en: "Lead Frontend Developer"

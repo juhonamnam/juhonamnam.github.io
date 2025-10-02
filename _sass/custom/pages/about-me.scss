@@ -5,6 +5,55 @@
     }
   }
 
+  h2 {
+    margin: 0.5em 0 0.5em;
+    border-bottom: 1px solid $primary-color;
+    @media print {
+      font-size: 1.25em;
+    }
+  }
+
+  .expand-toggle {
+    display: none;
+
+    &:checked + .expandable > .expandable-content {
+      transform: translateY(0%);
+    }
+
+    &:not(:checked) + .expandable {
+      height: 0;
+      > .expandable-content {
+        transform: translateY(-100%);
+      }
+    }
+
+    &:checked ~ label > .expand-more {
+      display: none;
+    }
+    &:not(:checked) ~ label > .expand-less {
+      display: none;
+    }
+  }
+
+  .expandable {
+    overflow-y: clip;
+    > .expandable-content {
+      transition: transform 0.5s ease;
+    }
+  }
+
+  .expand-label {
+    font-size: 0.9em;
+    color: $muted-text-color;
+    &:hover {
+      color: $primary-color;
+    }
+
+    @media print {
+      display: none;
+    }
+  }
+
   .intro {
     display: flex;
     justify-content: space-around;
@@ -60,13 +109,6 @@
     }
 
     .info-box {
-      > h2 {
-        margin: 0.5em 0 0.5em;
-        border-bottom: 1px solid $primary-color;
-        @media print {
-          font-size: 1.25em;
-        }
-      }
       .info-item {
         margin: 0.5em 0;
         font-size: 0.9em;
@@ -89,36 +131,28 @@
   }
 
   .work-experience {
-    > h2 {
-      margin: 0.5em 0 0.5em;
-      border-bottom: 1px solid $primary-color;
-      @media print {
-        font-size: 1.25em;
-      }
-    }
-
     $work-experience-timeline-period-width: 7.8em;
 
     div.work-experience-timeline {
-      margin: 20px auto;
+      margin: 1em auto;
       position: relative;
 
       &::before {
         content: "";
         position: absolute;
         height: 100%;
-        width: 2px;
-        margin-left: -1px;
+        width: 0.1em;
+        margin-left: -0.05em;
         left: $work-experience-timeline-period-width;
         background-color: $primary-color;
-        box-shadow: 0 0 10px 2px #0003;
+        box-shadow: 0 0 0.5em 0.1em #0003;
 
         @media print {
           -webkit-print-color-adjust: exact;
         }
 
         @include breakpoint(max-width $small - 1px) {
-          left: 10px;
+          left: 0.5em;
         }
       }
 
@@ -131,43 +165,54 @@
         }
 
         > div.work-experience-timeline-label {
-          margin: 0px 20px 20px 0;
+          margin: 0 1em 1em 0;
           @include breakpoint(max-width $small - 1px) {
-            margin: 0px 0 10px 30px;
+            margin: 0 0 0.5em 1.5em;
           }
           > div.work-experience-timeline-period {
             position: relative;
-            text-shadow: 1px 1px 3px #0003;
+            text-shadow: 0.05em 0.05em 0.15em #0003;
             > span {
               font-size: 0.75em;
             }
             &::before {
               content: "";
               position: absolute;
-              width: 10px;
-              margin-left: -8px;
-              height: 10px;
-              margin-top: -8px;
+              width: 0.5em;
+              margin-left: -0.4em;
+              height: 0.5em;
+              margin-top: -0.4em;
               background: $background-color;
               border-radius: 999px;
               top: 50%;
               left: $work-experience-timeline-period-width;
-              border: 3px solid $danger-color;
-              box-shadow: 0 0 10px 1px #0003;
+              border: 0.15em solid $danger-color;
+              box-shadow: 0 0 0.5em 0.05em #0003;
               @include breakpoint(max-width $small - 1px) {
-                left: -20px;
+                left: -1em;
               }
             }
           }
         }
 
         > div.work-experience-timeline-content {
-          margin: 0 0 20px 20px;
+          margin: 0 0 1em 1em;
           @include breakpoint(max-width $small - 1px) {
-            margin-left: 30px;
+            margin-left: 1.5em;
           }
-          .work-experience-job-title {
-            font-weight: bold;
+          h3 {
+            margin: 0 0 0 0;
+            font-size: 1em;
+            @media print {
+              font-size: 1em;
+            }
+          }
+          h4 {
+            margin: 0.2em 0 0.5em 0;
+            font-size: 1em;
+            @media print {
+              font-size: 1em;
+            }
           }
           .work-experience-job-description {
             font-size: 0.9em;
@@ -175,5 +220,176 @@
         }
       }
     }
+  }
+
+  .projects {
+    hr {
+      border-color: $muted-text-color;
+    }
+    > .project {
+      margin: 1em 0;
+
+      .preview {
+        display: flex;
+        align-items: center;
+
+        @include breakpoint(max-width $small - 1px) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .image-container {
+          overflow: clip;
+          border-radius: $border-radius;
+          background-color: $primary-color;
+          width: 10em;
+          height: 10em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          flex-shrink: 0;
+          user-select: none;
+
+          margin-right: 1em;
+
+          transition: transform 0.2s ease;
+
+          &:hover {
+            img {
+              transform: scale(1.05);
+            }
+          }
+
+          @media print {
+            -webkit-print-color-adjust: exact;
+          }
+
+          @include breakpoint(max-width $small - 1px) {
+            margin-bottom: 1em;
+          }
+
+          img {
+            object-fit: cover;
+            background-color: $background-color;
+
+            &.landscape {
+              width: 100%;
+              height: auto;
+            }
+            &.portrait {
+              width: auto;
+              height: 100%;
+            }
+          }
+        }
+
+        p,
+        h3 {
+          margin: 0.5em 0 0.5em;
+        }
+
+        h3 {
+          font-size: 1.125em;
+          @media print {
+            font-size: 1.125em;
+          }
+        }
+      }
+
+      .image-list-container {
+        display: flex;
+        overflow-x: auto;
+        margin: 1em 0;
+        width: 100%;
+
+        > .image-container {
+          cursor: pointer;
+          user-select: none;
+          width: 7em;
+          height: 7em;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          overflow: clip;
+          flex-shrink: 0;
+          background-color: $primary-color;
+
+          transition: transform 0.2s ease;
+
+          &:hover {
+            img {
+              transform: scale(1.05);
+            }
+          }
+
+          @media print {
+            -webkit-print-color-adjust: exact;
+          }
+
+          &:not(:last-child) {
+            margin-right: 0.5em;
+          }
+
+          img {
+            background-color: $background-color;
+            object-fit: cover;
+
+            &.landscape {
+              width: 100%;
+              height: auto;
+            }
+            &.portrait {
+              width: auto;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .expand-label {
+      text-align: center;
+    }
+  }
+}
+
+.image-modal {
+  user-select: none;
+  position: relative;
+  overflow: clip !important;
+
+  img {
+    object-fit: cover;
+    background-color: $background-color;
+
+    &.landscape {
+      width: 90vw;
+      height: auto;
+    }
+
+    &.portrait {
+      width: auto;
+      height: 90vw;
+    }
+
+    @media (min-aspect-ratio: 1/1) {
+      &.landscape {
+        width: 90vh;
+        height: auto;
+      }
+
+      &.portrait {
+        width: auto;
+        height: 90vh;
+      }
+    }
+  }
+
+  .modal-close-button-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0.6;
   }
 }

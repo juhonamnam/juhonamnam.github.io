@@ -45,3 +45,11 @@ data:
     name: "AWS"
   cpp:
     name: "C++"
+  rabbitmq:
+    name: "RabbitMQ"
+  postgresql:
+    name: "PostgreSQL"
+  langchain:
+    name: "LangChain"
+  chroma:
+    name: "Chroma"

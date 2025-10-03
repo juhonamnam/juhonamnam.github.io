@@ -81,8 +81,8 @@ data:
       period_str: "2024.03 ~"
       type: development
     status:
-      ko: "유지보수중"
-      en: "Under Maintenance"
+      ko: "오픈소스"
+      en: "Open Source"
       color: success
     specs:
       - react

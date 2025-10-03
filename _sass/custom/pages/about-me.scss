@@ -359,6 +359,15 @@
   position: relative;
   overflow: clip !important;
 
+  .modal-close-button {
+    &::before {
+      background-color: $background-color !important;
+    }
+    &::after {
+      background-color: $background-color !important;
+    }
+  }
+
   img {
     object-fit: cover;
     background-color: $background-color;

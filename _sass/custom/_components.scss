@@ -62,18 +62,6 @@
     max-height: 90vh;
     overflow: auto;
 
-    &.modal-inverse {
-      background-color: $primary-color;
-      .modal-close-button {
-        &::before {
-          background-color: $background-color !important;
-        }
-        &::after {
-          background-color: $background-color !important;
-        }
-      }
-    }
-
     .modal-close-button-wrapper {
       display: flex;
       justify-content: flex-end;
@@ -111,9 +99,4 @@
 
 img.spec-icon {
   height: 1em;
-}
-
-.mathjax-display {
-  text-align: center;
-  margin: 1em 0;
 }

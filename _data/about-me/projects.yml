@@ -44,6 +44,10 @@ data:
       - type: link_buttons
         inner:
           - label:
+              ko: "웹사이트"
+              en: "Website"
+            url: "https://arex-prototype.shop"
+          - label:
               ko: "소스코드"
               en: "Source Code"
             url: "https://github.com/The-Geppettos/AReX"

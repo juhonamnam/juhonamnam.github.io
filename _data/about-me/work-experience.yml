@@ -113,8 +113,8 @@ data:
     description:
       - type: paragraph
         inner:
-          ko: "LINE Plus의 외주 프로젝트에 프론트엔드 리드 개발자로 참여했습니다. 주로 관리자용 웹 서비스 개발 및 유지보수 업무를 수행했습니다."
-          en: "I participated as a lead frontend developer in an outsourced project for LINE Plus. I mainly handled the development and maintenance of admin web services."
+          ko: "LINE Plus의 외주 프로젝트에 프론트엔드 파트로 참여했습니다. 주로 관리자용 웹 서비스 개발 및 유지보수 업무를 수행했습니다."
+          en: "I participated as a frontend developer in an outsourced project for LINE Plus. I mainly handled the development and maintenance of admin web services."
 
       - type: heading
         inner:

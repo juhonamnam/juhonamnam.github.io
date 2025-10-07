@@ -117,6 +117,9 @@ hide_title: true
     <div class="projects">
       <h2>Projects</h2>
       {%- for project in site.data.about-me.projects.data -%}
+        {%- if project.hide == true -%}
+          {%- continue -%}
+        {%- endif -%}
         <div class="project">
           <div class="preview">
             <div class="image-container" onclick="openImageModal('{{ project.images[0].url }}', '{{ project.images[0].orientation }}')">

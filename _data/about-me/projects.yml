@@ -3,8 +3,8 @@ data:
       ko: "AI Agent-based Augmented Reading eXperience (AReX)"
       en: "AI Agent-based Augmented Reading eXperience (AReX)"
     status:
-      ko: "개발중"
-      en: "In Development"
+      ko: "대회 참가작"
+      en: "Competition Entry"
       color: info
     images:
       - url: "/images/projects/arex-1.png"

@@ -70,7 +70,6 @@ info:
     - react
     - docker
     - aws
-    - express
     - pytorch
   contacts:
     - label: "Email"

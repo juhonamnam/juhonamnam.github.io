@@ -187,7 +187,7 @@ data:
       - url: "/images/projects/trade-4.svg"
         orientation: landscape
     period:
-      period_str: "2021.05 ~ 2022.11"
+      period_str: "2021.05 ~ 2023.07"
       type: development
     status:
       ko: "서비스 종료"

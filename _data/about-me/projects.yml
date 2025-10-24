@@ -38,8 +38,8 @@ data:
     description:
       - type: paragraph
         inner:
-          ko: "AReX는 Agent AI-based Augmented Reading eXperience, 즉 에이전트 AI 기반 증강 독서 경험을 의미하는 LLM 기반 전자책 서비스입니다. 소설책 독서에 특화된 서비스이며, 미디어 의존도가 높아지며 줄어드는 독서량 문제를 해결하고자 이 프로젝트를 시작했습니다. 대회 참가를 위해 시작된 프로젝트입니다."
-          en: "AReX stands for Agent AI-based Augmented Reading eXperience, an LLM-based e-book service, specialized for reading novels. We started this project to address the issue of declining reading habits due to increased media dependency. This project was initiated to participate in a competition."
+          ko: "AReX는 Agent AI-based Augmented Reading eXperience의 약자로, 소설책에 특화된 LLM 기반 전자책 서비스입니다. 대학 동기와 함께 개발하였으며, 오픈소스 개발자대회와 사이드임팩트에 출품해 현재 심사 중입니다. 독서량 감소 문제를 해결하고 소설책을 더 즐겁게 읽을 수 있는 방법을 고민하며 착안한 아이디어로, 소설 속 등장인물을 모방하는 대화형 챗봇 기능을 제공합니다. RAG 구조를 활용한 LLM 설계를 통해 사용자가 책 속 인물과 대화하며 몰입할 수 있는 인터랙티브 독서 경험을 구현했습니다."
+          en: "AReX stands for Agent AI-based Augmented Reading eXperience, an LLM-based e-book service specialized for novels. Developed in collaboration with a university peer, it is currently under review after being submitted to an open-source developer competition and Side Impact. The idea was conceived to address the issue of declining reading habits and to enhance the enjoyment of reading novels by providing an interactive chatbot feature that mimics characters from the novels. By utilizing an LLM design based on the RAG structure, we have created an immersive interactive reading experience where users can converse with characters from the book."
 
       - type: link_buttons
         inner:
@@ -98,8 +98,8 @@ data:
     description:
       - type: paragraph
         inner:
-          ko: "실제 저의 결혼식을 위해 직접 개발한 모바일 청첩장입니다. 개발 과정에서 외부 라이브러리 사용을 최소화하고, 직접 구현하는 것을 목표로 하였습니다. 결혼식 이후에는 오픈소스로 템플릿을 공유하였습니다."
-          en: "This is a mobile wedding invitation that I developed for my actual wedding. I minimized the use of external libraries and aimed to develop all the features myself. After the wedding, I shared the template as open source."
+          ko: "실제 저의 결혼식을 위해 직접 제작한 React 기반 모바일 청첩장입니다. 기존 서비스 디자인의 제약을 극복하기 위해 UI를 직접 설계하고, 도메인을 구입하여 Naver Cloud Platform에 배포해 실제로 사용했습니다. 단순한 개인 용도에서 출발했지만 다른 사용자들의 문의가 들어오면서 오픈소스 템플릿으로 전환했습니다. 현재 재사용성과 확장성을 고려해 지속적으로 개선하고 있습니다."
+          en: "This is a React-based mobile wedding invitation that I personally developed for my own wedding. To overcome the design limitations of existing services, I designed the UI myself, purchased a domain, and deployed it on Naver Cloud Platform for actual use. Although it started as a simple personal project, it was converted into an open-source template due to inquiries from other users. I am continuously improving it with reusability and scalability in mind."
 
       - type: link_buttons
         inner:
@@ -201,13 +201,13 @@ data:
     description:
       - type: paragraph
         inner:
-          ko: "가상화폐 자동매매 알고리즘을 실시간으로 구현하기 위한 프로젝트이며, 실거래와 모의투자 모드를 지원하도록 설계하였습니다. 작은 규모의 지인들을 초대하기도 하였으며, 이들에게는 모의투자 모드만 제공하였습니다."
-          en: "This project aims to implement a real-time cryptocurrency automated trading algorithm, designed to support both live trading and paper trading modes. I invited a small group of acquaintances to use the program, providing them with access to the paper trading mode only."
+          ko: "프로그래밍 입문 시 개발한 투자 알고리즘 자동화 프로그램입니다. 래리 윌리엄스의 변동성 돌파 전략을 참고해 투자 알고리즘을 직접 설계하고, Python과 UPbit Open API를 활용해 매수·매도 로직을 자동화했습니다. 또한 투자 전략으로 AI 기반 모델 활용 가능성을 검토해 보기도 했습니다. 실제 자본을 투입해 약 10%의 누적 수익을 냈으며, 이후에는 메신저봇을 통한 모의투자 시그널 시스템으로 발전시켰습니다. 실제 수익을 달성하긴 했지만, 알고리즘이 반드시 일반 투자보다 우월하지 않음을 배웠습니다."
+          en: "This is an automated trading program developed when I first started programming. I designed a trading algorithm based on Larry Williams' volatility breakout strategy and automated the buy and sell logic using Python and UPbit Open API. I also explored the possibility of using AI-based models for trading strategies. I achieved a cumulative return of about 10% with real capital, and later evolved it into a mock trading signal system through a messenger bot. Although I achieved actual profits, I learned that algorithms are not necessarily superior to general investing."
 
       - type: list
         inner:
-          - ko: "변동성 돌파 알고리즘으로 매수, 매도 지점을 실시간으로 판단"
-            en: "Determine buy and sell points in real-time using volatility breakout algorithm"
+          - ko: "래리 윌리엄스의 변동성 돌파 전략을 참고해 투자 알고리즘을 직접 설계"
+            en: "Design and implement a trading algorithm based on Larry Williams' volatility breakout strategy"
           - ko: "거래소에서 WebSocket Client을 통해 실시간 가격 정보 수신"
             en: "Receive real-time price information from exchanges via WebSocket Client"
           - ko: "Telegram Bot API를 통해 실시간 매수, 매도 시그널 전송"

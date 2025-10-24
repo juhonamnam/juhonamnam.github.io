@@ -43,8 +43,8 @@ data:
 
       - type: heading
         inner:
-          ko: "담당 서비스"
-          en: "Services in Charge"
+          ko: "담당 분야"
+          en: "Areas of Responsibility"
 
       - type: paragraph
         inner:

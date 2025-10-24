@@ -29,7 +29,7 @@ data:
           - label:
               ko: "RetailTrend 소개 페이지"
               en: "RetailTrend Introduction Page"
-            url: "https://www.cpro.co.kr/"
+            url: "https://www.retailtrend.com/"
 
       - type: heading
         inner:

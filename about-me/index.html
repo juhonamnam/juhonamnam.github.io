@@ -14,35 +14,34 @@ use_qrcode: true
       <div class="intro-image">
         <img src="/images/profile.jpg" alt="" />
       </div>
-      <div class="intro-text">
-        <div class="intro-header">
-          <div>
-            {%- assign title = site.data.about-me.main.name[language] -%}
-            <div class="about-me-title">
-              {%- include h1.html h1_text=title -%}
-              <span>{{- site.data.about-me.main.job_title[language] -}}</span>
-            </div>
-            <div>
-              {%- for contact in site.data.about-me.main.contacts -%}
-                <div class="social-icons">
-                  <a href="{{ contact.url }}" rel="nofollow noopener noreferrer me">
-                    <i class="{{ contact.icon }}" aria-hidden="true"></i>
-                    <b>{{ contact.label }}:</b>
-                    <span>{{ contact.value }}</span>
-                  </a>
-                </div>
-              {%- endfor -%}
-            </div>
+      <div class="intro-header">
+        <div>
+          {%- assign title = site.data.about-me.main.name[language] -%}
+          <div class="about-me-title">
+            {%- include h1.html h1_text=title -%}
+            <span>{{- site.data.about-me.main.job_title[language] -}}</span>
           </div>
-
-          <div class="print-only qrcode"
-              data-text="{{ site.url }}{{ page.url }}"
-              data-margin="2"
-              data-color-dark="#000000"
-              data-color-light="#ffffff">
+          <div>
+            {%- for contact in site.data.about-me.main.contacts -%}
+              <div class="social-icons">
+                <a href="{{ contact.url }}" rel="nofollow noopener noreferrer me">
+                  <i class="{{ contact.icon }}" aria-hidden="true"></i>
+                  <b>{{ contact.label }}:</b>
+                  <span>{{ contact.value }}</span>
+                </a>
+              </div>
+            {%- endfor -%}
           </div>
         </div>
 
+        <div class="print-only qrcode"
+            data-text="{{ site.url }}{{ page.url }}"
+            data-margin="2"
+            data-color-dark="#000000"
+            data-color-light="#ffffff">
+        </div>
+      </div>
+      <div class="intro-description">
         <!--excerpt open-->
         {%- for desc in site.data.about-me.main.description -%}
           <p>{{ desc[language] }}</p>

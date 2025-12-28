@@ -1,5 +1,6 @@
 .about-me {
   @media print {
+    margin-top: 1em;
     a[href]:after {
       content: "";
     }
@@ -59,15 +60,16 @@
   }
 
   .intro {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    gap: 1em;
 
     > .intro-image {
+      grid-row: span 2;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      width: 30%;
+      justify-content: start;
 
       > img {
         width: auto;
@@ -78,35 +80,30 @@
       }
     }
 
-    > .intro-text {
-      width: 70%;
-      padding: 1em;
+    > .intro-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
 
-      .intro-header {
+      .about-me-title {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: start;
+        gap: 0.5em;
 
-        .about-me-title {
-          display: flex;
-          flex-direction: row;
-          gap: 0.5em;
-
-          h1 {
-            margin: 0 0 0.5em 0;
-            @media print {
-              font-size: 1.5em;
-            }
+        h1 {
+          margin: 0 0 0.5em 0;
+          @media print {
+            font-size: 1.5em;
           }
         }
+      }
 
-        .qrcode {
-          border: 0.2em solid $background-color;
-          > img {
-            width: 6em;
-            height: 6em;
-          }
+      .qrcode {
+        border: 0.2em solid $background-color;
+        > img {
+          width: 6em;
+          height: 6em;
         }
       }
 
@@ -117,19 +114,31 @@
           text-decoration: underline;
         }
       }
+    }
 
+    > .intro-description {
       p:last-child {
         margin-bottom: 0;
       }
     }
 
     @include breakpoint(max-width $small - 1px) {
-      flex-direction: column;
-      > .profile-container {
-        width: 100%;
+      .intro-image {
+        grid-row: unset;
       }
-      > .intro-text {
-        width: 100%;
+      .intro-description {
+        grid-column: span 2;
+      }
+    }
+
+    @include breakpoint(max-width $x-small - 1px) {
+      grid-template-columns: 1fr;
+      .intro-image {
+        grid-row: unset;
+        width: 9em;
+      }
+      .intro-description {
+        grid-column: unset;
       }
     }
   }

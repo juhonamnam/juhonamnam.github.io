@@ -1,7 +1,7 @@
 {%- assign crumb_path = '/' -%}
 {%- assign breadcrumb_separator = ">" -%}
 
-<nav class="breadcrumbs">
+<nav class="breadcrumbs{% if include.class %} {{ include.class }}{% endif %}">
   <ol{% if include.sidebar_indent %} class="sidebar-indent"{% endif %} itemscope itemtype="https://schema.org/BreadcrumbList">
     {%- assign crumbs = page.url | split: '/' -%}
     {%- assign i = 1 -%}

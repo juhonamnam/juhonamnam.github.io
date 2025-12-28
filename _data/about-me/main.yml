@@ -15,72 +15,72 @@ keywords:
     ko: "참여 기간"
     en: "Participated Period"
 
-title:
-  ko: "소프트웨어 엔지니어 남주호입니다."
-  en: "Hi, I'm Ju Ho Nam, a software engineer."
-lines:
-  - ko: "어릴 적부터 수학을 좋아했고, 인공지능 수학을 접한 것을 계기로 소프트웨어 세계에 발을 들이게 되었습니다. 그 후 프론트엔드, 백엔드, 인공지능 등 다양한 분야를 경험하며, 기술 전반에 두루 능숙한 소프트웨어 엔지니어로 성장하고 있습니다."
-    en: "I've enjoyed mathematics since I was young, and my interest in mathematical aspects of artificial intelligence led me into the world of software engineering. Since then, I've gained experience in various fields such as frontend, backendm and AI, growing into a well-rounded software engineer proficient in a wide range of technologies."
-  - ko: "현재 서비스 개발과 인공지능 모델 연구 및 개발을 담당하고 있습니다. 사용자의 문제를 해결하고 더 나은 경험을 제공하는 데 열정을 가지고 있으며, 최신 기술 동향을 지속적으로 학습하고 적용하려 노력하고 있습니다."
-    en: "I am currently responsible for service development and AI model research and development. I am passionate about solving user problems and providing better experiences, and I strive to continuously learn and apply the latest technology trends."
-info:
-  educations:
-    - title:
-        ko: "수학교육과 석사 학위 (중퇴)"
-        en: "Master's degree in Mathematics Education (Did not complete)"
-      association:
-        ko: "서울대학교 사범대학"
-        en: "Seoul National University College of Education"
-      period: "March 2021 - June 2021"
-      gpa: "3.65 / 4.3"
-    - title:
-        ko: "수학과 학사 학위"
-        en: "Bachelor's degree in Mathematics"
-      association:
-        ko: "University of Massachusetts Amherst<br />Commonwealth Honors College"
-        en: "University of Massachusetts Amherst<br />Commonwealth Honors College"
-      period: "August 2014 - May 2020"
-      gpa: "3.7 / 4.0"
-  certificates:
-    - title:
-        ko: "PCCP Python Lv.4"
-        en: "PCCP Python Lv.4"
-      agency:
-        ko: "그렙"
-        en: "Grepp"
-      period: "2023"
-    - title:
-        ko: "데이터분석 준전문가 (ADsP)"
-        en: "Advanced Data Analytics Semi-Professional (ADsP)"
-      agency:
-        ko: "한국데이터산업진흥원"
-        en: "Korea Data Agency"
-      period: "2021"
-    - title:
-        ko: "SQL 개발자 (SQLD)"
-        en: "SQL Developer (SQLD)"
-      agency:
-        ko: "한국데이터산업진흥원"
-        en: "Korea Data Agency"
-      period: "2021"
-  skills:
-    - typescript
-    - go
-    - python
-    - pytorch
-    - react
-    - docker
-    - aws
-  contacts:
-    - label: "Email"
-      icon: "fas faa-fw fa-envelope"
-      value: "jhnamnam@gmail.com"
-      url: "mailto:jhnamnam@gmail.com"
-    - label: "LinkedIn"
-      icon: "fab fa-fw fa-linkedin"
-      value: "linkedin.com/in/juhonam"
-      url: "https://www.linkedin.com/in/juhonam"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      value: "github.com/juhonamnam"
-      url: "https://github.com/juhonamnam"
+name:
+  ko : "남주호"
+  en : "Ju Ho Nam"
+job_title:
+  ko: "소프트웨어 엔지니어"
+  en: "Software Engineer"
+description:
+  - ko: "어릴 적부터 수학을 좋아했고, 인공지능 수학을 접한 것을 계기로 소프트웨어 세계에 발을 들이게 되었습니다. 서비스 개발과 인공지능 모델 연구 및 개발 경험을 갖추고 있으며, 기술 전반에 두루 능숙한 소프트웨어 엔지니어로 성장하고 있습니다."
+    en: "I've enjoyed mathematics since I was young, and my interest in mathematical aspects of artificial intelligence led me into the world of software engineering. With experience in both service development and AI model research and development, I am growing into a well-rounded software engineer proficient in various technologies."
+contacts:
+  - label: "Email"
+    icon: "fas faa-fw fa-envelope"
+    value: "jhnamnam@gmail.com"
+    url: "mailto:jhnamnam@gmail.com"
+  - label: "LinkedIn"
+    icon: "fab fa-fw fa-linkedin"
+    value: "linkedin.com/in/juhonam"
+    url: "https://www.linkedin.com/in/juhonam"
+  - label: "GitHub"
+    icon: "fab fa-fw fa-github"
+    value: "github.com/juhonamnam"
+    url: "https://github.com/juhonamnam"
+skills:
+  - typescript
+  - go
+  - python
+  - pytorch
+  - react
+  - docker
+  - aws
+educations:
+  - title:
+      ko: "수학교육과 석사 학위 (중퇴)"
+      en: "Master's degree in Mathematics Education (Did not complete)"
+    association:
+      ko: "서울대학교 사범대학"
+      en: "Seoul National University College of Education"
+    period: "March 2021 - June 2021"
+    gpa: "3.65 / 4.3"
+  - title:
+      ko: "수학과 학사 학위"
+      en: "Bachelor's degree in Mathematics"
+    association:
+      ko: "University of Massachusetts Amherst<br />Commonwealth Honors College"
+      en: "University of Massachusetts Amherst<br />Commonwealth Honors College"
+    period: "August 2014 - May 2020"
+    gpa: "3.7 / 4.0"
+certificates:
+  - title:
+      ko: "PCCP Python Lv.4"
+      en: "PCCP Python Lv.4"
+    agency:
+      ko: "그렙"
+      en: "Grepp"
+    period: "2023"
+  - title:
+      ko: "데이터분석 준전문가 (ADsP)"
+      en: "Advanced Data Analytics Semi-Professional (ADsP)"
+    agency:
+      ko: "한국데이터산업진흥원"
+      en: "Korea Data Agency"
+    period: "2021"
+  - title:
+      ko: "SQL 개발자 (SQLD)"
+      en: "SQL Developer (SQLD)"
+    agency:
+      ko: "한국데이터산업진흥원"
+      en: "Korea Data Agency"
+    period: "2021"

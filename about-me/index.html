@@ -1,33 +1,67 @@
 ---
 title: About Me
 hide_title: true
+use_qrcode: true
 ---
 
 {%- assign language = "ko" -%}
 
-{%- include breadcrumbs.html -%}
+{%- include breadcrumbs.html class="web-only" -%}
 
 <div id="main" role="main">
   <div class="about-me">
     <div class="intro">
-      <div class="profile-container">
+      <div class="intro-image">
         <img src="/images/profile.jpg" alt="" />
       </div>
       <div class="intro-text">
-        {%- assign title = site.data.about-me.main.title[language] -%}
-        {%- include h1.html h1_text=title -%}
+        <div class="intro-header">
+          <div>
+            {%- assign title = site.data.about-me.main.name[language] -%}
+            <div class="about-me-title">
+              {%- include h1.html h1_text=title -%}
+              <span>{{- site.data.about-me.main.job_title[language] -}}</span>
+            </div>
+            <div>
+              {%- for contact in site.data.about-me.main.contacts -%}
+                <div class="social-icons">
+                  <a href="{{ contact.url }}" rel="nofollow noopener noreferrer me">
+                    <i class="{{ contact.icon }}" aria-hidden="true"></i>
+                    <b>{{ contact.label }}:</b>
+                    <span>{{ contact.value }}</span>
+                  </a>
+                </div>
+              {%- endfor -%}
+            </div>
+          </div>
+
+          <div class="print-only qrcode"
+              data-text="{{ site.url }}{{ page.url }}"
+              data-margin="2"
+              data-color-dark="#000000"
+              data-color-light="#ffffff">
+          </div>
+        </div>
+
         <!--excerpt open-->
-        {%- for line in site.data.about-me.main.lines -%}
-          <p>{{ line[language] }}</p>
+        {%- for desc in site.data.about-me.main.description -%}
+          <p>{{ desc[language] }}</p>
         {%- endfor -%}
         <!--excerpt close-->
       </div>
     </div>
 
+    <div class="skill-tags">
+      {%- for skill in site.data.about-me.main.skills -%}
+        <small class="badge">{% include spec-icon.html spec_key=skill %}</small>
+        {{- " " -}}
+      {%- endfor -%}
+    </div>
+
     <div class="info-grid">
       <div class="info-box">
         <h2>Education</h2>
-        {%- for education in site.data.about-me.main.info.educations -%}
+        {%- for education in site.data.about-me.main.educations -%}
           <div class="info-item">
             <b>{{ education.title[language] }}</b>
             <br />
@@ -43,32 +77,13 @@ hide_title: true
       </div>
       <div class="info-box">
         <h2>Certificate</h2>
-        {%- for certificate in site.data.about-me.main.info.certificates -%}
+        {%- for certificate in site.data.about-me.main.certificates -%}
           <div class="info-item">
             <b>{{ certificate.title[language] }}</b>
             <br />
             <em>{{ certificate.agency[language] }}, {{ certificate.period }}</em>
           </div>
         {%- endfor -%}
-      </div>
-      <div class="info-box">
-        <h2>Skills</h2>
-        {%- for skill in site.data.about-me.main.info.skills -%}
-          <small class="badge">{% include spec-icon.html spec_key=skill %}</small>
-          {{- " " -}}
-        {%- endfor -%}
-      </div>
-      <div class="info-box">
-        <h2>Contact</h2>
-        <ul class="social-icons">
-        {%- for contact in site.data.about-me.main.info.contacts -%}
-          <li>
-            <a href="{{ contact.url }}" rel="nofollow noopener noreferrer me">
-              <i class="{{ contact.icon }}" aria-hidden="true"></i> {{ contact.label }}
-            </a>
-          </li>
-        {%- endfor -%}
-        </ul>
       </div>
     </div>
 
@@ -103,7 +118,7 @@ hide_title: true
                     {%- include about-me/description.html description=work_experience.description language=language -%}
                   </div>
                 </div>
-                <label for="expand-work-experience-{{ forloop.index }}" class="expand-label">
+                <label for="expand-work-experience-{{ forloop.index }}" class="expand-label web-only">
                   <span class="expand-more">자세히 보기</span>
                   <span class="expand-less">간략히 보기</span>
                 </label>
@@ -121,7 +136,7 @@ hide_title: true
           {%- continue -%}
         {%- endif -%}
         <div class="project">
-          <div class="preview">
+          <div class="preview avoid-page-break">
             <div class="image-container" onclick="openImageModal('{{ project.images[0].url }}', '{{ project.images[0].orientation }}')">
               <img class="{{ project.images[0].orientation }}" src="{{ project.images[0].url }}" alt="" />
             </div>
@@ -174,7 +189,7 @@ hide_title: true
               <div>{% include about-me/description.html description=project.description language=language %}</div>
             </div>
           </div>
-          <label for="expand-project-{{ forloop.index }}" class="expand-label">
+          <label for="expand-project-{{ forloop.index }}" class="expand-label web-only">
             <span class="expand-more">자세히 보기</span>
             <span class="expand-less">간략히 보기</span>
           </label>

@@ -13,6 +13,14 @@
     }
   }
 
+  ul {
+    page-break-inside: unset;
+  }
+
+  .avoid-page-break {
+    page-break-inside: avoid;
+  }
+
   .expand-toggle {
     display: none;
 
@@ -48,21 +56,19 @@
     &:hover {
       color: $primary-color;
     }
-
-    @media print {
-      display: none;
-    }
   }
 
   .intro {
     display: flex;
     justify-content: space-around;
 
-    > .profile-container {
+    > .intro-image {
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      width: 40%;
+      width: 30%;
+
       > img {
         width: auto;
         height: auto;
@@ -73,14 +79,44 @@
     }
 
     > .intro-text {
-      width: 60%;
-      h1 {
-        margin: 0 0 0.5em 0;
-        @media print {
-          font-size: 1.5em;
+      width: 70%;
+      padding: 1em;
+
+      .intro-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+
+        .about-me-title {
+          display: flex;
+          flex-direction: row;
+          gap: 0.5em;
+
+          h1 {
+            margin: 0 0 0.5em 0;
+            @media print {
+              font-size: 1.5em;
+            }
+          }
+        }
+
+        .qrcode {
+          border: 0.2em solid $background-color;
+          > img {
+            width: 6em;
+            height: 6em;
+          }
         }
       }
-      padding: 1em;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
 
       p:last-child {
         margin-bottom: 0;
@@ -96,6 +132,10 @@
         width: 100%;
       }
     }
+  }
+
+  .skill-tags {
+    margin: 1em 0;
   }
 
   .info-grid {
@@ -119,13 +159,6 @@
       li {
         list-style: none;
         font-size: 0.9em;
-      }
-      a {
-        color: inherit;
-        text-decoration: none;
-        &:hover {
-          text-decoration: underline;
-        }
       }
     }
   }

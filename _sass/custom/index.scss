@@ -3,3 +3,16 @@
 @import "sidebar-nav";
 @import "main-page-hero";
 @import "pages/about-me";
+
+.print-only {
+  display: none;
+  @media print {
+    display: inherit;
+  }
+}
+
+.web-only {
+  @media print {
+    display: none;
+  }
+}

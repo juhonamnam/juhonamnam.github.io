@@ -77,6 +77,16 @@ data:
     images:
       - url: "/images/projects/wedding-invitation-1.png"
         orientation: portrait
+      - url: "/images/projects/wedding-invitation-2.png"
+        orientation: portrait
+      - url: "/images/projects/wedding-invitation-3.png"
+        orientation: portrait
+      - url: "/images/projects/wedding-invitation-4.png"
+        orientation: portrait
+      - url: "/images/projects/wedding-invitation-5.png"
+        orientation: portrait
+      - url: "/images/projects/wedding-invitation-6.png"
+        orientation: portrait
     period:
       period_str: "2024.03 ~"
       type: development
@@ -122,8 +132,8 @@ data:
             en: "Deployment on Naver Cloud Platform along with connecting domain and SSL certification"
           - ko: "Naver Map API, Kakao SDK 등 외부 API 연동"
             en: "Integration with external APIs such as Naver Map API and Kakao SDK"
-          - ko: "MIT 라이선스로 템플릿 공개 (2025년 8월부터 fork와 star 상승중)"
-            en: "Released the template under MIT license (gaining forks and stars since August 2025)"
+          - ko: "MIT 라이선스로 템플릿 공개 (2025년 12월 기준 fork 40개 돌파)"
+            en: "Released the template under MIT license (over 40 forks as of December 2025)"
 
   - title:
       ko: "개인 웹사이트: Ju Ho Nam's Bits & Bytes"

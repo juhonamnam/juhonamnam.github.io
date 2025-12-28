@@ -7,14 +7,14 @@ data:
     specs:
       - typescript
       - express
+      - python
+      - pytorch
       - go
       - mongodb
       - aws
       - docker
-      - python
       - react
       - nextjs
-      - pytorch
     affiliation:
       ko: "RetailTrend 개발팀"
       en: "RetailTrend Development Team"
@@ -33,18 +33,26 @@ data:
 
       - type: heading
         inner:
-          ko: "조직 문화"
-          en: "Organizational Culture"
+          ko: "담당 분야"
+          en: "Areas of Responsibility"
 
       - type: paragraph
         inner:
-          ko: "RetailTrend 개발팀은 6명의 소규모 팀으로, 기술 분야(프론트엔드, 백엔드 등)보다는 도메인 중심으로 역할을 분담합니다. 모든 구성원은 전체 기술 스택을 아우르는 풀스택 역량을 발휘하며 업무를 수행합니다."
-          en: "The RetailTrend development team is a small team of six members, dividing roles based on domains rather than technical areas (frontend, backend, etc.). All members perform their duties by leveraging full-stack capabilities that encompass the entire technology stack."
+          ko: "Vision AI"
+          en: "Vision AI"
 
-      - type: heading
+      - type: list
         inner:
-          ko: "담당 분야"
-          en: "Areas of Responsibility"
+          - ko: "방문객 동선 분석, 재방문자 및 직원 구분을 위한 Re-Identification (ReID) 모델 아키텍처 설계 및 개발"
+            en: "Design and develop Re-Identification (ReID) model architecture for visitor path analysis, distinguishing between repeat visitors and staff"
+          - ko: "실시간과 비실시간 추론을 분리한 AI 모델 아키텍처 설계"
+            en: "Design AI model architecture that separates real-time and non-real-time inference"
+          - ko: "자체적인 데이터 수집, 라벨링 및 학습 시스템 구축"
+            en: "Building systems for data collection, labeling, and training"
+          - ko: "객관적인 지표로 모델 성능 평가 및 개선"
+            en: "Model performance evaluation and improvement using objective metrics"
+          - ko: "카메라 내부의 GPU 기반 임베디드/엣지 환경에서 동작하도록 AI 모델을 포팅"
+            en: "Porting AI models to run in GPU-based embedded/edge environments inside cameras"
 
       - type: paragraph
         inner:
@@ -59,26 +67,10 @@ data:
             inner:
               - ko: "카메라의 raw 데이터 ➡ 10분, 1시간, 1일 등의 시간 단위 집계 데이터 생성 ➡ 웹 UI에 시각화 및 report 생성"
                 en: "Camera raw data ➡ Generate aggregated data in time units such as 10 minutes, 1 hour, 1 day ➡ Visualize on web UI and generate reports"
-          - ko: "카메라 네트워크 지연, 설정값 변경, 데이터 복구 등의 상황에서 부분 재처리"
-            en: "Partial reprocessing in situations such as camera network delays, configuration changes, and data recovery"
+          - ko: "카메라 네트워크 지연, 설정값 변경, 데이터 복구 등의 예외적인 상황에 대응하는 견고한 데이터 파이프라인 설계 및 구현"
+            en: "Design and implement a robust data pipeline that handles exceptional situations such as camera network delays, configuration changes, and data recovery"
           - ko: "이벤트 기반과 폴링을 혼합한 하이브리드 아키텍처"
             en: "Hybrid architecture combining event-based and polling"
-
-      - type: paragraph
-        inner:
-          ko: "Vision AI"
-          en: "Vision AI"
-
-      - type: list
-        inner:
-          - ko: "CNN 기반의 Re-Identification(동일인 재식별) 모델 아키텍처 설계 및 개발"
-            en: "Design and development of CNN-based Re-Identification model architecture"
-          - ko: "학습 데이터 수집, 라벨링 및 학습"
-            en: "Collecting data, labeling, and training"
-          - ko: "다양한 지표를 활용한 모델 성능 평가 및 개선"
-            en: "Model performance evaluation and improvement using various metrics"
-          - ko: "카메라 내부의 GPU 환경(Ambarella 칩)에서 동작할 수 있도록 AI 모델 포팅"
-            en: "Porting AI models to operate in the GPU environment (Ambarella chip) inside the camera"
 
       - type: heading
         inner:
@@ -87,12 +79,12 @@ data:
 
       - type: list
         inner:
-          - ko: "AWS S3 미사용 객체 정리 스크립트로 약 10% 스토리지 비용 절감"
-            en: "Reduced storage costs by approximately 10% with an AWS S3 unused object cleanup script"
-          - ko: "데이터 파이프라인 상의 불완전한 동기화 문제를 해결하여 데이터 일관성을 확보"
-            en: "Resolved incomplete synchronization issues in the data pipeline to ensure data consistency"
           - ko: "사내 첫 자체 AI 모델 개발 프로젝트 전담"
             en: "Led the company’s first in-house AI model development project"
+          - ko: "데이터 파이프라인 상의 불완전한 동기화 문제를 해결하여 데이터 일관성을 확보"
+            en: "Resolved incomplete synchronization issues in the data pipeline to ensure data consistency"
+          - ko: "AWS S3 미사용 객체 정리 스크립트로 약 10% 스토리지 비용 절감"
+            en: "Reduced storage costs by approximately 10% with an AWS S3 unused object cleanup script"
 
   - period: "2021.12 ~ 2023.01"
     company: "J&FIRST"

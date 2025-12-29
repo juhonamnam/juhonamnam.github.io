@@ -1,4 +1,4 @@
-keywords:
+translations:
   gpa:
     ko: "학점"
     en: "GPA"
@@ -14,6 +14,9 @@ keywords:
   participated_period:
     ko: "참여 기간"
     en: "Participated Period"
+  portfolio_phrase:
+    ko: "경력, 프로젝트 및 기술 관련 자세한 내용은 링크에서 확인하실 수 있습니다."
+    en: "For more details on my experience, projects, and skills, please visit the link."
 
 name:
   ko : "남주호"
@@ -21,9 +24,19 @@ name:
 job_title:
   ko: "소프트웨어 엔지니어"
   en: "Software Engineer"
+title:
+  ko: "소프트웨어 엔지니어 남주호입니다."
+  en: "Hi, I'm Ju Ho Nam, a software engineer."
 description:
-  - ko: "어릴 적부터 수학을 좋아했고, 인공지능 수학을 접한 것을 계기로 소프트웨어 세계에 발을 들이게 되었습니다. 서비스 개발과 인공지능 모델 연구 및 개발 경험을 갖추고 있으며, 기술 전반에 두루 능숙한 소프트웨어 엔지니어로 성장하고 있습니다."
-    en: "I've enjoyed mathematics since I was young, and my interest in mathematical aspects of artificial intelligence led me into the world of software engineering. With experience in both service development and AI model research and development, I am growing into a well-rounded software engineer proficient in various technologies."
+  - type: paragraph
+    inner:
+      ko: "어릴 적부터 수학을 좋아했고, 인공지능 수학을 접한 것을 계기로 소프트웨어 세계에 발을 들이게 되었습니다. 서비스 개발과 인공지능 모델 연구 및 개발 경험을 바탕으로 기술 전반에 두루 능숙한 소프트웨어 엔지니어로 성장하고 있습니다."
+      en: "I've enjoyed mathematics since I was young, and my interest in mathematical aspects of artificial intelligence led me into the world of software engineering. With experience in both service development and AI model research and development, I am growing into a well-rounded software engineer proficient in various technologies."
+additional_description:
+  - type: paragraph
+    inner:
+      ko: "개발은 제게 직업인 동시에 취미이기도 합니다. 다양한 생각과 배움을 나누고자 이 개인 웹사이트를 시작하게 되었습니다. 편하게 둘러보시고, 즐겁게 봐주시면 좋겠습니다."
+      en: "For me, programming is both a profession and a passion. I started this personal website to share my thouughts and learnings. Feel free to explore, and I hope you enjoy it."
 contacts:
   - label: "Email"
     icon: "fas faa-fw fa-envelope"
@@ -39,8 +52,8 @@ contacts:
     url: "https://github.com/juhonamnam"
 skills:
   - typescript
-  - go
   - python
+  - go
   - pytorch
   - react
   - docker
@@ -84,3 +97,31 @@ certificates:
       ko: "한국데이터산업진흥원"
       en: "Korea Data Agency"
     period: "2021"
+
+technical_activities:
+  - title:
+      ko: "기술 대회 참여"
+      en: "Participation in Technical Competitions"
+    description:
+      - type: list
+        inner:
+          - ko: "오픈소스 개발자대회, 사이드임팩트, Kaggle Competition 대회 참여 경험"
+            en: "Experience participating in Open Source Developer Competition, Side Impact, and Kaggle Competition"
+  - title:
+      ko: "기술 블로그 운영"
+      en: "Running a Technical Blog"
+    period: "2021.10 - Present"
+    description:
+      - type: list
+        inner:
+          - ko: "기술 블로그를 운영하며 탐구 내용을 꾸준히 기록"
+            en: "Running a technical blog to consistently document explorations and findings"
+  - title:
+      ko: "IT 초보 비전공자 스터디 모임"
+      en: "IT Beginner Non-CS Major Study Group"
+    period: "2021.06 - Present"
+    description:
+      - type: list
+        inner:
+          - ko: "최대 200명 규모의 IT 스터디 및 정보 공유 커뮤니티에서 운영진으로 활동"
+            en: "Active as an administrator in an IT study and information sharing community with up to 200 members"

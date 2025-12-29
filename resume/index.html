@@ -1,26 +1,30 @@
 ---
-title: About Me
+title: Resume
 hide_title: true
+sitemap: false
 use_qrcode: true
 ---
 
 {%- assign language = "ko" -%}
 
-{%- include breadcrumbs.html class="web-only" -%}
-
 <div id="main" role="main">
   <div class="about-me">
+    <div class="horizontal-spacer"></div>
     <div class="intro">
       <img src="/images/profile.jpg" alt="" />
-      <div class="print-only qrcode"
+
+      <div class="qrcode print-only"
            data-text="{{ site.url }}{{ page.url }}"
            data-margin="2"
            data-color-dark="#000000"
            data-color-light="#ffffff">
       </div>
 
-      {%- assign title = site.data.about-me.main.title[language] -%}
-      {%- include h1.html h1_text=title -%}
+      {%- assign title = site.data.about-me.main.name[language] -%}
+      <div class="header-with-subheader">
+        {%- include h1.html h1_text=title -%}
+        <span>{{- site.data.about-me.main.job_title[language] -}}</span>
+      </div>
       {%- for contact in site.data.about-me.main.contacts -%}
         <div class="social-icons">
           <a href="{{ contact.url }}" rel="nofollow noopener noreferrer me">
@@ -30,10 +34,8 @@ use_qrcode: true
           </a>
         </div>
       {%- endfor -%}
-
       <!--excerpt open-->
       {%- include about-me/description.html description=site.data.about-me.main.description language=language -%}
-      {%- include about-me/description.html description=site.data.about-me.main.additional_description language=language -%}
       <!--excerpt close-->
       <p>
         {%- for skill in site.data.about-me.main.skills -%}
@@ -97,16 +99,9 @@ use_qrcode: true
                     {%- endunless -%}
                   {%- endfor -%}
                 </div>
-                <input type="checkbox" id="expand-work-experience-{{ forloop.index }}" class="expand-toggle" />
-                <div class="expandable">
-                  <div class="expandable-content">
-                    {%- include about-me/description.html description=work_experience.description language=language -%}
-                  </div>
+                <div class="compact-list">
+                  {%- include about-me/description.html description=work_experience.brief_description language=language -%}
                 </div>
-                <label for="expand-work-experience-{{ forloop.index }}" class="expand-label web-only">
-                  <span class="expand-more">자세히 보기</span>
-                  <span class="expand-less">간략히 보기</span>
-                </label>
               </div>
             </div>
           </div>
@@ -128,75 +123,41 @@ use_qrcode: true
       {%- endfor -%}
     </div>
 
-    <div class="projects">
+    <div>
       <h2>Projects</h2>
       {%- for project in site.data.about-me.projects.data -%}
         {%- if project.hide == true -%}
           {%- continue -%}
         {%- endif -%}
-        <div class="project">
-          <div class="preview avoid-page-break">
-            <div class="image-container" onclick="openImageModal('{{ project.images[0].url }}', '{{ project.images[0].orientation }}')">
-              <img class="{{ project.images[0].orientation }}" src="{{ project.images[0].url }}" alt="" />
-            </div>
-            <div class="preview-detail">
-              <h3>{{ project.title[language] }}</h3>
-              {%- if project.team -%}
-                <div>
-                  {{- site.data.about-me.main.translations.team_name[language] -}}: {{ project.team.name[language] }}
-                </div>
-                <div>
-                  {{- site.data.about-me.main.translations.team_size[language] -}}: {{ project.team.size }}
-                </div>
-              {%- endif -%}
-              {%- if project.period.type == "development" -%}
-                <div>
-                  {{- site.data.about-me.main.translations.development_period[language] -}}: {{ project.period.period_str }}
-                </div>
-              {%- elsif project.period.type == "participated" -%}
-                <div>
-                  {{- site.data.about-me.main.translations.participated_period[language] -}}: {{ project.period.period_str }}
-                </div>
-              {%- endif -%}
-              <div>
-                <small class="badge badge-{{ project.status.color }}">
-                  {{- project.status[language] -}}
-                </small>
-              </div>
-              <div>
-                {%- for spec_key in project.specs -%}
-                  <small class="badge">{% include spec-icon.html spec_key=spec_key %}</small>
-                  {{- " " -}}
-                {%- endfor -%}
-              </div>
-            </div>
+        <div>
+          <b>{{ project.title[language] }}</b> <small><em>{{ project.period.period_str }}</em></small>
+          <div>
+            {%- for spec_key in project.specs -%}
+              <small class="badge">{% include spec-icon.html spec_key=spec_key %}</small>
+              {{- " " -}}
+            {%- endfor -%}
           </div>
-          <input type="checkbox" id="expand-project-{{ forloop.index }}" class="expand-toggle" />
-          <div class="expandable">
-            <div class="expandable-content">
-              {%- if project.images.size > 1 -%}
-                <div class="image-list-container">
-                  {%- for image in project.images -%}
-                    {%- unless forloop.first -%}
-                      <div class="image-container" onclick="openImageModal('{{ image.url }}', '{{ image.orientation }}')">
-                        <img class="{{ image.orientation }}" src="{{ image.url }}" alt="" />
-                      </div>
-                    {%- endunless -%}
-                  {%- endfor -%}
-                </div>
-              {%- endif -%}
-              <div>{% include about-me/description.html description=project.description language=language %}</div>
-            </div>
+          <div class="compact-list">
+            {% include about-me/description.html description=project.brief_description language=language %}
           </div>
-          <label for="expand-project-{{ forloop.index }}" class="expand-label web-only">
-            <span class="expand-more">자세히 보기</span>
-            <span class="expand-less">간략히 보기</span>
-          </label>
         </div>
-        {%- unless forloop.last -%}
-          <hr />
-        {%- endunless -%}
+        <div class="horizontal-spacer"></div>
       {%- endfor -%}
+    </div>
+
+    <div class="portfolio">
+      <hr />
+      <div class="qrcode"
+           data-text="{{ site.url }}/about-me/"
+           data-margin="2"
+           data-color-dark="#000000"
+           data-color-light="#ffffff">
+      </div>
+      <small>
+        {{ site.data.about-me.main.translations.portfolio_phrase[language] }}
+        <br />
+        {{ site.url }}/about-me/
+      </small>
     </div>
   </div>
 </div>

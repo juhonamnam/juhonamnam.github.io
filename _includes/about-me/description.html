@@ -3,6 +3,12 @@
     <p>{{ item.inner[include.language] }}</p>
   {%- elsif item.type == "heading" -%}
     <h4>{{ item.inner[include.language] }}</h4>
+  {%- elsif item.type == "line_break" -%}
+    <br />
+  {%- elsif item.type == "text" -%}
+    {{ item.inner[include.language] }}
+  {%- elsif item.type == "italic" -%}
+    <em>{{ item.inner[include.language] }}</em>
   {%- elsif item.type == "link_buttons" -%}
     <p>
       {%- for link_button in item.inner -%}

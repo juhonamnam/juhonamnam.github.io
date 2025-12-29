@@ -1,5 +1,5 @@
 data:
-  - period: "2023.02 ~ Present"
+  - period: "2023.02 - Present"
     company: "CPRO"
     job_title:
       ko: "풀스택 개발자"
@@ -18,6 +18,17 @@ data:
     affiliation:
       ko: "RetailTrend 개발팀"
       en: "RetailTrend Development Team"
+    brief_description:
+      - type: list
+        inner:
+          - ko: "백엔드 개발 / 데이터 및 AI 엔지니어링"
+            en: "Backend Development / Data and AI Engineering"
+          - ko: "카메라 기반 Re-Identification (ReID) AI 모델 연구 및 개발"
+            en: "Camera-based Re-Identification (ReID) AI Model Research and Development"
+          - ko: "데이터 안정성 개선 및 파이프라인 구축"
+            en: "Data Reliability Improvement and Pipeline Construction"
+          - ko: "서비스 최적화 및 비용 절감"
+            en: "Service Optimization and Cost Reduction"
     description:
       - type: paragraph
         inner:
@@ -45,6 +56,8 @@ data:
         inner:
           - ko: "방문객 동선 분석, 재방문자 및 직원 구분을 위한 Re-Identification (ReID) 모델 아키텍처 설계 및 개발"
             en: "Design and develop Re-Identification (ReID) model architecture for visitor path analysis, distinguishing between repeat visitors and staff"
+          - ko: "논문 조사 및 최신 기술 적용을 참고하여 모델 계층 설계"
+            en: "Design model layers by researching papers and applying the latest technologies"
           - ko: "실시간과 비실시간 추론을 분리한 AI 모델 아키텍처 설계"
             en: "Design AI model architecture that separates real-time and non-real-time inference"
           - ko: "자체적인 데이터 수집, 라벨링 및 학습 시스템 구축"
@@ -81,12 +94,12 @@ data:
         inner:
           - ko: "사내 첫 자체 AI 모델 개발 프로젝트 전담"
             en: "Led the company’s first in-house AI model development project"
-          - ko: "데이터 파이프라인 상의 불완전한 동기화 문제를 해결하여 데이터 일관성을 확보"
-            en: "Resolved incomplete synchronization issues in the data pipeline to ensure data consistency"
+          - ko: "데이터 파이프라인 상의 불완전한 동기화 문제를 해결하여 데이터 안정성 확보"
+            en: "Resolved incomplete synchronization issues in the data pipeline to ensure data reliability"
           - ko: "AWS S3 미사용 객체 정리 스크립트로 약 10% 스토리지 비용 절감"
             en: "Reduced storage costs by approximately 10% with an AWS S3 unused object cleanup script"
 
-  - period: "2021.12 ~ 2023.01"
+  - period: "2021.12 - 2023.01"
     company: "J&FIRST"
     job_title:
       ko: "프론트엔드 개발자"
@@ -102,6 +115,17 @@ data:
     affiliation:
       ko: "개발팀"
       en: "Development Team"
+    brief_description:
+      - type: list
+        inner:
+          - ko: "LINE Plus 외주 프론트엔드 개발자"
+            en: "Outsourced Frontend Developer for LINE Plus"
+          - ko: "관리자용 웹 서비스 개발 및 유지보수"
+            en: "Development and maintenance of admin web services"
+          - ko: "최적화를 통한 사용자 경험 개선"
+            en: "Improving user experience through optimization"
+          - ko: "소스코드 관리 정책 수립하여 개발 생산성 향상"
+            en: "Enhancing development productivity by establishing source code management policies"
     description:
       - type: paragraph
         inner:

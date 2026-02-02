@@ -43,8 +43,8 @@ data:
     description:
       - type: paragraph
         inner:
-          ko: "AReX는 Agent AI-based Augmented Reading eXperience의 약자로, 소설책에 특화된 LLM 기반 전자책 서비스입니다. 대학 동기와 함께 개발하였으며, 오픈소스 개발자대회와 사이드임팩트에 출품해 현재 심사 중입니다. 독서량 감소 문제를 해결하고 소설책을 더 즐겁게 읽을 수 있는 방법을 고민하며 착안한 아이디어로, 소설 속 등장인물을 모방하는 대화형 챗봇 기능을 제공합니다. RAG 구조를 활용한 LLM 설계를 통해 사용자가 책 속 인물과 대화하며 몰입할 수 있는 인터랙티브 독서 경험을 구현했습니다."
-          en: "AReX stands for Agent AI-based Augmented Reading eXperience, an LLM-based e-book service specialized for novels. Developed in collaboration with a university peer, it is currently under review after being submitted to an open-source developer competition and Side Impact. The idea was conceived to address the issue of declining reading habits and to enhance the enjoyment of reading novels by providing an interactive chatbot feature that mimics characters from the novels. By utilizing an LLM design based on the RAG structure, we have created an immersive interactive reading experience where users can converse with characters from the book."
+          ko: "AReX는 Agent AI-based Augmented Reading eXperience의 약자로, 소설책에 특화된 LLM 기반 전자책 서비스입니다. 대학 동기와 함께 개발하였으며, 오픈소스 개발자대회와 사이드임팩트 출품작입니다. 독서량 감소 문제를 해결하고 소설책을 더 즐겁게 읽을 수 있는 방법을 고민하며 착안한 아이디어로, 소설 속 등장인물을 모방하는 대화형 챗봇 기능을 제공합니다. RAG 구조를 활용한 LLM 설계를 통해 사용자가 책 속 인물과 대화하며 몰입할 수 있는 인터랙티브 독서 경험을 구현했습니다."
+          en: "AReX stands for Agent AI-based Augmented Reading eXperience, an LLM-based e-book service specialized for novels. It was developed with a college friend and was submitted to an open source developer competition and Side Impact. The idea was conceived to address the issue of declining reading habits and to enhance the enjoyment of reading novels by providing an interactive chatbot feature that mimics characters from the novels. By utilizing an LLM design based on the RAG structure, we have created an immersive interactive reading experience where users can converse with characters from the book."
 
       - type: link_buttons
         inner:
@@ -109,8 +109,8 @@ data:
     brief_description:
       - type: list
         inner:
-          - ko: "실제 결혼식을 위해 제작한 React 기반 맞춤형 모바일 청첩장 템플릿 (2025년 12월 기준 fork 40개 돌파)"
-            en: "React-based custom mobile wedding invitation template developed for my own wedding (over 40 forks as of December 2025)"
+          - ko: "실제 결혼식을 위해 제작한 React 기반 맞춤형 모바일 청첩장 템플릿 (2026년 1월 기준 fork 60개 돌파)"
+            en: "React-based custom mobile wedding invitation template developed for my own wedding (over 60 forks as of January 2026)"
     description:
       - type: paragraph
         inner:

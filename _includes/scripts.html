@@ -19,6 +19,10 @@
   {%- include mathjax-script.html -%}
 {%- endif -%}
 
+{%- if page.use_mermaid -%}
+  {%- include mermaid-script.html -%}
+{%- endif -%}
+
 {%- if page.use_qrcode -%}
   {%- include qrcode-script.html -%}
 {%- endif -%}

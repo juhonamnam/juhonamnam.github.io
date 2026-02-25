@@ -6,7 +6,7 @@
 {%- assign posts_per_page = 5 -%}
 {%- assign page_trailing = 2 -%}
 
-{%- assign total_pages = posts | size | divided_by: posts_per_page | plus: 1 -%}
+{%- assign total_pages = posts | size | minus: 1 | divided_by: posts_per_page | plus: 1 -%}
 
 
 {%- for page_num in (1..total_pages) -%}

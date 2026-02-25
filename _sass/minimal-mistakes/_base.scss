@@ -221,10 +221,6 @@ figure {
         width: calc(50% - 0.5em);
       }
     }
-
-    figcaption {
-      width: 100%;
-    }
   }
 
   &.third {
@@ -233,10 +229,6 @@ figure {
       @include breakpoint($small) {
         width: calc(33.3333% - 0.5em);
       }
-    }
-
-    figcaption {
-      width: 100%;
     }
   }
 }
@@ -248,6 +240,7 @@ figcaption {
   color: $muted-text-color;
   font-family: $caption-font-family;
   font-size: $type-size-6;
+  width: 100%;
 
   a {
     -webkit-transition: $global-transition;

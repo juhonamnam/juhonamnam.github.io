@@ -10,8 +10,8 @@ main:
   data-ai:
     name: "데이터분석 / AI"
 
-  project:
-    name: "프로젝트 후기"
+  review:
+    name: "후기"
 
   backend-system:
     name: "Backend / System"

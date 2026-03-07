@@ -109,8 +109,8 @@ data:
     brief_description:
       - type: list
         inner:
-          - ko: "실제 결혼식을 위해 제작한 React 기반 맞춤형 모바일 청첩장 템플릿 (2026년 1월 기준 fork 60개 돌파)"
-            en: "React-based custom mobile wedding invitation template developed for my own wedding (over 60 forks as of January 2026)"
+          - ko: "실제 결혼식을 위해 제작한 React 기반 맞춤형 모바일 청첩장 템플릿 (2026년 3월 기준 fork 70개 돌파)"
+            en: "React-based custom mobile wedding invitation template developed for my own wedding (over 70 forks as of March 2026)"
     description:
       - type: paragraph
         inner:

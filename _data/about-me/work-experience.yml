@@ -96,8 +96,8 @@ data:
             en: "Led the company’s first in-house AI model development project"
           - ko: "데이터 파이프라인 상의 불완전한 동기화 문제를 해결하여 데이터 안정성 확보"
             en: "Resolved incomplete synchronization issues in the data pipeline to ensure data reliability"
-          - ko: "AWS S3 미사용 객체 정리 스크립트로 약 10% 스토리지 비용 절감"
-            en: "Reduced storage costs by approximately 10% with an AWS S3 unused object cleanup script"
+          - ko: "AWS S3 최적화로 약 10% 스토리지 비용 절감"
+            en: "Reduced storage costs by approximately 10% by optimizing AWS S3"
 
   - period: "2021.12 - 2023.01"
     company: "J&FIRST"

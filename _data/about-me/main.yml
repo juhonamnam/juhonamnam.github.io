@@ -105,8 +105,12 @@ technical_activities:
     description:
       - type: list
         inner:
-          - ko: "오픈소스 개발자대회, 사이드임팩트, Kaggle Competition 대회 참여 경험"
+          - ko: "오픈소스 개발자대회, 사이드임팩트, Kaggle 대회 참여 경험"
             en: "Experience participating in Open Source Developer Competition, Side Impact, and Kaggle Competition"
+          - sublist: true
+            inner:
+              - ko: "Kaggle 대회 \"NFL Big Data Bowl 2026 - Prediction\"에서 118/1899 (상위 7%) 기록"
+                en: "Ranked 118/1899 (Top 7%) in the Kaggle competition \"NFL Big Data Bowl 2026 - Prediction\""
   - title:
       ko: "기술 블로그 운영"
       en: "Running a Technical Blog"

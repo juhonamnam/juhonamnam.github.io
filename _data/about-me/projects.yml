@@ -73,8 +73,8 @@ data:
             inner:
               - ko: "사용자가 현재까지 읽은 범위 내로 한정된 문맥 제공"
                 en: "Provide context limited to the range the user has read so far"
-          - ko: "이벤트 기반 책 원문 전처리 파이프라인 아키텍처"
-            en: "Event-driven book text preprocessing pipeline architecture"
+          - ko: "책 원문 전처리 파이프라인 아키텍처 설계"
+            en: "Designing book text preprocessing pipeline architecture"
 
   - title:
       ko: "모바일 청첩장"

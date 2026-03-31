@@ -13,12 +13,14 @@ use_qrcode: true
     <div class="intro">
       <img src="/images/profile.jpg" alt="" />
 
-      <div class="qrcode print-only"
-           data-text="{{ site.url }}{{ page.url }}"
-           data-margin="2"
-           data-color-dark="#000000"
-           data-color-light="#ffffff">
-      </div>
+      <a href="{{ site.url }}{{ page.url }}" class="print-only">
+        <div class="qrcode"
+            data-text="{{ site.url }}{{ page.url }}"
+            data-margin="2"
+            data-color-dark="#000000"
+            data-color-light="#ffffff">
+        </div>
+      </a>
 
       {%- assign title = site.data.about-me.main.name[language] -%}
       <div class="header-with-subheader">
@@ -147,12 +149,14 @@ use_qrcode: true
 
     <div class="portfolio">
       <hr />
-      <div class="qrcode"
-           data-text="{{ site.url }}/about-me/"
-           data-margin="2"
-           data-color-dark="#000000"
-           data-color-light="#ffffff">
-      </div>
+      <a href="{{ site.url }}/about-me/">
+        <div class="qrcode"
+            data-text="{{ site.url }}/about-me/"
+            data-margin="2"
+            data-color-dark="#000000"
+            data-color-light="#ffffff">
+        </div>
+      </a>
       <small>
         {{ site.data.about-me.main.translations.portfolio_phrase[language] }}
         <br />

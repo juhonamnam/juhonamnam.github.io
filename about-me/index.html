@@ -12,12 +12,14 @@ use_qrcode: true
   <div class="about-me">
     <div class="intro">
       <img src="/images/profile.jpg" alt="" />
-      <div class="print-only qrcode"
-           data-text="{{ site.url }}{{ page.url }}"
-           data-margin="2"
-           data-color-dark="#000000"
-           data-color-light="#ffffff">
-      </div>
+      <a href="{{ site.url }}{{ page.url }}" class="print-only">
+        <div class="qrcode"
+            data-text="{{ site.url }}{{ page.url }}"
+            data-margin="2"
+            data-color-dark="#000000"
+            data-color-light="#ffffff">
+        </div>
+      </a>
 
       {%- assign title = site.data.about-me.main.title[language] -%}
       {%- include h1.html h1_text=title -%}

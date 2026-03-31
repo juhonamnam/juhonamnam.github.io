@@ -168,7 +168,6 @@
         margin-left: -0.05em;
         left: $work-experience-timeline-period-width;
         background-color: $primary-color;
-        box-shadow: 0 0 0.5em 0.1em #0003;
 
         @media print {
           -webkit-print-color-adjust: exact;
@@ -210,7 +209,6 @@
               top: 50%;
               left: $work-experience-timeline-period-width;
               border: 0.15em solid $danger-color;
-              box-shadow: 0 0 0.5em 0.05em #0003;
               @include breakpoint(max-width $small - 1px) {
                 left: -1em;
               }

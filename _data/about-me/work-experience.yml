@@ -175,9 +175,9 @@ data:
 
       - type: list
         inner:
-          - ko: "캐시 정책 도입으로 웹 페이지 재방문 시 초기 로드 시간 약 50% 단축"
-            en: "Implemented caching policies, reducing initial load times by 50% on page revisits"
-          - ko: "React에서 Next.js로 마이그레이션하여 Multi-page Application 및 SSR의 장점 활용 (code splitting 및 초기 로드 시간 단축)"
+          - ko: "자체 개발한 웹 페이지의 초기 로드 시간 약 50% 단축"
+            en: "Reducing website initial load times by 50%"
+          - ko: "Next.js 프레임워크를 도입하여 Multi-page Multi-page Application 및 SSR의 장점 활용 (code splitting 및 초기 로드 시간 단축)"
             en: "Migrated from React to Next.js to leverage the benefits of Multi-page Application and SSR (code splitting and reduced initial load times)"
-          - ko: "공통 소스코드 정책 수립하여 개발 생산성 향상"
+          - ko: "사내 공통 소스코드 정책 수립하여 개발 생산성 향상"
             en: "Established common source code policies to enhance development productivity"

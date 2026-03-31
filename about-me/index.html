@@ -35,7 +35,9 @@ use_qrcode: true
 
       <!--excerpt open-->
       {%- include about-me/description.html description=site.data.about-me.main.description language=language -%}
-      {%- include about-me/description.html description=site.data.about-me.main.additional_description language=language -%}
+      <div class="web-only">
+        {%- include about-me/description.html description=site.data.about-me.main.additional_description language=language -%}
+      </div>
       <!--excerpt close-->
       <p>
         {%- for skill in site.data.about-me.main.skills -%}

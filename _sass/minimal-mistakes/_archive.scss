@@ -220,15 +220,17 @@
   }
 
   .archive__item-teaser {
-    max-height: 120px;
+    height: 120px;
     background-color: $primary-color;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     img {
       background-color: $background-color;
+      max-width: 100%;
       width: auto;
-      max-height: 120px;
+      max-height: 100%;
       height: auto;
       object-fit: contain;
     }

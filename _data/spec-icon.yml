@@ -43,6 +43,8 @@ data:
     name: "PyTorch"
   aws:
     name: "AWS"
+  onnx:
+    name: "ONNX"
   cpp:
     name: "C++"
   rabbitmq:

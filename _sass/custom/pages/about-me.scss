@@ -23,6 +23,27 @@
   }
 
   @media print {
+    .link-button {
+      display: block;
+      text-align: left;
+      font-size: 100%;
+      font-weight: normal;
+      color: $text-color;
+      border: none;
+      background: none;
+      margin: 0;
+      padding: 0;
+
+      &[href^="http://"]:after,
+      &[href^="https://"]:after,
+      &[href^="ftp://"]:after {
+        font-size: 100%;
+        content: ": " attr(href);
+      }
+    }
+  }
+
+  @media print {
     a[href]:after {
       content: "";
     }

@@ -1,6 +1,6 @@
 # Gemini CLI Project Context: juhonamnam.github.io
 
-This project is the personal website and blog of **Juho Nam (남주호)**, a software engineer. It is built using the **Jekyll** static site generator and is based on a customized version of the **Minimal Mistakes** theme.
+This project is the personal website and blog of **Juho Nam (남주호)**, an AI engineer. It is built using the **Jekyll** static site generator and is based on a customized version of the **Minimal Mistakes** theme.
 
 ## Project Overview
 

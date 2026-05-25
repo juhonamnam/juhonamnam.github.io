@@ -10,8 +10,5 @@ main:
   data-ai:
     name: "데이터분석 / AI"
 
-  review:
-    name: "후기"
-
   backend-system:
     name: "Backend / System"

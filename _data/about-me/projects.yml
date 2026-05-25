@@ -26,11 +26,6 @@ data:
           - ko: "모바일 및 엣지 환경에서 실시간으로 동작하는 신체 부위 기반의 Person Re-identification 모델"
             en: "A body part-based Person Re-identification model that operates in real-time on mobile and edge environments"
     description:
-      - type: paragraph
-        inner:
-          ko: "여러 대의 카메라 환경에서 동일인을 식별하는 Re-ID 기술을 모바일/엣지 환경에 최적화하여 구현했습니다. MobileNetV3와 FPN 구조를 결합하고, 사람의 신체 부위를 5개로 나누어 각각의 특징을 추출하는 Part-based representation 방식을 채택했습니다. 특히, 여러 부위의 유사도를 합산할 때 흔히 쓰이는 <strong>Weighted Mean(가중 평균)</strong> 방식이 특정 부위의 큰 차이를 상쇄해버리는 단점을 보완하고자, 직접 명명한 <strong>'Weakest Link'</strong> 원칙 기반의 유사도 측정법을 제안했습니다. 이는 '쇠사슬의 강도는 가장 약한 고리에 의해 결정된다'는 점에 착안하여, '전체적으로 비슷한가'보다 '각 부분이 모두 비슷한가'에 집중함으로써 단 하나의 결정적인 차이만으로도 오답 후보를 단호하게 배제하도록 설계한 방식입니다. 이를 통해 가려짐(Occlusion) 상황에서도 강건한 성능을 확보했으며, ONNX Runtime Web을 통해 브라우저에서 실시간 추론이 가능한 웹 데모도 구현했습니다."
-          en: "I implemented Person Re-identification (Re-ID) technology, optimized for mobile/edge environments. I combined MobileNetV3 and FPN structures and adopted a Part-based representation method. To overcome the limitations of the conventional <strong>Weighted Mean</strong> approach—where a significant difference in one part can be masked by high similarities in others—I proposed a similarity measurement method based on my personally named <strong>'Weakest Link'</strong> principle. Inspired by the idea that 'a chain is only as strong as its weakest link,' this method focuses on whether *every* part matches rather than just an overall average. This allows the model to decisively exclude candidates based on even a single definitive difference, ensuring robust performance in occlusion scenarios. I also implemented a serverless web demo using ONNX Runtime Web."
-
       - type: link_buttons
         inner:
           - label:
@@ -40,11 +35,16 @@ data:
           - label:
               ko: "웹 데모"
               en: "Web Demo"
-            url: "https://juhonamnam.github.io/realtime-re-id/"
+            url: "https://juhonamnam.github.io/realtime-re-id"
           - label:
-              ko: "제작기"
-              en: "Post"
-            url: "/blog/post/22"
+              ko: "개발기"
+              en: "Development Story"
+            url: "https://juhonamnam.github.io/blog/post/22"
+
+      - type: paragraph
+        inner:
+          ko: "여러 대의 카메라 환경에서 동일인을 식별하는 Re-ID 기술을 모바일/엣지 환경에 최적화하여 구현했습니다. MobileNetV3와 FPN 구조를 결합하고, 사람의 신체 부위를 5개로 나누어 각각의 특징을 추출하는 Part-based representation 방식을 채택했습니다. 특히, 여러 부위의 유사도를 합산할 때 흔히 쓰이는 <strong>Weighted Mean(가중 평균)</strong> 방식이 특정 부위의 큰 차이를 상쇄해버리는 단점을 보완하고자, 직접 명명한 <strong>'Weakest Link'</strong> 원칙 기반의 유사도 측정법을 제안했습니다. 이는 '쇠사슬의 강도는 가장 약한 고리에 의해 결정된다'는 점에 착안하여, '전체적으로 비슷한가'보다 '각 부분이 모두 비슷한가'에 집중함으로써 단 하나의 결정적인 차이만으로도 오답 후보를 단호하게 배제하도록 설계한 방식입니다. 이를 통해 가려짐(Occlusion) 상황에서도 강건한 성능을 확보했으며, ONNX Runtime Web을 통해 브라우저에서 실시간 추론이 가능한 웹 데모도 구현했습니다."
+          en: "I implemented Person Re-identification (Re-ID) technology, optimized for mobile/edge environments. I combined MobileNetV3 and FPN structures and adopted a Part-based representation method. To overcome the limitations of the conventional <strong>Weighted Mean</strong> approach—where a significant difference in one part can be masked by high similarities in others—I proposed a similarity measurement method based on my personally named <strong>'Weakest Link'</strong> principle. Inspired by the idea that 'a chain is only as strong as its weakest link,' this method focuses on whether *every* part matches rather than just an overall average. This allows the model to decisively exclude candidates based on even a single definitive difference, ensuring robust performance in occlusion scenarios. I also implemented a serverless web demo using ONNX Runtime Web."
 
       - type: list
         inner:
@@ -103,11 +103,6 @@ data:
           - ko: "LLM과 RAG 기반의 소설 특화 대화형 전자책 서비스 (대회 출품작)"
             en: "LLM and RAG-based interactive e-book service specialized for novels (competition entry)"
     description:
-      - type: paragraph
-        inner:
-          ko: "AReX는 Agent AI-based Augmented Reading eXperience의 약자로, 소설책에 특화된 LLM 기반 전자책 서비스입니다. 대학 동기와 함께 개발하였으며, 오픈소스 개발자대회와 사이드임팩트 출품작입니다. 독서량 감소 문제를 해결하고 소설책을 더 즐겁게 읽을 수 있는 방법을 고민하며 착안한 아이디어로, 소설 속 등장인물을 모방하는 대화형 챗봇 기능을 제공합니다. RAG 구조를 활용한 LLM 설계를 통해 사용자가 책 속 인물과 대화하며 몰입할 수 있는 인터랙티브 독서 경험을 구현했습니다."
-          en: "AReX stands for Agent AI-based Augmented Reading eXperience, an LLM-based e-book service specialized for novels. It was developed with a college friend and was submitted to an open source developer competition and Side Impact. The idea was conceived to address the issue of declining reading habits and to enhance the enjoyment of reading novels by providing an interactive chatbot feature that mimics characters from the novels. By utilizing an LLM design based on the RAG structure, we have created an immersive interactive reading experience where users can converse with characters from the book."
-
       - type: link_buttons
         inner:
           - label:
@@ -118,6 +113,11 @@ data:
               ko: "소개 영상"
               en: "Introduction Video"
             url: "https://youtu.be/uCMB6xpeiUM"
+
+      - type: paragraph
+        inner:
+          ko: "AReX는 Agent AI-based Augmented Reading eXperience의 약자로, 소설책에 특화된 LLM 기반 전자책 서비스입니다. 대학 동기와 함께 개발하였으며, 오픈소스 개발자대회와 사이드임팩트 출품작입니다. 독서량 감소 문제를 해결하고 소설책을 더 즐겁게 읽을 수 있는 방법을 고민하며 착안한 아이디어로, 소설 속 등장인물을 모방하는 대화형 챗봇 기능을 제공합니다. RAG 구조를 활용한 LLM 설계를 통해 사용자가 책 속 인물과 대화하며 몰입할 수 있는 인터랙티브 독서 경험을 구현했습니다."
+          en: "AReX stands for Agent AI-based Augmented Reading eXperience, an LLM-based e-book service specialized for novels. It was developed with a college friend and was submitted to an open source developer competition and Side Impact. The idea was conceived to address the issue of declining reading habits and to enhance the enjoyment of reading novels by providing an interactive chatbot feature that mimics characters from the novels. By utilizing an LLM design based on the RAG structure, we have created an immersive interactive reading experience where users can converse with characters from the book."
 
       - type: list
         inner:
@@ -174,11 +174,6 @@ data:
           - ko: "실제 결혼식을 위해 제작한 React 기반 맞춤형 모바일 청첩장 템플릿 (2026년 5월 기준 fork 90개 돌파)"
             en: "React-based custom mobile wedding invitation template developed for my own wedding (over 90 forks as of May 2026)"
     description:
-      - type: paragraph
-        inner:
-          ko: "실제 저의 결혼식을 위해 직접 제작한 React 기반 모바일 청첩장입니다. 기존 서비스 디자인의 제약을 극복하기 위해 UI를 직접 설계하고, 도메인을 구입하여 Naver Cloud Platform에 배포해 실제로 사용했습니다. 단순한 개인 용도에서 출발했지만 다른 사용자들의 문의가 들어오면서 오픈소스 템플릿으로 전환했습니다. 현재 재사용성과 확장성을 고려해 지속적으로 개선하고 있습니다."
-          en: "This is a React-based mobile wedding invitation that I personally developed for my own wedding. To overcome the design limitations of existing services, I designed the UI myself, purchased a domain, and deployed it on Naver Cloud Platform for actual use. Although it started as a simple personal project, it was converted into an open-source template due to inquiries from other users. I am continuously improving it with reusability and scalability in mind."
-
       - type: link_buttons
         inner:
           - label:
@@ -188,11 +183,16 @@ data:
           - label:
               ko: "청첩장 샘플"
               en: "Wedding Invitation Sample"
-            url: "https://juhonamnam.github.io/wedding-invitation/"
+            url: "https://juhonamnam.github.io/wedding-invitation"
           - label:
-              ko: "후기"
-              en: "Review"
-            url: "/blog/post/18"
+              ko: "개발기"
+              en: "Development Story"
+            url: "https://juhonamnam.github.io/blog/post/18"
+
+      - type: paragraph
+        inner:
+          ko: "실제 저의 결혼식을 위해 직접 제작한 React 기반 모바일 청첩장입니다. 기존 서비스 디자인의 제약을 극복하기 위해 UI를 직접 설계하고, 도메인을 구입하여 Naver Cloud Platform에 배포해 실제로 사용했습니다. 단순한 개인 용도에서 출발했지만 다른 사용자들의 문의가 들어오면서 오픈소스 템플릿으로 전환했습니다. 현재 재사용성과 확장성을 고려해 지속적으로 개선하고 있습니다."
+          en: "This is a React-based mobile wedding invitation that I personally developed for my own wedding. To overcome the design limitations of existing services, I designed the UI myself, purchased a domain, and deployed it on Naver Cloud Platform for actual use. Although it started as a simple personal project, it was converted into an open-source template due to inquiries from other users. I am continuously improving it with reusability and scalability in mind."
 
       - type: list
         inner:

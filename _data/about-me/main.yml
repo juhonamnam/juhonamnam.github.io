@@ -22,21 +22,16 @@ name:
   ko : "남주호"
   en : "Ju Ho Nam"
 job_title:
-  ko: "소프트웨어 엔지니어"
-  en: "Software Engineer"
+  ko: "AI 엔지니어"
+  en: "AI Engineer"
 title:
-  ko: "소프트웨어 엔지니어 남주호입니다."
-  en: "Hi, I'm Ju Ho Nam, a software engineer."
+  ko: "AI 엔지니어 남주호입니다."
+  en: "Hi, I'm Ju Ho Nam, an AI Engineer passionate about solving complex problems."
 description:
   - type: paragraph
     inner:
-      ko: "어릴 적부터 수학을 좋아했고, 인공지능 수학을 접한 것을 계기로 소프트웨어 세계에 발을 들이게 되었습니다. 서비스 개발과 인공지능 모델 연구 및 개발 경험을 바탕으로 기술 전반에 두루 능숙한 소프트웨어 엔지니어로 성장하고 있습니다."
-      en: "I've enjoyed mathematics since I was young, and my interest in mathematical aspects of artificial intelligence led me into the world of software engineering. With experience in both service development and AI model research and development, I am growing into a well-rounded software engineer proficient in various technologies."
-additional_description:
-  - type: paragraph
-    inner:
-      ko: "개발은 제게 직업인 동시에 취미이기도 합니다. 다양한 생각과 배움을 나누고자 이 개인 웹사이트를 시작하게 되었습니다. 편하게 둘러보시고, 즐겁게 봐주시면 좋겠습니다."
-      en: "For me, programming is both a profession and a passion. I started this personal website to share my thouughts and learnings. Feel free to explore, and I hope you enjoy it."
+      ko: "수학적 배경과 탄탄한 소프트웨어 엔지니어링 역량을 바탕으로, 이제는 AI 기술을 통해 실제 세상의 문제를 해결하는 데 집중하고 있습니다. 서비스 개발부터 AI 모델 연구 및 개발까지 폭넓은 경험을 쌓아왔으며, 최근 Kaggle NFL Big Data Bowl 2026에서 상위 7%를 기록하는 등 데이터 분석과 모델링 능력을 증명해 보였습니다. 복잡한 문제를 수식과 코드로 풀어내며 가치를 창출하는 AI 엔지니어로 성장하고 있습니다."
+      en: "Building on a strong mathematical background and solid software engineering foundations, I am now focusing on solving real-world problems through AI technology. With a diverse portfolio ranging from service development to AI model R&D, I have demonstrated my analytical skills by ranking in the top 7% of the Kaggle NFL Big Data Bowl 2026. I am evolving into an AI Engineer who creates value by translating complex challenges into elegant mathematical models and robust code."
 contacts:
   - label: "Email"
     icon: "fas faa-fw fa-envelope"
@@ -51,13 +46,13 @@ contacts:
     value: "github.com/juhonamnam"
     url: "https://github.com/juhonamnam"
 skills:
-  - typescript
   - python
-  - go
   - pytorch
-  - react
+  - typescript
+  - go
   - docker
   - aws
+  - react
 educations:
   - title:
       ko: "수학교육과 석사 학위 (중퇴)"

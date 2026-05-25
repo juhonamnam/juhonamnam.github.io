@@ -2,17 +2,17 @@ data:
   - period: "2023.02 - Present"
     company: "CPRO"
     job_title:
-      ko: "풀스택 개발자"
-      en: "Full Stack Developer"
+      ko: "AI / 데이터 엔지니어"
+      en: "AI / Data Engineer"
     specs:
-      - typescript
-      - express
       - python
       - pytorch
-      - go
-      - mongodb
       - aws
+      - mongodb
       - docker
+      - typescript
+      - express
+      - go
       - react
       - nextjs
     affiliation:
@@ -21,12 +21,12 @@ data:
     brief_description:
       - type: list
         inner:
-          - ko: "백엔드 개발 / 데이터 및 AI 엔지니어링"
-            en: "Backend Development / Data and AI Engineering"
           - ko: "카메라 기반 Re-Identification (ReID) AI 모델 연구 및 개발"
             en: "Camera-based Re-Identification (ReID) AI Model Research and Development"
           - ko: "데이터 안정성 개선 및 파이프라인 구축"
             en: "Data Reliability Improvement and Pipeline Construction"
+          - ko: "서비스 유지보수 및 신규 기능 개발"
+            en: "Service Maintenance and New Feature Development"
           - ko: "서비스 최적화 및 비용 절감"
             en: "Service Optimization and Cost Reduction"
     description:
@@ -40,7 +40,7 @@ data:
           - label:
               ko: "RetailTrend 소개 페이지"
               en: "RetailTrend Introduction Page"
-            url: "https://www.retailtrend.com/"
+            url: "https://www.retailtrend.com"
 
       - type: heading
         inner:
@@ -82,8 +82,8 @@ data:
                 en: "Camera raw data ➡ Generate aggregated data in time units such as 10 minutes, 1 hour, 1 day ➡ Visualize on web UI and generate reports"
           - ko: "카메라 네트워크 지연, 설정값 변경, 데이터 복구 등의 예외적인 상황에 대응하는 견고한 데이터 파이프라인 설계 및 구현"
             en: "Design and implement a robust data pipeline that handles exceptional situations such as camera network delays, configuration changes, and data recovery"
-          - ko: "이벤트 기반과 폴링을 혼합한 하이브리드 아키텍처"
-            en: "Hybrid architecture combining event-based and polling"
+          - ko: "이벤트 기반과 스케줄 기반 데이터 처리 시스템 설계 및 구현"
+            en: "Design and implement event-based and schedule-based data processing systems"
 
       - type: heading
         inner:
@@ -94,8 +94,8 @@ data:
         inner:
           - ko: "사내 첫 자체 AI 모델 개발 프로젝트 전담"
             en: "Led the company’s first in-house AI model development project"
-          - ko: "데이터 파이프라인 상의 불완전한 동기화 문제를 해결하여 데이터 안정성 확보"
-            en: "Resolved incomplete synchronization issues in the data pipeline to ensure data reliability"
+          - ko: "데이터 무결성 문제를 해결하여 데이터 안정성 향상"
+            en: "Resolved data integrity issues to enhance data reliability"
           - ko: "AWS S3 최적화로 약 20% 스토리지 비용 절감"
             en: "Reduced storage costs by approximately 20% by optimizing AWS S3"
 

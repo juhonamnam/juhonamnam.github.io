@@ -2,6 +2,7 @@ data:
   - title:
       ko: "실시간 Person Re-identification 모델"
       en: "Real-time Person Re-identification Model"
+    hide: true
     status:
       ko: "오픈소스"
       en: "Open Source"

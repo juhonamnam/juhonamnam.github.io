@@ -104,8 +104,10 @@ technical_activities:
             en: "Experience participating in Open Source Developer Competition, Side Impact, and Kaggle Competition"
           - sublist: true
             inner:
-              - ko: "Kaggle 대회 \"NFL Big Data Bowl 2026 - Prediction\"에서 118/1899 (상위 7%) 기록"
+              - ko: "Kaggle 대회 \"NFL Big Data Bowl 2026 - Prediction\"에서 상위 7% 기록 (Ranked 118/1899)"
                 en: "Ranked 118/1899 (Top 7%) in the Kaggle competition \"NFL Big Data Bowl 2026 - Prediction\""
+              - ko: "Kaggle 대회 \"NVIDIA Nemotron Model Reasoning Challenge\"에서 LLM 모델 fine-tuning 경험 (Ranked 2225/4182)"
+                en: "Gained experience in fine-tuning the Nemotron model and improving model performance through the Kaggle competition \"NVIDIA Nemotron Model Reasoning Challenge\" (Ranked 2225/4182)"
   - title:
       ko: "기술 블로그 운영"
       en: "Running a Technical Blog"

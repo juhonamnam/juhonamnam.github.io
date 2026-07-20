@@ -38,7 +38,7 @@ data:
     brief_description:
       - type: list
         inner:
-          - ko: "LLM과 RAG 기반의 소설 특화 대화형 전자책 서비스 (대회 출품작)"
+          - ko: "<b>LLM과 RAG 기반</b>의 소설 특화 대화형 전자책 서비스 (대회 출품작)"
             en: "LLM and RAG-based interactive e-book service specialized for novels (competition entry)"
     description:
       - type: link_buttons
@@ -54,26 +54,26 @@ data:
 
       - type: paragraph
         inner:
-          ko: "AReX는 Agent AI-based Augmented Reading eXperience의 약자로, 소설책에 특화된 LLM 기반 전자책 서비스입니다. 대학 동기와 함께 개발하였으며, 오픈소스 개발자대회와 사이드임팩트 출품작입니다. 독서량 감소 문제를 해결하고 소설책을 더 즐겁게 읽을 수 있는 방법을 고민하며 착안한 아이디어로, 소설 속 등장인물을 모방하는 대화형 챗봇 기능을 제공합니다. RAG 구조를 활용한 LLM 설계를 통해 사용자가 책 속 인물과 대화하며 몰입할 수 있는 인터랙티브 독서 경험을 구현했습니다."
+          ko: "AReX는 Agent AI-based Augmented Reading eXperience의 약자로, 소설책에 특화된 LLM 기반 전자책 서비스입니다. 대학 동기와 함께 개발하였으며, <b>오픈소스 개발자대회</b>와 <b>사이드임팩트</b> 출품작입니다. 독서량 감소 문제를 해결하고 소설책을 더 즐겁게 읽을 수 있는 방법을 고민하며 착안한 아이디어로, 소설 속 등장인물을 모방하는 <b>대화형 챗봇 기능</b>을 제공합니다. <b>RAG 구조를 활용한 LLM 설계</b>를 통해 사용자가 책 속 인물과 대화하며 몰입할 수 있는 인터랙티브 독서 경험을 구현했습니다."
           en: "AReX stands for Agent AI-based Augmented Reading eXperience, an LLM-based e-book service specialized for novels. It was developed with a college friend and was submitted to an open source developer competition and Side Impact. The idea was conceived to address the issue of declining reading habits and to enhance the enjoyment of reading novels by providing an interactive chatbot feature that mimics characters from the novels. By utilizing an LLM design based on the RAG structure, we have created an immersive interactive reading experience where users can converse with characters from the book."
 
       - type: list
         inner:
-          - ko: "LLM 기반 챗봇"
+          - ko: "<b>LLM 기반 챗봇</b>"
             en: "LLM-based chatbot"
           - sublist: true
             inner:
-              - ko: "도우미 모드: 독서 중 궁금한 점을 질문하고 답변 제공"
+              - ko: "<b>도우미 모드</b>: 독서 중 궁금한 점을 질문하고 답변 제공"
                 en: "Helper Mode: Ask questions and provide answers while reading"
-              - ko: "등장인물 모드: 작품 속 인물의 말투와 지식을 재현"
+              - ko: "<b>등장인물 모드</b>: 작품 속 인물의 말투와 지식을 재현"
                 en: "Character Mode: Recreate the tone and knowledge of characters in the work"
-          - ko: "RAG (Retrieval-Augmented Generation) 기반 책 문맥 제공"
+          - ko: "<b>RAG (Retrieval-Augmented Generation) 기반 책 문맥 제공</b>"
             en: "RAG (Retrieval-Augmented Generation) based book context provision"
           - sublist: true
             inner:
               - ko: "사용자가 현재까지 읽은 범위 내로 한정된 문맥 제공"
                 en: "Provide context limited to the range the user has read so far"
-          - ko: "책 원문 전처리 파이프라인 아키텍처 설계"
+          - ko: "책 원문 <b>전처리 파이프라인 아키텍처 설계</b>"
             en: "Designing book text preprocessing pipeline architecture"
 
   - title:
@@ -100,7 +100,7 @@ data:
     brief_description:
       - type: list
         inner:
-          - ko: "실제 CCTV 관제 환경을 고려해 속도, 정확도, 커버리지를 최적화한 실시간 인물 재식별(Re-ID) 모델 및 온디바이스 웹 데모"
+          - ko: "실제 CCTV 관제 환경을 고려해 속도, 정확도, 커버리지를 최적화한 <b>실시간 인물 재식별(Re-ID) 모델</b> 및 <b>온디바이스 웹 데모</b>"
             en: "A real-time person re-identification (Re-ID) model and on-device web demo optimized for speed, accuracy, and coverage in real-world CCTV environments"
     description:
       - type: link_buttons
@@ -120,18 +120,18 @@ data:
 
       - type: paragraph
         inner:
-          ko: "실제 CCTV 스트림 서비스 환경의 난제(가림, 잘림 현상 및 대규모 매칭 병목)를 해결하기 위해 개발한 신체 분할 기반 인물 재식별(Re-ID) 시스템입니다. BPBReID(Body Part-Based Person Re-ID) 구조를 기반으로 하되, 백본 모델을 경량화하여 속도를 4배 이상 향상시켰습니다. 또한, 실세 서비스 환경을 고려하여 단순 정확도가 아닌 Quality Filtering의 커버리지까지 고려한 설계를 적용했습니다. 최종적으로는 웹 브라우저에서 100% 온디바이스로 구동하는 YOLO + Re-ID 라이브 데모 웹 서비스를 구축했습니다."
+          ko: "실제 CCTV 스트림 서비스 환경의 난제(가림, 잘림 현상 및 대규모 매칭 병목)를 해결하기 위해 개발한 <b>신체 분할 기반 인물 재식별(Re-ID) 시스템</b>입니다. BPBReID 구조를 기반으로 하되, <b>백본 모델을 경량화하여 속도를 4배 이상 향상</b>시켰습니다. 또한, 실제 서비스 환경을 고려하여 단순 정확도가 아닌 <b>Quality Filtering의 커버리지까지 고려한 설계</b>를 적용했습니다. 최종적으로는 웹 브라우저에서 100% 온디바이스로 구동하는 <b>YOLO + Re-ID 라이브 데모 웹 서비스</b>를 구축했습니다."
           en: "This is a body part-based person re-identification (Re-ID) system developed to address challenges in real-world CCTV stream service environments, such as occlusion, truncation, and large-scale matching bottlenecks. Based on the BPBReID (Body Part-Based Person Re-ID) architecture, we optimized the backbone model for lightweight performance, achieving over 4x speed improvement. Additionally, we designed the system to consider not only simple accuracy but also coverage through Quality Filtering, taking into account real service environments. Ultimately, we built a live demo web service that runs 100% on-device in a web browser using YOLO + Re-ID."
 
       - type: list
         inner:
-          - ko: "경량 백본 네트워크 설계 (MobileNetV3 + FPN)"
+          - ko: "<b>경량 백본 네트워크 설계</b> (MobileNetV3 + FPN)"
             en: "Lightweight backbone network design (MobileNetV3 + FPN)"
           - sublist: true
             inner:
-              - ko: "기존 HRNet 백본 대비 정확도 하락을 최소화하면서 4배 이상의 속도 향상 달성"
+              - ko: "기존 HRNet 백본 대비 정확도 하락을 최소화하면서 <b>4배 이상의 속도 향상</b> 달성"
                 en: "Achieved over 4x speedup while minimizing accuracy drop compared to the existing HRNet backbone"
-          - ko: "Quality Filtering의 커버리지를 고려한 설계"
+          - ko: "<b>Quality Filtering의 커버리지를 고려한 설계</b>"
             en: "Design considering the coverage of Quality Filtering"
           - sublist: true
             inner:
@@ -139,19 +139,19 @@ data:
                 en: "Strict Filtering: High accuracy and low coverage"
               - ko: "느슨한 필터링: 낮은 정확도와 높은 커버리지"
                 en: "Loose Filtering: Low accuracy and high coverage"
-          - ko: "ANN 알고리즘 활용 가능성을 고려한 단일 고정 길이 벡터 병합 구조 설계"
+          - ko: "ANN 알고리즘 활용 가능성을 고려한 <b>단일 고정 길이 벡터 병합 구조 설계</b>"
             en: "Design of a single fixed-length vector concatenation structure considering the applicability of ANN algorithms"
           - sublist: true
             inner:
-              - ko: "신체 부위별 거리를 비교하는 기존 구조가 아닌, 하나의 고정 길이 벡터로 병합하여 ANN 알고리즘 활용 가능"
+              - ko: "신체 부위별 거리를 비교하는 기존 구조가 아닌, 하나의 고정 길이 벡터로 병합하여 <b>ANN 알고리즘 활용 가능</b>"
                 en: "Merged into a single fixed-length vector instead of comparing distances for each body part, enabling the use of ANN algorithms"
-          - ko: "Multi-task Learning 학습 파이프라인 구축"
+          - ko: "<b>Multi-task Learning 학습 파이프라인 구축</b>"
             en: "Constructed Multi-task Learning pipeline"
           - sublist: true
             inner:
-              - ko: "COCO DensePose 및 Market1501/DukeMTMC 등 이종 데이터셋의 도메인 레이블 노이즈 방지 학습 전략 적용"
+              - ko: "COCO DensePose 및 Market1501/DukeMTMC 등 이종 데이터셋의 <b>도메인 레이블 노이즈 방지 학습 전략</b> 적용"
                 en: "Applied domain-specific classification layers to avoid label noise when training on heterogeneous datasets (COCO DensePose, Market1501, etc.)"
-          - ko: "onnxruntime-web 기반 100% 온디바이스 웹 데모 페이지 개발"
+          - ko: "<b>onnxruntime-web 기반 100% 온디바이스 웹 데모 페이지 개발</b>"
             en: "Developed a 100% on-device web demo page using onnxruntime-web"
 
   - title:
@@ -187,7 +187,7 @@ data:
     brief_description:
       - type: list
         inner:
-          - ko: "실제 결혼식을 위해 제작한 React 기반 맞춤형 모바일 청첩장 템플릿 (2026년 6월 기준 fork 100개 돌파)"
+          - ko: "실제 결혼식을 위해 제작한 <b>React 기반 맞춤형 모바일 청첩장 템플릿</b> (2026년 6월 기준 <b>fork 100개 돌파</b>)"
             en: "React-based custom mobile wedding invitation template developed for my own wedding (over 100 forks as of June 2026)"
     description:
       - type: link_buttons
@@ -207,21 +207,21 @@ data:
 
       - type: paragraph
         inner:
-          ko: "실제 저의 결혼식을 위해 직접 제작한 React 기반 모바일 청첩장입니다. 기존 서비스 디자인의 제약을 극복하기 위해 UI를 직접 설계하고, 도메인을 구입하여 Naver Cloud Platform에 배포해 실제로 사용했습니다. 단순한 개인 용도에서 출발했지만 다른 사용자들의 문의가 들어오면서 오픈소스 템플릿으로 전환했습니다. 현재 재사용성과 확장성을 고려해 지속적으로 개선하고 있습니다."
+          ko: "실제 저의 결혼식을 위해 직접 제작한 <b>React 기반 모바일 청첩장</b>입니다. 기존 서비스 디자인의 제약을 극복하기 위해 UI를 직접 설계하고, 도메인을 구입하여 <b>Naver Cloud Platform에 배포</b>해 실제로 사용했습니다. 단순한 개인 용도에서 출발했지만 다른 사용자들의 문의가 들어오면서 <b>오픈소스 템플릿</b>으로 전환했습니다. 현재 재사용성과 확장성을 고려해 지속적으로 개선하고 있습니다."
           en: "This is a React-based mobile wedding invitation that I personally developed for my own wedding. To overcome the design limitations of existing services, I designed the UI myself, purchased a domain, and deployed it on Naver Cloud Platform for actual use. Although it started as a simple personal project, it was converted into an open-source template due to inquiries from other users. I am continuously improving it with reusability and scalability in mind."
 
       - type: list
         inner:
-          - ko: "다양한 모바일 화면 사이즈에 대응하는 반응형 웹 디자인"
+          - ko: "다양한 모바일 화면 사이즈에 대응하는 <b>반응형 웹 디자인</b>"
             en: "Responsive web design for various mobile screen sizes"
-          - ko: "캐러셀, 모달, 방명록 등 복합적인 Event 기반 UI 기능 구현"
+          - ko: "캐러셀, 모달, 방명록 등 복합적인 <b>Event 기반 UI 기능 구현</b>"
             en: "Complex event based UI features such as carousel, modal, and guestbook"
-          - ko: "도메인 연동과 SSL 인증서로 Naver Cloud Platform 배포"
+          - ko: "도메인 연동과 SSL 인증서로 <b>Naver Cloud Platform 배포</b>"
             en: "Deployment on Naver Cloud Platform along with connecting domain and SSL certification"
-          - ko: "Naver Map API, Kakao SDK 등 외부 API 연동"
+          - ko: "Naver Map API, Kakao SDK 등 <b>외부 API 연동</b>"
             en: "Integration with external APIs such as Naver Map API and Kakao SDK"
-          - ko: "MIT 라이선스로 템플릿 공개 (2026년 6월 기준 fork 100개 돌파)"
-            en: "Released the template under MIT license (over 100 forks as of June 2026)"
+          - ko: "2026년 6월 기준 <b>fork 100개 돌파</b>"
+            en: "<b>Achieved over 100 forks</b> as of June 2026"
 
   - title:
       ko: "가상화폐 자동매매 프로그램"
@@ -250,21 +250,21 @@ data:
     brief_description:
       - type: list
         inner:
-          - ko: "투자 전략을 자동화한 가상화폐 트레이딩 봇 프로그램"
+          - ko: "투자 전략을 자동화한 <b>가상화폐 트레이딩 봇 프로그램</b>"
             en: "A cryptocurrency trading bot program that automates investment strategies"
     description:
       - type: paragraph
         inner:
-          ko: "프로그래밍 입문 시 개발한 투자 알고리즘 자동화 프로그램입니다. 래리 윌리엄스의 변동성 돌파 전략을 참고해 투자 알고리즘을 직접 설계하고, Python과 UPbit Open API를 활용해 매수·매도 로직을 자동화했습니다. 또한 투자 전략으로 AI 기반 모델 활용 가능성을 검토해 보기도 했습니다. 실제 자본을 투입해 약 10%의 누적 수익을 냈으며, 이후에는 메신저봇을 통한 모의투자 시그널 시스템으로 발전시켰습니다. 실제 수익을 달성하긴 했지만, 알고리즘이 반드시 일반 투자보다 우월하지 않음을 배웠습니다."
+          ko: "프로그래밍 입문 시 개발한 투자 알고리즘 자동화 프로그램입니다. 래리 윌리엄스의 <b>변동성 돌파 전략</b>을 참고해 투자 알고리즘을 직접 설계하고, Python과 UPbit Open API를 활용해 <b>매수·매도 로직을 자동화</b>했습니다. 또한 투자 전략으로 AI 기반 모델 활용 가능성을 검토해 보기도 했습니다. 실제 자본을 투입해 <b>약 10%의 누적 수익</b>을 냈으며, 이후에는 메신저봇을 통한 모의투자 시그널 시스템으로 발전시켰습니다. 실제 수익을 달성하긴 했지만, 알고리즘이 반드시 일반 투자보다 우월하지 않음을 배웠습니다."
           en: "This is an automated trading program developed when I first started programming. I designed a trading algorithm based on Larry Williams' volatility breakout strategy and automated the buy and sell logic using Python and UPbit Open API. I also explored the possibility of using AI-based models for trading strategies. I achieved a cumulative return of about 10% with real capital, and later evolved it into a mock trading signal system through a messenger bot. Although I achieved actual profits, I learned that algorithms are not necessarily superior to general investing."
 
       - type: list
         inner:
-          - ko: "래리 윌리엄스의 변동성 돌파 전략을 참고해 투자 알고리즘을 직접 설계"
+          - ko: "래리 윌리엄스의 변동성 돌파 전략을 참고해 <b>투자 알고리즘을 직접 설계</b>"
             en: "Design and implement a trading algorithm based on Larry Williams' volatility breakout strategy"
-          - ko: "거래소에서 WebSocket Client을 통해 실시간 가격 정보 수신"
+          - ko: "거래소에서 WebSocket Client을 통해 <b>실시간 가격 정보 수신</b>"
             en: "Receive real-time price information from exchanges via WebSocket Client"
-          - ko: "Telegram Bot API를 통해 실시간 매수, 매도 시그널 전송"
+          - ko: "Telegram Bot API를 통해 <b>실시간 매수, 매도 시그널 전송</b>"
             en: "Send real-time buy and sell signals via Telegram Bot API"
-          - ko: "누적 수익률 10% 달성"
+          - ko: "<b>누적 수익률 10% 달성</b>"
             en: "Achieved cumulative return of 10%"

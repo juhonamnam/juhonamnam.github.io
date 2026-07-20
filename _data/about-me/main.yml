@@ -30,7 +30,7 @@ title:
 description:
   - type: paragraph
     inner:
-      ko: "수학적 배경과 탄탄한 소프트웨어 엔지니어링 역량을 바탕으로, 이제는 AI 기술을 통해 실제 세상의 문제를 해결하는 데 집중하고 있습니다. 서비스 개발부터 AI 모델 연구 및 개발까지 폭넓은 경험을 쌓아왔으며, 현업, 대회, 개인 프로젝트를 통해 데이터 분석과 모델링 능력을 증명해 보였습니다. 복잡한 문제를 수식과 코드로 풀어내며 가치를 창출하는 AI 엔지니어로 성장하고 있습니다."
+      ko: "<b>수학적 배경</b>과 탄탄한 <b>소프트웨어 엔지니어링 역량</b>을 바탕으로, 이제는 <b>AI 기술</b>을 통해 실제 세상의 문제를 해결하는 데 집중하고 있습니다. 서비스 개발부터 AI 모델 연구 및 개발까지 폭넓은 경험을 쌓아왔으며, 현업, 대회, 개인 프로젝트를 통해 <b>데이터 분석과 모델링 능력</b>을 증명해 보였습니다. 복잡한 문제를 수식과 코드로 풀어내며 가치를 창출하는 <b>AI 엔지니어</b>로 성장하고 있습니다."
       en: "With a strong foundation in mathematics and solid software engineering skills, I am now focused on solving real-world problems through AI technology. I have gained extensive experience in service development as well as AI model research and development, demonstrating my data analysis and modeling capabilities through professional work, competitions, and personal projects. I am growing as an AI engineer who creates value by solving complex problems with equations and code."
 contacts:
   - label: "Email"
@@ -104,9 +104,9 @@ technical_activities:
             en: "Experience participating in Open Source Developer Competition, Side Impact, and Kaggle Competition"
           - sublist: true
             inner:
-              - ko: "Kaggle 대회 \"NFL Big Data Bowl 2026 - Prediction\"에서 상위 7% 기록 (Ranked 118/1899)"
+              - ko: "Kaggle 대회 \"NFL Big Data Bowl 2026 - Prediction\"에서 <b>상위 7%</b> 기록 (Ranked 118/1899)"
                 en: "Ranked 118/1899 (Top 7%) in the Kaggle competition \"NFL Big Data Bowl 2026 - Prediction\""
-              - ko: "Kaggle 대회 \"NVIDIA Nemotron Model Reasoning Challenge\"에서 LLM 모델 fine-tuning 경험 (Ranked 2225/4182)"
+              - ko: "Kaggle 대회 \"NVIDIA Nemotron Model Reasoning Challenge\"에서 <b>LLM 모델 fine-tuning</b> 경험 (Ranked 2225/4182)"
                 en: "Gained experience in fine-tuning the Nemotron model and improving model performance through the Kaggle competition \"NVIDIA Nemotron Model Reasoning Challenge\" (Ranked 2225/4182)"
   - title:
       ko: "기술 블로그 운영"
@@ -124,5 +124,5 @@ technical_activities:
     description:
       - type: list
         inner:
-          - ko: "최대 200명 규모의 IT 스터디 및 정보 공유 커뮤니티에서 운영진으로 활동"
+          - ko: "최대 200명 규모의 IT 스터디 및 정보 공유 커뮤니티에서 <b>운영진</b>으로 활동"
             en: "Active as an administrator in an IT study and information sharing community with up to 200 members"

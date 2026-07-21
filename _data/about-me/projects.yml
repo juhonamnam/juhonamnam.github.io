@@ -120,8 +120,8 @@ data:
 
       - type: paragraph
         inner:
-          ko: "실제 CCTV 스트림 서비스 환경의 난제(가림, 잘림 현상 및 대규모 매칭 병목)를 해결하기 위해 개발한 <b>신체 분할 기반 인물 재식별(Re-ID) 시스템</b>입니다. BPBReID 구조를 기반으로 하되, <b>백본 모델을 경량화하여 속도를 4배 이상 향상</b>시켰습니다. 또한, 실제 서비스 환경을 고려하여 단순 정확도가 아닌 <b>Quality Filtering의 커버리지까지 고려한 설계</b>를 적용했습니다. 최종적으로는 웹 브라우저에서 100% 온디바이스로 구동하는 <b>YOLO + Re-ID 라이브 데모 웹 서비스</b>를 구축했습니다."
-          en: "This is a body part-based person re-identification (Re-ID) system developed to address challenges in real-world CCTV stream service environments, such as occlusion, truncation, and large-scale matching bottlenecks. Based on the BPBReID (Body Part-Based Person Re-ID) architecture, we optimized the backbone model for lightweight performance, achieving over 4x speed improvement. Additionally, we designed the system to consider not only simple accuracy but also coverage through Quality Filtering, taking into account real service environments. Ultimately, we built a live demo web service that runs 100% on-device in a web browser using YOLO + Re-ID."
+          ko: "실제 카메라 환경에서의 가림 및 잘림 현상에서도 견고하게 동작하는 <b>신체 분할 기반 인물 재식별(Re-ID) 시스템</b>입니다. BPBReID 구조를 기반으로 하되, <b>백본 모델을 경량화하여 속도를 4배 이상 향상</b>시켰습니다. 또한, 실제 서비스 환경을 고려하여 단순 정확도가 아닌 <b>Quality Filtering의 커버리지까지 고려한 설계</b>를 적용했습니다. 최종적으로는 웹 브라우저에서 100% 온디바이스로 구동하는 <b>YOLO + Re-ID 라이브 데모 웹 서비스</b>를 구축했습니다."
+          en: "This is a body part-based person re-identification (Re-ID) system that operates robustly even in real camera environments with occlusions and truncations. Based on the BPBReID architecture, we have <b>lightweighted the backbone model to achieve over 4x speedup</b>. Additionally, considering real service environments, we applied a design that takes into account not only simple accuracy but also the coverage of Quality Filtering. Ultimately, we built a <b>YOLO + Re-ID live demo web service</b> that runs 100% on-device in a web browser."
 
       - type: list
         inner:

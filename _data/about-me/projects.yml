@@ -100,7 +100,7 @@ data:
     brief_description:
       - type: list
         inner:
-          - ko: "실제 CCTV 관제 환경을 고려해 속도, 정확도, 커버리지를 최적화한 <b>실시간 인물 재식별(Re-ID) 모델</b> 및 <b>온디바이스 웹 데모</b>"
+          - ko: "실제 CCTV 관제 환경을 고려해 속도, 정확도, 커버리지, 일반화 성능를 최적화한 <b>실시간 인물 재식별(Re-ID) 모델</b> 및 <b>온디바이스 웹 데모</b>"
             en: "A real-time person re-identification (Re-ID) model and on-device web demo optimized for speed, accuracy, and coverage in real-world CCTV environments"
     description:
       - type: link_buttons
@@ -120,17 +120,19 @@ data:
 
       - type: paragraph
         inner:
-          ko: "실제 카메라 환경에서의 가림 및 잘림 현상에서도 견고하게 동작하는 <b>신체 분할 기반 인물 재식별(Re-ID) 시스템</b>입니다. BPBReID 구조를 기반으로 하되, <b>백본 모델을 경량화하여 속도를 4배 이상 향상</b>시켰습니다. 또한, 실제 서비스 환경을 고려하여 단순 정확도가 아닌 <b>Quality Filtering의 커버리지까지 고려한 설계</b>를 적용했습니다. 최종적으로는 웹 브라우저에서 100% 온디바이스로 구동하는 <b>YOLO + Re-ID 라이브 데모 웹 서비스</b>를 구축했습니다."
-          en: "This is a body part-based person re-identification (Re-ID) system that operates robustly even in real camera environments with occlusions and truncations. Based on the BPBReID architecture, we have <b>lightweighted the backbone model to achieve over 4x speedup</b>. Additionally, considering real service environments, we applied a design that takes into account not only simple accuracy but also the coverage of Quality Filtering. Ultimately, we built a <b>YOLO + Re-ID live demo web service</b> that runs 100% on-device in a web browser."
+          ko: "실제 카메라 환경을 고려해 설계한 <b>신체 분할 기반 인물 재식별(Re-ID) 시스템</b>입니다. BPBReID 구조를 기반으로 하되, <b>속도와 정확도 사이의 트레이드오프를 고려한 백본</b>을 설계했습니다. 또한 단일 데이터셋의 정확도가 아닌 <b>일반화 성능을 우선시</b>하여 실제 서비스 환경에 더 적합한 학습 방법을 구상하고, 가림 및 잘림 현상에서도 견고하게 동작하는 <b>Quality Filtering의 커버리지까지 고려한 설계</b>를 적용했습니다. 최종적으로는 웹 브라우저에서 100% 온디바이스로 구동하는 <b>YOLO + Re-ID 라이브 데모 웹 서비스</b>를 구축했습니다."
+          en: "This is a body part-based person re-identification (Re-ID) system designed with real camera environments in mind. Based on the BPBReID structure, we designed a backbone that considers the trade-off between speed and accuracy. Additionally, we prioritized generalization performance over single dataset accuracy to devise a training method more suitable for real-world service environments, and applied a design that also considers the coverage of Quality Filtering to ensure robust operation even in occluded or cropped scenarios. Ultimately, we built a YOLO + Re-ID live demo web service that runs 100% on-device in web browsers."
 
       - type: list
         inner:
-          - ko: "<b>경량 백본 네트워크 설계</b> (MobileNetV3 + FPN)"
-            en: "Lightweight backbone network design (MobileNetV3 + FPN)"
+          - ko: "<b>경량 백본 네트워크 설계</b>"
+            en: "Lightweight backbone network design"
           - sublist: true
             inner:
-              - ko: "기존 HRNet 백본 대비 정확도 하락을 최소화하면서 <b>4배 이상의 속도 향상</b> 달성"
-                en: "Achieved over 4x speedup while minimizing accuracy drop compared to the existing HRNet backbone"
+              - ko: "기존 HRNet 백본 대비 경량 모델인 ResNet, MobileNet 등에 <b>FPN을 결합한 구조</b> 설계"
+                en: "Designed a structure that combines FPN with lightweight models such as ResNet and MobileNet compared to the existing HRNet backbone"
+              - ko: "2배에서 4배까지의 <b>속도 향상</b>과 이에 따른 <b>정확도 손실 트레이드오프</b>를 고려한 백본 설계"
+                en: "Backbone design considering a 2x to 4x speedup vs. accuracy trade-off"
           - ko: "<b>Quality Filtering의 커버리지를 고려한 설계</b>"
             en: "Design considering the coverage of Quality Filtering"
           - sublist: true
@@ -145,12 +147,14 @@ data:
             inner:
               - ko: "신체 부위별 거리를 비교하는 기존 구조가 아닌, 하나의 고정 길이 벡터로 병합하여 <b>ANN 알고리즘 활용 가능</b>"
                 en: "Merged into a single fixed-length vector instead of comparing distances for each body part, enabling the use of ANN algorithms"
-          - ko: "<b>Multi-task Learning 학습 파이프라인 구축</b>"
-            en: "Constructed Multi-task Learning pipeline"
+          - ko: "<b>Multi-task Learning 및 데이터셋 통합을 통한 일반화 성능 개선</b>"
+            en: "Improved generalization performance via Multi-task Learning and dataset integration"
           - sublist: true
             inner:
-              - ko: "COCO DensePose 및 Market1501/DukeMTMC 등 이종 데이터셋의 <b>도메인 레이블 노이즈 방지 학습 전략</b> 적용"
-                en: "Applied domain-specific classification layers to avoid label noise when training on heterogeneous datasets (COCO DensePose, Market1501, etc.)"
+              - ko: "COCO DensePose 및 다종 Re-ID 데이터셋(Market1501, DukeMTMC, AI Hub 등) 동시 학습"
+                en: "Simultaneous training on COCO DensePose and multiple Re-ID datasets (Market1501, DukeMTMC, AI Hub, etc.)"
+              - ko: "단일 데이터셋의 성능보다 <b>일반화 성능</b>을 우선시하여 <b>실제 서비스 환경에서의 적합성 향상</b>"
+                en: "Prioritized <b>generalization performance</b> over single dataset performance to <b>enhance suitability in real-world service environments</b>"
           - ko: "<b>onnxruntime-web 기반 100% 온디바이스 웹 데모 페이지 개발</b>"
             en: "Developed a 100% on-device web demo page using onnxruntime-web"
 

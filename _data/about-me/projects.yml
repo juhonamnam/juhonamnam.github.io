@@ -38,8 +38,8 @@ data:
     brief_description:
       - type: list
         inner:
-          - ko: "<b>LLM과 RAG 기반</b>의 소설 특화 대화형 전자책 서비스 (대회 출품작)"
-            en: "LLM and RAG-based interactive e-book service specialized for novels (competition entry)"
+          - ko: "<b>AI Agent 및 RAG 기반</b>의 소설 특화 대화형 전자책 서비스 (대회 출품작)"
+            en: "AI Agent and RAG-based interactive e-book service specialized for novels (competition entry)"
     description:
       - type: link_buttons
         inner:
@@ -54,25 +54,31 @@ data:
 
       - type: paragraph
         inner:
-          ko: "AReX는 Agent AI-based Augmented Reading eXperience의 약자로, 소설책에 특화된 LLM 기반 전자책 서비스입니다. 대학 동기와 함께 개발하였으며, <b>오픈소스 개발자대회</b>와 <b>사이드임팩트</b> 출품작입니다. 독서량 감소 문제를 해결하고 소설책을 더 즐겁게 읽을 수 있는 방법을 고민하며 착안한 아이디어로, 소설 속 등장인물을 모방하는 <b>대화형 챗봇 기능</b>을 제공합니다. <b>RAG 구조를 활용한 LLM 설계</b>를 통해 사용자가 책 속 인물과 대화하며 몰입할 수 있는 인터랙티브 독서 경험을 구현했습니다."
-          en: "AReX stands for Agent AI-based Augmented Reading eXperience, an LLM-based e-book service specialized for novels. It was developed with a college friend and was submitted to an open source developer competition and Side Impact. The idea was conceived to address the issue of declining reading habits and to enhance the enjoyment of reading novels by providing an interactive chatbot feature that mimics characters from the novels. By utilizing an LLM design based on the RAG structure, we have created an immersive interactive reading experience where users can converse with characters from the book."
+          ko: "AReX는 Agent AI-based Augmented Reading eXperience의 약자로, 소설책에 특화된 LLM 기반 전자책 서비스입니다. 대학 동기와 함께 개발하였으며, <b>오픈소스 개발자대회</b>와 <b>사이드임팩트</b> 출품작입니다. 독서량 감소 문제를 해결하고 소설책을 더 즐겁게 읽을 수 있는 방법을 고민하며 착안한 아이디어로, 소설 속 등장인물을 모방하는 <b>대화형 챗봇 기능</b>을 제공합니다. <b>Agent 기반 아키텍처</b>를 도입하여 필요에 따라 다양한 Tool(RAG 기반 문맥 검색 등)을 동적으로 호출하도록 구현했으며, 사용자의 <b>현재 독서 페이지 시점</b>에 맞춰 등장인물과 대화하도록 함으로써 스포일러 없이 더욱 생동감 있고 몰입도 높은 인터랙티브 독서 경험을 제공합니다."
+          en: "AReX stands for Agent AI-based Augmented Reading eXperience, an LLM-based e-book service specialized for novels. It was developed with a college friend and was submitted to an open source developer competition and Side Impact. The idea was conceived to address the issue of declining reading habits and to enhance the enjoyment of reading novels by providing an interactive chatbot feature that mimics characters from the novels. By adopting an <b>Agent-based architecture</b>, the chatbot dynamically calls defined tools (e.g., RAG-based context retrieval). Furthermore, interactions with characters are synchronized to the user's <b>current reading page POV</b>, delivering a lively, spoiler-free, and immersive interactive reading experience."
 
       - type: list
         inner:
-          - ko: "<b>LLM 기반 챗봇</b>"
-            en: "LLM-based chatbot"
+          - ko: "<b>AI Agent 기반 챗봇 설계 및 Tool Call 구조</b>"
+            en: "AI Agent-based chatbot design and Tool Call structure"
+          - sublist: true
+            inner:
+              - ko: "<b>Tool 정의 및 동적 호출</b>: 답변 생성에 필요한 정보를 불러오기 위해 정의된 Tool을 상황에 맞게 선택하여 실행"
+                en: "<b>Tool Definition & Dynamic Invocation</b>: Dynamically select and call defined tools to retrieve necessary information for user answers"
+          - ko: "<b>챗봇 모드</b>"
+            en: "Chatbot Modes"
           - sublist: true
             inner:
               - ko: "<b>도우미 모드</b>: 독서 중 궁금한 점을 질문하고 답변 제공"
-                en: "Helper Mode: Ask questions and provide answers while reading"
-              - ko: "<b>등장인물 모드</b>: 작품 속 인물의 말투와 지식을 재현"
-                en: "Character Mode: Recreate the tone and knowledge of characters in the work"
-          - ko: "<b>RAG (Retrieval-Augmented Generation) 기반 책 문맥 제공</b>"
-            en: "RAG (Retrieval-Augmented Generation) based book context provision"
+                en: "<b>Helper Mode</b>: Ask questions about the book and provide answers"
+              - ko: "<b>등장인물 모드</b>: 사용자의 <b>현재 독서 페이지 시점</b>에 맞춰 등장인물의 말투, 지식, 상황을 재현하여 대화"
+                en: "<b>Character Mode</b>: Recreate character tone and knowledge synchronized with the user's <b>current reading page POV</b>"
+          - ko: "<b>RAG (Retrieval-Augmented Generation) 기반 시점 맞춤형 문맥 제공</b>"
+            en: "RAG (Retrieval-Augmented Generation) based POV-customized context provision"
           - sublist: true
             inner:
-              - ko: "사용자가 현재까지 읽은 범위 내로 한정된 문맥 제공"
-                en: "Provide context limited to the range the user has read so far"
+              - ko: "사용자가 현재까지 읽은 범위(페이지 시점) 내로 한정된 문맥을 제공하여 스포일러 방지 및 생동감 있는 대화 유도"
+                en: "Limit context up to the user's current reading page to prevent spoilers and enhance realistic interaction"
           - ko: "책 원문 <b>전처리 파이프라인 아키텍처 설계</b>"
             en: "Designing book text preprocessing pipeline architecture"
 

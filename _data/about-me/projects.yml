@@ -110,8 +110,8 @@ data:
     brief_description:
       - type: list
         inner:
-          - ko: "실제 CCTV 관제 환경을 고려해 속도, 정확도, 커버리지, 일반화 성능를 최적화한 <b>실시간 인물 재식별(Re-ID) 모델</b> 및 <b>온디바이스 웹 데모</b>"
-            en: "A real-time person re-identification (Re-ID) model and on-device web demo optimized for speed, accuracy, and coverage in real-world CCTV environments"
+          - ko: "실제 카메라 환경을 고려해 속도, 정확도, 커버리지, 일반화 성능를 최적화한 <b>실시간 인물 재식별(Re-ID) 모델</b> 및 <b>온디바이스 웹 데모</b>"
+            en: "A real-time person re-identification (Re-ID) model and on-device web demo optimized for speed, accuracy, and coverage in real-world camera environments"
     description:
       - type: link_buttons
         inner:

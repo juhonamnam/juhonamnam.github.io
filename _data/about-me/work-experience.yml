@@ -27,7 +27,7 @@ data:
             en: "Data Reliability Improvement and Pipeline Construction"
           - ko: "서비스 유지보수 및 신규 기능 개발"
             en: "Service Maintenance and New Feature Development"
-          - ko: "서비스 최적화 및 <b>비용 절감</b>"
+          - ko: "서비스 최적화 및 <b>운영 비용 절감</b>"
             en: "Service Optimization and Cost Reduction"
     description:
       - type: paragraph

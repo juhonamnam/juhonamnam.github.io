@@ -347,6 +347,11 @@
         margin: 1em 0;
         width: 100%;
 
+        @media print {
+          flex-wrap: wrap;
+          overflow-x: visible;
+        }
+
         > .image-container {
           cursor: pointer;
           user-select: none;
@@ -369,6 +374,7 @@
 
           @media print {
             -webkit-print-color-adjust: exact;
+            margin-bottom: 0.5em;
           }
 
           &:not(:last-child) {

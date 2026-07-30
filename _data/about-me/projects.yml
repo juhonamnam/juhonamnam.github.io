@@ -130,8 +130,8 @@ data:
 
       - type: paragraph
         inner:
-          ko: "실제 카메라 환경을 고려해 설계한 <b>신체 분할 기반 인물 재식별(Re-ID) 시스템</b>입니다. BPBReID 구조를 기반으로 하되, <b>속도와 정확도 사이의 트레이드오프를 고려한 백본</b>을 설계했습니다. 또한 단일 데이터셋의 정확도가 아닌 <b>일반화 성능을 우선시</b>하여 실제 서비스 환경에 더 적합한 학습 방법을 구상하고, 가림 및 잘림 현상에서도 견고하게 동작하는 <b>Quality Filtering의 커버리지까지 고려한 설계</b>를 적용했습니다. 최종적으로는 웹 브라우저에서 100% 온디바이스로 구동하는 <b>YOLO + Re-ID 라이브 데모 웹 서비스</b>를 구축했습니다."
-          en: "This is a body part-based person re-identification (Re-ID) system designed with real camera environments in mind. Based on the BPBReID structure, we designed a backbone that considers the trade-off between speed and accuracy. Additionally, we prioritized generalization performance over single dataset accuracy to devise a training method more suitable for real-world service environments, and applied a design that also considers the coverage of Quality Filtering to ensure robust operation even in occluded or cropped scenarios. Ultimately, we built a YOLO + Re-ID live demo web service that runs 100% on-device in web browsers."
+          ko: "실제 카메라 환경을 고려해 설계한 <b>신체 분할 기반 인물 재식별(Re-ID) 시스템</b>입니다. BPBReID(Body-Part-Based Re-ID) 모델을 기반으로 하되, 논문의 모델 구조를 단순 재현(Reproduction)하는 것에 그치지 않고, <b>실제 실시간 서비스 목적에 맞춰 아키텍처와 파이프라인을 수정 및 변형하여 구현</b>했습니다. <b>속도와 정확도 사이의 트레이드오프를 고려한 백본</b>을 설계하고, 단일 데이터셋의 정확도가 아닌 <b>일반화 성능을 우선시</b>하여 실제 서비스 환경에 더 적합한 학습 방법을 구상했으며, 가림 및 잘림 현상에서도 견고하게 동작하는 <b>Quality Filtering의 커버리지</b>를 고려한 파이프라인을 설계했습니다. 최종적으로는 웹 브라우저에서 100% 온디바이스로 구동하는 <b>YOLO + Re-ID 라이브 데모 웹 서비스</b>를 구축했습니다."
+          en: "A <b>body-part-segmentation-based person re-identification (Re-ID) system</b> designed for real-world camera environments. Based on the BPBReID (Body-Part-Based Re-ID) model, rather than simply reproducing the model architecture from the paper, I <b>modified and adapted the architecture and pipeline specifically for real-time production services</b>. I designed a <b>backbone considering the trade-off between speed and accuracy</b>, prioritized <b>generalization performance over single-dataset accuracy</b> to better suit real-world service environments, and designed a pipeline considering <b>Quality Filtering coverage</b> to operate robustly under occlusion and truncation. Finally, I built a <b>YOLO + Re-ID live demo web service</b> running 100% on-device in web browsers."
 
       - type: list
         inner:
@@ -167,6 +167,11 @@ data:
                 en: "Prioritized <b>generalization performance</b> over single dataset performance to <b>enhance suitability in real-world service environments</b>"
           - ko: "<b>onnxruntime-web 기반 100% 온디바이스 웹 데모 페이지 개발</b>"
             en: "Developed a 100% on-device web demo page using onnxruntime-web"
+
+      - type: paragraph
+        inner:
+          ko: "프로젝트 진행 과정에서 위에 기술된 내용 외에도 최종적으로 채택되지 않은 다양한 아이디어들이 존재했으며, 각 아이디어가 기대만큼의 성능 향상으로 이어지는지 확인하는 데 상당한 시간과 시행착오를 거쳤습니다. 여러 가능성을 직접 실험하고 비교해보며 가장 적합한 방향을 찾아가는 과정에 많은 노력을 기울였습니다."
+          en: "During the project, in addition to the items described above, various ideas that were ultimately not adopted were explored. Significant time and trial and error were spent verifying whether each idea led to expected performance gains, and much effort was devoted to experimenting with and comparing multiple possibilities to find the most suitable direction."
 
   - title:
       ko: "모바일 청첩장"

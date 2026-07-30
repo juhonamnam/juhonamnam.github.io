@@ -13,10 +13,14 @@ data:
         orientation: landscape
       - url: "/images/projects/arex-3.png"
         orientation: landscape
-      - url: "/images/projects/arex-4.svg"
-        orientation: portrait
-      - url: "/images/projects/arex-5.svg"
+      - url: "/images/projects/arex-4.png"
         orientation: landscape
+      - url: "/images/projects/arex-5.svg"
+        orientation: portrait
+      - url: "/images/projects/arex-6.svg"
+        orientation: landscape
+      - url: "/images/projects/arex-7.svg"
+        orientation: portrait
     team:
       name:
         ko: "The Geppettos"

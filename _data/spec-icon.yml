@@ -53,5 +53,7 @@ data:
     name: "PostgreSQL"
   langchain:
     name: "LangChain"
+  langgraph:
+    name: "LangGraph"
   chroma:
     name: "Chroma"

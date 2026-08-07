@@ -30,6 +30,9 @@ data:
       period_str: "2025.07 ~ 2025.10"
       type: development
     specs:
+      - langchain
+      - langgraph
+      - chroma
       - typescript
       - react
       - express
@@ -37,8 +40,6 @@ data:
       - docker
       - rabbitmq
       - postgresql
-      - langchain
-      - chroma
     brief_description:
       - type: list
         inner:

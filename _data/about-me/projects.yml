@@ -87,6 +87,11 @@ data:
           - ko: "책 원문 <b>전처리 파이프라인 아키텍처 설계</b>"
             en: "Designing book text preprocessing pipeline architecture"
 
+      - type: paragraph
+        inner:
+          ko: "대회 기간 내에 구현하지는 못했지만, AI 기반으로 독자의 행동 패턴을 분석하여 올바른 독서 습관을 형성할 수 있도록 돕는 피드백 기능을 구상하기도 했습니다. 기회가 된다면 이러한 아이디어를 더 발전시켜 나가고 싶습니다."
+          en: "Although not implemented during the competition period, I also conceived a feedback feature that analyzes readers' behavioral patterns using AI to help foster healthy reading habits. If given the opportunity, I would like to further develop these ideas."
+
   - title:
       ko: "실시간 신체 분할 기반 인물 재식별(Re-ID) 모델"
       en: "Real-time Body Part-Based Person Re-Identification Model"

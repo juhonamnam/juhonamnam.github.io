@@ -21,18 +21,18 @@ data:
     brief_description:
       - type: list
         inner:
+          - ko: "하루 약 500만 건의 트래픽을 처리하는 서비스의 유지보수 및 신규 기능 개발"
+            en: "Maintenance and new feature development for a service that handles approximately 5 million traffic per day"
           - ko: "카메라 기반 <b>Re-Identification (ReID) AI 모델 연구 및 개발</b>"
             en: "Camera-based Re-Identification (ReID) AI Model Research and Development"
           - ko: "<b>데이터 안정성 개선</b> 및 <b>파이프라인 구축</b>"
             en: "Data Reliability Improvement and Pipeline Construction"
-          - ko: "서비스 유지보수 및 신규 기능 개발"
-            en: "Service Maintenance and New Feature Development"
           - ko: "서비스 최적화 및 <b>운영 비용 절감</b>"
             en: "Service Optimization and Cost Reduction"
     description:
       - type: paragraph
         inner:
-          ko: "CPRO는 CCTV 보안 업체이며, RetailTrend는 CPRO의 리테일 분야 B2B 사업부로, <b>인공지능 카메라 기반의 오프라인 매장 방문객 분석 서비스</b>입니다. 피플 카운팅, 동선 분석, 성별 연령, 관심 영역 등 다양한 데이터를 클라이언트에게 제공합니다."
+          ko: "CPRO는 CCTV 보안 업체이며, RetailTrend는 CPRO의 리테일 분야 B2B 사업부로, <b>인공지능 카메라 기반의 오프라인 매장 방문객 분석 서비스</b>입니다. 하루 약 500만 건의 트래픽을 처리하는 서비스로, 피플 카운팅, 동선 분석, 성별 연령, 관심 영역 등 다양한 데이터를 클라이언트에게 제공합니다."
           en: "CPRO is a CCTV security company, and RetailTrend is CPRO's retail division, providing an AI camera-based offline store visitor analysis service. It provides various data such as people counting, path analysis, gender age ratio, and region of interest to clients."
 
       - type: link_buttons

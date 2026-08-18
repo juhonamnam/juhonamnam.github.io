@@ -21,13 +21,13 @@ data:
     brief_description:
       - type: list
         inner:
-          - ko: "하루 약 500만 건의 트래픽을 처리하는 서비스의 유지보수 및 신규 기능 개발"
+          - ko: "<b>하루 약 500만 건의 트래픽</b>을 처리하는 서비스의 유지보수 및 신규 기능 개발"
             en: "Maintenance and new feature development for a service that handles approximately 5 million traffic per day"
           - ko: "카메라 기반 <b>Re-Identification (ReID) AI 모델 연구 및 개발</b>"
             en: "Camera-based Re-Identification (ReID) AI Model Research and Development"
           - ko: "<b>데이터 안정성 개선</b> 및 <b>파이프라인 구축</b>"
             en: "Data Reliability Improvement and Pipeline Construction"
-          - ko: "서비스 최적화 및 <b>운영 비용 절감</b>"
+          - ko: "서비스 최적화 및 <b>운영 비용 절감</b> (AWS S3 비용 약 40% 절감)"
             en: "Service Optimization and Cost Reduction"
     description:
       - type: paragraph
@@ -62,8 +62,8 @@ data:
             en: "Design AI model architecture that separates real-time and non-real-time inference"
           - ko: "자체적인 <b>데이터 수집, 라벨링 및 학습 시스템 구축</b>"
             en: "Building systems for data collection, labeling, and training"
-          - ko: "객관적인 지표로 모델 성능 평가"
-            en: "Model performance evaluation and improvement using objective metrics"
+          - ko: "Benchmark, AUC Curve, mAP, cluster analysis, GradCAM 등 다양한 <b>모델 성능 평가 지표</b>를 활용한 모델 성능 분석"
+            en: "Analyze model performance using various model performance evaluation metrics such as Benchmark, AUC Curve, mAP, cluster analysis, GradCAM"
           - ko: "카메라 내부의 GPU 기반 임베디드/엣지 환경에서 동작하도록 <b>AI 모델을 포팅</b>"
             en: "Porting AI models to run in GPU-based embedded/edge environments inside cameras"
 
@@ -96,10 +96,10 @@ data:
         inner:
           - ko: "팀내 첫 <b>자체 AI 모델 개발 프로젝트 전담</b>"
             en: "Led the company’s first in-house AI model development project"
-          - ko: "다양한 문제 상황에 대해 <b>구조적이고 체계적인 접근으로 문제 해결</b>"
-            en: "Solved various problems with a structured and systematic approach"
-          - ko: "AWS S3 최적화로 약 <b>40% 스토리지 비용 절감</b>"
-            en: "Reduced storage costs by approximately 40% by optimizing AWS S3"
+          - ko: "다양한 영역의 데이터 비일치 문제를 <b>데이터 구조 개선</b>을 통해 해결"
+            en: "Resolved various data inconsistencies through data structure improvements"
+          - ko: "서비스 확장에 따른 AWS S3 스토리지 비용 증가 문제를 정책 개선을 통해 <b>약 40% 절감</b>"
+            en: "Reduced AWS S3 storage costs by approximately 40% through policy improvements in response to service expansion"
 
   - period: "2021.12 - 2023.01"
     company: "J&FIRST"
@@ -122,12 +122,12 @@ data:
         inner:
           - ko: "<b>LINE Plus 외주</b> 프론트엔드 개발자"
             en: "Outsourced Frontend Developer for LINE Plus"
-          - ko: "관리자용 웹 서비스 개발 및 유지보수"
-            en: "Development and maintenance of admin web services"
-          - ko: "<b>최적화</b>를 통한 사용자 경험 개선"
-            en: "Improving user experience through optimization"
+          - ko: "페이지 로딩 시간 개선 (2400ms → 1300ms)"
+            en: "Improved page loading time (2400ms → 1300ms)"
           - ko: "소스코드 관리 정책 수립하여 <b>개발 생산성 향상</b>"
             en: "Enhancing development productivity by establishing source code management policies"
+          - ko: "신규 기술 도입 (Next.js, GraphQL)"
+            en: "Introduced new technologies (Next.js, GraphQL)"
     description:
       - type: paragraph
         inner:
@@ -177,9 +177,9 @@ data:
 
       - type: list
         inner:
-          - ko: "자체 개발한 웹 페이지의 초기 로드 시간 약 <b>50% 단축</b>"
-            en: "Reducing website initial load times by 50%"
-          - ko: "<b>Next.js 프레임워크를 도입</b>하여 Multi-page Application 및 SSR의 장점 활용 (code splitting 및 초기 로드 시간 단축)"
-            en: "Implemented Next.js framework to leverage the benefits of Multi-page Application and SSR (code splitting and reduced initial load times)"
-          - ko: "사내 <b>공통 소스코드 정책 수립</b>하여 개발 생산성 향상"
-            en: "Established common source code policies to enhance development productivity"
+          - ko: "페이지 로딩 시간 개선 (2400ms → 1300ms)"
+            en: "Improved page loading time (2400ms → 1300ms)"
+          - ko: "소스코드 관리 정책 수립하여 <b>개발 생산성 향상</b>"
+            en: "Enhancing development productivity by establishing source code management policies"
+          - ko: "신규 기술 도입 (Next.js, GraphQL)"
+            en: "Introduced new technologies (Next.js, GraphQL)"

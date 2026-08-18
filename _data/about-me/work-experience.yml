@@ -78,8 +78,8 @@ data:
             en: "Data processing pipeline:"
           - sublist: true
             inner:
-              - ko: "카메라의 raw 데이터 ➡ 10분, 1시간, 1일 등의 시간 단위 집계 데이터 생성 ➡ 웹 UI에 시각화 및 report 생성"
-                en: "Camera raw data ➡ Generate aggregated data in time units such as 10 minutes, 1 hour, 1 day ➡ Visualize on web UI and generate reports"
+              - ko: "카메라 데이터에서 사용자에게 유의미한 정보까지의 과정을 처리하는 <b>데이터 파이프라인 설계 및 구현</b>"
+                en: "Design and implement a data pipeline that processes camera data into meaningful information for users"
           - ko: "카메라 네트워크 지연, 설정값 변경, 데이터 복구 등의 예외적인 상황에 대응하는 <b>견고한 데이터 파이프라인 설계 및 구현</b>"
             en: "Design and implement a robust data pipeline that handles exceptional situations such as camera network delays, configuration changes, and data recovery"
           - ko: "<b>이벤트 기반과 스케줄 기반</b> 데이터 처리 시스템 설계 및 구현"

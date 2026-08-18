@@ -21,8 +21,8 @@ data:
     brief_description:
       - type: list
         inner:
-          - ko: "<b>하루 약 500만 건의 트래픽</b>을 처리하는 서비스의 유지보수 및 신규 기능 개발"
-            en: "Maintenance and new feature development for a service that handles approximately 5 million traffic per day"
+          - ko: "<b>하루 약 500만 건의 트래픽</b>을 처리하는 서비스의 데이터 컨텐츠 관리 및 개선"
+            en: "Data content management and improvement of a service that handles approximately 5 million traffic per day"
           - ko: "카메라 기반 <b>Re-Identification (ReID) AI 모델 연구 및 개발</b>"
             en: "Camera-based Re-Identification (ReID) AI Model Research and Development"
           - ko: "<b>데이터 안정성 개선</b> 및 <b>파이프라인 구축</b>"

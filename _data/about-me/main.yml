@@ -45,14 +45,24 @@ contacts:
     icon: "fab fa-fw fa-github"
     value: "github.com/juhonamnam"
     url: "https://github.com/juhonamnam"
+
 skills:
   - python
   - pytorch
+  - langgraph
   - typescript
   - go
   - docker
   - aws
   - react
+  - nextjs
+  - express
+
+tools:
+  - vscode
+  - neovim
+  - pi
+
 educations:
   - title:
       ko: "수학교육과 석사 학위 (중퇴)"

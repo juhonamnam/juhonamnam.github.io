@@ -57,3 +57,11 @@ data:
     name: "LangGraph"
   chroma:
     name: "Chroma"
+  neovim:
+    name: "Neovim"
+    url: "https://github.com/juhonamnam/kickstart.nvim"
+  pi:
+    name: "Pi Coding Agent"
+    url: "https://github.com/juhonamnam/pi-agent-preset"
+  vscode:
+    name: "VS Code"

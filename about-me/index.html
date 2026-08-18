@@ -36,15 +36,25 @@ use_qrcode: true
       <!--excerpt open-->
       {%- include about-me/description.html description=site.data.about-me.main.description language=language -%}
       <!--excerpt close-->
-      <p>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-box">
+        <h2>Skills</h2>
         {%- for skill in site.data.about-me.main.skills -%}
           <small class="badge">{% include spec-icon.html spec_key=skill %}</small>
           {{- " " -}}
         {%- endfor -%}
-      </p>
-    </div>
+      </div>
 
-    <div class="info-grid">
+      <div class="info-box">
+        <h2>Tools</h2>
+        {%- for tool in site.data.about-me.main.tools -%}
+          <small class="badge">{% include spec-icon.html spec_key=tool %}</small>
+          {{- " " -}}
+        {%- endfor -%}
+      </div>
+
       <div class="info-box">
         <h2>Education</h2>
         {%- for education in site.data.about-me.main.educations -%}
@@ -114,7 +124,7 @@ use_qrcode: true
         {%- endfor -%}
       </div>
     </div>
-    
+
     <div>
       <h2>Technical Activities</h2>
       {%- for technical_activity in site.data.about-me.main.technical_activities -%}

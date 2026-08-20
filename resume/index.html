@@ -52,10 +52,20 @@ use_qrcode: true
 
       <div class="info-box">
         <h2>Tools</h2>
-        {%- for tool in site.data.about-me.main.tools -%}
-          <small class="badge">{% include spec-icon.html spec_key=tool %}</small>
-          {{- " " -}}
-        {%- endfor -%}
+        <div class="info-item">
+          Editor:{{- " " -}}
+          {%- for editor in site.data.about-me.main.tools.editor -%}
+            <small class="badge">{% include spec-icon.html spec_key=editor %}</small>
+            {{- " " -}}
+          {%- endfor -%}
+        </div>
+        <div class="info-item">
+          Agent:{{- " " -}}
+          {%- for agent in site.data.about-me.main.tools.agent -%}
+            <small class="badge">{% include spec-icon.html spec_key=agent %}</small>
+            {{- " " -}}
+          {%- endfor -%}
+        </div>
       </div>
 
       <div class="info-box">

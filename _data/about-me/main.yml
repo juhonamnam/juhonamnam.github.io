@@ -52,6 +52,7 @@ skills:
   - langgraph
   - typescript
   - go
+  - linux
   - docker
   - aws
   - react
@@ -59,9 +60,11 @@ skills:
   - express
 
 tools:
-  - vscode
-  - neovim
-  - pi
+  editor:
+    - neovim
+    - vscode
+  agent:
+    - pi
 
 educations:
   - title:

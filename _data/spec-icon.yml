@@ -65,3 +65,5 @@ data:
     url: "https://github.com/juhonamnam/pi-agent-preset"
   vscode:
     name: "VS Code"
+  linux:
+    name: "Linux"

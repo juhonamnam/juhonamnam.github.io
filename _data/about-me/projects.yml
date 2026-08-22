@@ -214,8 +214,8 @@ data:
     brief_description:
       - type: list
         inner:
-          - ko: "실제 결혼식을 위해 제작한 <b>React 기반 맞춤형 모바일 청첩장 템플릿</b> (2026년 6월 기준 <b>fork 100개 돌파</b>)"
-            en: "React-based custom mobile wedding invitation template developed for my own wedding (over 100 forks as of June 2026)"
+          - ko: "실제 결혼식을 위해 제작한 <b>React 기반 맞춤형 모바일 청첩장 템플릿</b> (2026년 6월 기준 <b>GitHub 100+ fork 기록</b>)"
+            en: "React-based custom mobile wedding invitation template developed for my own wedding (over 100 forks on GitHub as of June 2026)"
     description:
       - type: link_buttons
         inner:
@@ -247,8 +247,8 @@ data:
             en: "Deployment on Naver Cloud Platform along with connecting domain and SSL certification"
           - ko: "Naver Map API, Kakao SDK 등 <b>외부 API 연동</b>"
             en: "Integration with external APIs such as Naver Map API and Kakao SDK"
-          - ko: "2026년 6월 기준 <b>fork 100개 돌파</b>"
-            en: "<b>Achieved over 100 forks</b> as of June 2026"
+          - ko: "2026년 6월 기준 <b>GitHub 100+ fork 기록</b>"
+            en: "Over 100 forks on GitHub as of June 2026"
 
   - title:
       ko: "가상화폐 자동매매 프로그램"

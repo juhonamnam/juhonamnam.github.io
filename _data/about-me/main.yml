@@ -30,8 +30,8 @@ title:
 description:
   - type: paragraph
     inner:
-      ko: "<b>수학적 배경</b>과 탄탄한 <b>소프트웨어 엔지니어링 역량</b>을 바탕으로, 이제는 <b>AI 기술</b>을 통해 실제 세상의 문제를 해결하는 데 집중하고 있습니다. 서비스 개발부터 AI 모델 연구 및 개발까지 폭넓은 경험을 쌓아왔으며, 현업, 대회 및 개인 프로젝트를 통해 <b>데이터 분석과 모델링 능력</b>을 증명해 보였습니다. 복잡한 문제를 수식과 코드로 풀어내며 가치를 창출하는 <b>AI 엔지니어</b>로 성장하고 있습니다."
-      en: "With a strong foundation in mathematics and solid software engineering skills, I am now focused on solving real-world problems through AI technology. I have gained extensive experience in service development as well as AI model research and development, demonstrating my data analysis and modeling capabilities through professional work, competitions, and personal projects. I am growing as an AI engineer who creates value by solving complex problems with equations and code."
+      ko: "<b>수학적 배경</b>과 <b>소프트웨어 엔지니어링 역량</b>을 바탕으로, AI 기술을 실제 서비스에 적용하는 <b>AI 엔지니어</b>로 성장하고 있습니다. 서비스 백엔드, 데이터 파이프라인, AI 모델 개발까지 폭넓은 경험을 쌓았으며, 복잡한 문제를 구조화하고 <b>안정적이고 확장 가능한 시스템으로 구현하는 것</b>에 강점이 있습니다. 최근에는 LLM과 Agent까지 기술 영역을 확장하며 AI와 소프트웨어 엔지니어링을 연결하는 데 집중하고 있습니다."
+      en: "I am growing as an AI engineer, leveraging my mathematical background and software engineering skills to apply AI technologies to real-world services. I have gained extensive experience in service backend, data pipelines, and AI model development, with a strong ability to structure complex problems and implement them into stable and scalable systems. Recently, I have been expanding my technical expertise to include LLMs and Agents, focusing on bridging the gap between AI and software engineering."
 contacts:
   - label: "Email"
     icon: "fas faa-fw fa-envelope"

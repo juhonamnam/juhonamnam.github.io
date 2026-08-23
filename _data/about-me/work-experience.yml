@@ -114,6 +114,7 @@ data:
       - spring
       - mysql
       - nginx
+      - java
     affiliation:
       ko: "개발팀"
       en: "Development Team"

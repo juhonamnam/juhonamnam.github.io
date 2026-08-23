@@ -67,3 +67,5 @@ data:
     name: "VS Code"
   linux:
     name: "Linux"
+  java:
+    name: "Java"

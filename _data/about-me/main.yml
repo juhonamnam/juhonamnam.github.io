@@ -48,16 +48,16 @@ contacts:
 
 skills:
   - python
-  - pytorch
-  - langgraph
   - typescript
   - go
   - linux
   - docker
   - aws
+  - express
+  - pytorch
+  - langgraph
   - react
   - nextjs
-  - express
 
 tools:
   editor:

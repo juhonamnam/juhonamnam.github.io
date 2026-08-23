@@ -155,9 +155,11 @@ use_qrcode: true
             <div class="preview-detail">
               <h3>{{ project.title[language] }}</h3>
               {%- if project.team -%}
-                <div>
-                  {{- site.data.about-me.main.translations.team_name[language] -}}: {{ project.team.name[language] }}
-                </div>
+                {%- if project.team.name -%}
+                  <div>
+                    {{- site.data.about-me.main.translations.team_name[language] -}}: {{ project.team.name[language] }}
+                  </div>
+                {%- endif -%}
                 <div>
                   {{- site.data.about-me.main.translations.team_size[language] -}}: {{ project.team.size }}
                 </div>

@@ -94,7 +94,7 @@ data:
 
       - type: list
         inner:
-          - ko: "팀내 첫 <b>자체 AI 모델 개발 프로젝트 전담</b>"
+          - ko: "팀 내 첫 <b>자체 AI 모델 개발 프로젝트 전담</b>"
             en: "Led the company’s first in-house AI model development project"
           - ko: "다양한 영역의 데이터 비일치 문제를 <b>데이터 구조 개선</b>을 통해 해결"
             en: "Resolved various data inconsistencies through data structure improvements"

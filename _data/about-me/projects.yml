@@ -106,8 +106,10 @@ data:
         orientation: landscape
       - url: "/images/22/comparison-diagram.jpg"
         orientation: landscape
+    team:
+      size: 1
     period:
-      period_str: "2024.07 ~"
+      period_str: "2024.07 ~ 2026.05"
       type: development
     specs:
       - python
@@ -197,8 +199,10 @@ data:
         orientation: portrait
       - url: "/images/projects/wedding-invitation-6.png"
         orientation: portrait
+    team:
+      size: 1
     period:
-      period_str: "2024.03 ~"
+      period_str: "2024.03 ~ 2024.09"
       type: development
     status:
       ko: "오픈소스"
@@ -234,8 +238,8 @@ data:
 
       - type: paragraph
         inner:
-          ko: "실제 저의 결혼식을 위해 직접 제작한 <b>React 기반 모바일 청첩장</b>입니다. 기존 서비스 디자인의 제약을 극복하기 위해 UI를 직접 설계하고, 도메인을 구입하여 <b>Naver Cloud Platform에 배포</b>해 실제로 사용했습니다. 단순한 개인 용도에서 출발했지만 다른 사용자들의 문의가 들어오면서 <b>오픈소스 템플릿</b>으로 전환했습니다. 현재 재사용성과 확장성을 고려해 지속적으로 개선하고 있습니다."
-          en: "This is a React-based mobile wedding invitation that I personally developed for my own wedding. To overcome the design limitations of existing services, I designed the UI myself, purchased a domain, and deployed it on Naver Cloud Platform for actual use. Although it started as a simple personal project, it was converted into an open-source template due to inquiries from other users. I am continuously improving it with reusability and scalability in mind."
+          ko: "실제 저의 결혼식을 위해 직접 제작한 <b>React 기반 모바일 청첩장</b>입니다. 기존 서비스 디자인의 제약을 극복하기 위해 UI를 직접 설계하고, 도메인을 구입하여 <b>Naver Cloud Platform에 배포</b>해 실제로 사용했습니다. 단순한 개인 용도에서 출발했지만 다른 사용자들의 문의가 들어오면서 <b>오픈소스 템플릿</b>으로 전환했습니다. 현재는 네이버 및 카카오 API 업데이트 시  이에 대응하는 정도로만 유지하고 있습니다."
+          en: "This is a <b>React-based mobile wedding invitation</b> that I personally developed for my own wedding. To overcome the limitations of existing service designs, I designed the UI myself and deployed it on <b>Naver Cloud Platform</b> after purchasing a domain. Although it started as a personal project, due to inquiries from other users, I transitioned it into an <b>open-source template</b>. Currently, I am maintaining it to accommodate updates from Naver and Kakao APIs."
 
       - type: list
         inner:
@@ -262,6 +266,8 @@ data:
         orientation: portrait
       - url: "/images/projects/trade-4.svg"
         orientation: landscape
+    team:
+      size: 1
     period:
       period_str: "2021.05 ~ 2023.07"
       type: development

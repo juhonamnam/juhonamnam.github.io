@@ -98,6 +98,8 @@ data:
             en: "Led the company’s first in-house AI model development project"
           - ko: "다양한 영역의 데이터 비일치 문제를 <b>데이터 구조 개선</b>을 통해 해결"
             en: "Resolved various data inconsistencies through data structure improvements"
+          - ko: "DB 쿼리 최적화 및 애플리케이션 성능 최적화를 통해 <b>병목 현상 해결</b>"
+            en: "Resolved bottlenecks through database query optimization and application performance tuning"
           - ko: "서비스 확장에 따른 AWS S3 스토리지 비용 증가 문제를 정책 개선을 통해 <b>약 40% 절감</b>"
             en: "Reduced AWS S3 storage costs by approximately 40% through policy improvements in response to service expansion"
 

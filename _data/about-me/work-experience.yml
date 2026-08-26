@@ -21,14 +21,14 @@ data:
     brief_description:
       - type: list
         inner:
-          - ko: "<b>하루 약 500만 건의 트래픽</b>을 처리하는 서비스의 데이터 컨텐츠 관리 및 개선"
-            en: "Data content management and improvement of a service that handles approximately 5 million traffic per day"
-          - ko: "카메라 기반 <b>Re-Identification (ReID) AI 모델 연구 및 개발</b>"
-            en: "Camera-based Re-Identification (ReID) AI Model Research and Development"
-          - ko: "<b>데이터 안정성 개선</b> 및 <b>파이프라인 구축</b>"
-            en: "Data Reliability Improvement and Pipeline Construction"
-          - ko: "서비스 최적화 및 <b>운영 비용 절감</b> (AWS S3 비용 약 40% 절감)"
-            en: "Service Optimization and Cost Reduction"
+          - ko: "<b>하루 약 500만 건의 트래픽</b>을 처리하는 서비스의 데이터 파이프라인 관리 및 개선"
+            en: "Data pipeline management and improvement of a service that handles approximately 5 million traffic per day"
+          - ko: "카메라 기반 <b>Re-Identification (ReID) AI 모델 연구 개발 및 온디바이스 배포</b>"
+            en: "Camera-based Re-Identification (ReID) AI Model Research, Development and on-device deployment"
+          - ko: "DB 쿼리 튜닝, 아키텍처 재설계 등을 통한 <b>서비스 장애 및 병목 현상 해결</b>"
+            en: "Resolved service outages and bottlenecks through query optimization and architectural redesign"
+          - ko: "<b>서비스 운영 비용 절감</b> (AWS S3 비용 약 40% 절감)"
+            en: "Service Cost Reduction"
     description:
       - type: paragraph
         inner:
@@ -64,7 +64,7 @@ data:
             en: "Building systems for data collection, labeling, and training"
           - ko: "Benchmark, AUC Curve, mAP, cluster analysis, GradCAM 등 다양한 <b>모델 성능 평가 지표</b>를 활용한 모델 성능 분석"
             en: "Analyze model performance using various model performance evaluation metrics such as Benchmark, AUC Curve, mAP, cluster analysis, GradCAM"
-          - ko: "카메라 내부의 GPU 기반 임베디드/엣지 환경에서 동작하도록 <b>AI 모델을 포팅</b>"
+          - ko: "카메라 내부의 GPU 기반 임베디드/엣지 환경에서 동작하도록 <b>AI 모델 온디바이스 포팅</b>"
             en: "Porting AI models to run in GPU-based embedded/edge environments inside cameras"
 
       - type: paragraph
@@ -96,12 +96,10 @@ data:
         inner:
           - ko: "팀 내 첫 <b>자체 AI 모델 개발 프로젝트 전담</b>"
             en: "Led the company’s first in-house AI model development project"
-          - ko: "다양한 영역의 데이터 비일치 문제를 <b>데이터 구조 개선</b>을 통해 해결"
-            en: "Resolved various data inconsistencies through data structure improvements"
-          - ko: "DB 쿼리 최적화 및 애플리케이션 성능 최적화를 통해 <b>병목 현상 해결</b>"
-            en: "Resolved bottlenecks through database query optimization and application performance tuning"
-          - ko: "서비스 확장에 따른 AWS S3 스토리지 비용 증가 문제를 정책 개선을 통해 <b>약 40% 절감</b>"
-            en: "Reduced AWS S3 storage costs by approximately 40% through policy improvements in response to service expansion"
+          - ko: "DB 쿼리 튜닝, 아키텍처 재설계 등을 통한 <b>서비스 장애 및 병목 현상 해결</b>"
+            en: "Resolved service outages and bottlenecks through query optimization and architectural redesign"
+          - ko: "<b>서비스 운영 비용 절감</b> (AWS S3 비용 약 40% 절감)"
+            en: "Service Cost Reduction"
 
   - period: "2021.12 - 2023.01"
     company: "J&FIRST"

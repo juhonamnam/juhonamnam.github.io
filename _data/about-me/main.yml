@@ -30,8 +30,8 @@ title:
 description:
   - type: paragraph
     inner:
-      ko: "<b>수학적 배경</b>과 <b>소프트웨어 엔지니어링 역량</b>을 바탕으로, AI 기술을 실제 서비스에 적용하는 <b>AI 엔지니어</b>로 성장하고 있습니다. 서비스 백엔드, 데이터 파이프라인, AI 모델 개발까지 폭넓은 경험을 쌓아가고 있습니다"
-      en: "I am growing as an <b>AI Engineer</b> who applies AI technology to real-world services, leveraging my <b>mathematical background</b> and <b>software engineering skills</b>. I am gaining extensive experience in service backend, data pipelines, and AI model development."
+      ko: "수학을 전공하며 AI 모델 학습의 수학적 원리에 흥미를 느낀 것을 시작으로 프로그래밍에 관심을 갖게 되었습니다. 이론으로 배웠던 수학적 개념이 실제 문제 해결에 활용될 수 있다는 점이 큰 동기부여가 되었고, 이를 계기로 학원이나 부트캠프의 도움 없이 프로그래밍을 독학하며 진로를 전환했습니다. 이후 프론트엔드와 백엔드 개발을 거쳐 서비스의 설계부터 구현, 운영까지 경험하는 소프트웨어 엔지니어로 성장해 왔습니다."
+      en: "My interest in programming began with my fascination for the mathematical principles behind AI model training, which I studied during my mathematics major. The realization that theoretical mathematical concepts could be applied to solve real-world problems served as a significant motivation for me. This led me to self-study programming without the aid of academies or bootcamps, ultimately transitioning my career path. Since then, I have grown into a software engineer with experience in both frontend and backend development, gaining expertise in designing, implementing, and operating services."
 contacts:
   - label: "Email"
     icon: "fas faa-fw fa-envelope"
@@ -117,9 +117,9 @@ technical_activities:
             en: "Experience participating in Open Source Developer Competition, Side Impact, and Kaggle Competition"
           - sublist: true
             inner:
-              - ko: "Kaggle 대회 \"NFL Big Data Bowl 2026 - Prediction\"에서 <b>상위 7%</b> 기록 (Ranked 118/1899)"
+              - ko: "Kaggle 대회 \"NFL Big Data Bowl 2026 - Prediction\"에서 상위 7% 기록 (Ranked 118/1899)"
                 en: "Ranked 118/1899 (Top 7%) in the Kaggle competition \"NFL Big Data Bowl 2026 - Prediction\""
-              - ko: "Kaggle 대회 \"NVIDIA Nemotron Model Reasoning Challenge\"에서 <b>LLM 모델 fine-tuning</b> 경험 (Ranked 2225/4182)"
+              - ko: "Kaggle 대회 \"NVIDIA Nemotron Model Reasoning Challenge\"에서 LLM 모델 fine-tuning 경험 (Ranked 2225/4182)"
                 en: "Gained experience in fine-tuning the Nemotron model and improving model performance through the Kaggle competition \"NVIDIA Nemotron Model Reasoning Challenge\" (Ranked 2225/4182)"
   - title:
       ko: "기술 블로그 운영"
@@ -137,5 +137,5 @@ technical_activities:
     description:
       - type: list
         inner:
-          - ko: "최대 200명 규모의 IT 스터디 및 정보 공유 커뮤니티에서 <b>운영진</b>으로 활동"
+          - ko: "최대 200명 규모의 IT 스터디 및 정보 공유 커뮤니티에서 운영진으로 활동"
             en: "Active as an administrator in an IT study and information sharing community with up to 200 members"

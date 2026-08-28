@@ -419,7 +419,6 @@
       border-color: $muted-text-color;
       @media print {
         border-bottom: 1px solid $muted-text-color;
-        margin: 1em 0;
       }
     }
     .qrcode {

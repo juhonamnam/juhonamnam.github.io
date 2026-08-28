@@ -3,6 +3,7 @@ title: Resume
 hide_title: true
 sitemap: false
 use_qrcode: true
+published: false
 ---
 
 {%- assign language = "ko" -%}
@@ -12,15 +13,6 @@ use_qrcode: true
     <div class="horizontal-spacer"></div>
     <div class="intro">
       <img src="/images/profile.jpg" alt="" />
-
-      <a href="{{ site.url }}{{ page.url }}" class="print-only">
-        <div class="qrcode"
-            data-text="{{ site.url }}{{ page.url }}"
-            data-margin="2"
-            data-color-dark="#000000"
-            data-color-light="#ffffff">
-        </div>
-      </a>
 
       {%- assign title = site.data.about-me.main.name[language] -%}
       <div class="header-with-subheader">
@@ -39,35 +31,15 @@ use_qrcode: true
       <!--excerpt open-->
       {%- include about-me/description.html description=site.data.about-me.main.description language=language -%}
       <!--excerpt close-->
-    </div>
-
-    <div class="info-grid">
-      <div class="info-box">
-        <h2>Skills</h2>
+      <p>
         {%- for skill in site.data.about-me.main.skills -%}
           <small class="badge">{% include spec-icon.html spec_key=skill %}</small>
           {{- " " -}}
         {%- endfor -%}
-      </div>
+      </p>
+    </div>
 
-      <div class="info-box">
-        <h2>Tools</h2>
-        <div class="info-item">
-          Editor:{{- " " -}}
-          {%- for editor in site.data.about-me.main.tools.editor -%}
-            <small class="badge">{% include spec-icon.html spec_key=editor %}</small>
-            {{- " " -}}
-          {%- endfor -%}
-        </div>
-        <div class="info-item">
-          Agent:{{- " " -}}
-          {%- for agent in site.data.about-me.main.tools.agent -%}
-            <small class="badge">{% include spec-icon.html spec_key=agent %}</small>
-            {{- " " -}}
-          {%- endfor -%}
-        </div>
-      </div>
-
+    <div class="info-grid">
       <div class="info-box">
         <h2>Education</h2>
         {%- for education in site.data.about-me.main.educations -%}

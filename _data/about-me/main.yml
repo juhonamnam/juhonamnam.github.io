@@ -58,13 +58,9 @@ skills:
   - langgraph
   - react
   - nextjs
-
-tools:
-  editor:
-    - neovim
-    - vscode
-  agent:
-    - pi
+  - neovim
+  - vscode
+  - pi
 
 educations:
   - title:

@@ -5,7 +5,7 @@
 {%- assign spec_url = site.data.spec-icon.data[spec_key].url -%}
 
 {%- if post_id -%}
-  <a href="{{ post_id | prepend: site.data.spec-icon.post_base_url }}">
+  <a href="{{site.url}}{{ post_id | prepend: site.data.spec-icon.post_base_url }}">
 {%- elsif spec_url -%}
   <a href="{{ spec_url }}">
 {%- endif -%}

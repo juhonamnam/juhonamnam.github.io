@@ -30,8 +30,8 @@ title:
 description:
   - type: paragraph
     inner:
-      ko: "수학을 전공하며 AI 모델 학습의 수학적 원리에 흥미를 느낀 것을 시작으로 프로그래밍에 관심을 갖게 되었습니다. 이론으로 배웠던 수학적 개념이 실제 문제 해결에 활용될 수 있다는 점이 큰 동기부여가 되었고, 이를 계기로 학원이나 부트캠프의 도움 없이 프로그래밍을 독학하며 진로를 전환했습니다. 이후 프론트엔드와 백엔드 개발을 거쳐 서비스의 설계부터 구현, 운영까지 경험하는 소프트웨어 엔지니어로 성장해 왔습니다."
-      en: "My interest in programming began with my fascination for the mathematical principles behind AI model training, which I studied during my mathematics major. The realization that theoretical mathematical concepts could be applied to solve real-world problems served as a significant motivation for me. This led me to self-study programming without the aid of academies or bootcamps, ultimately transitioning my career path. Since then, I have grown into a software engineer with experience in both frontend and backend development, gaining expertise in designing, implementing, and operating services."
+      ko: "수학을 전공하며 AI 모델 학습의 수학적 원리에 흥미를 느낀 것을 시작으로 프로그래밍에 관심을 갖게 되었습니다. 이론으로 배웠던 수학적 개념이 실제 문제 해결에 활용될 수 있다는 점이 큰 동기부여가 되었고, 이를 계기로 학원이나 부트캠프의 도움 없이 프로그래밍을 독학하며 진로를 전환했습니다. 이후 프론트엔드와 백엔드 개발을 거쳐 서비스의 설계부터 구현, 운영까지 경험을 쌓으며 소프트웨어 엔지니어로 성장했습니다."
+      en: "My interest in programming began with my fascination for the mathematical principles behind AI model training, which I studied during my mathematics major. The realization that the mathematical concepts I learned in theory could be applied to solve real-world problems was a significant motivator for me. This led me to self-study programming without the aid of academies or bootcamps, ultimately transitioning my career path. Since then, I have gained experience in both frontend and backend development, growing as a software engineer through hands-on involvement in designing, implementing, and operating services."
 contacts:
   - label: "Email"
     icon: "fas faa-fw fa-envelope"

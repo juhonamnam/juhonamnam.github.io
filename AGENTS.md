@@ -24,6 +24,7 @@ This project is the personal website and blog of **Juho Nam (남주호)**, a Sof
 - `_sass/`: SCSS files. Custom overrides are in `_sass/custom/`.
 - `assets/`: Static assets such as images (in `images/`), CSS, and JS.
 - `blog/` & `about-me/`: Top-level directories for specific site sections.
+- `resume/`: Unpublished resume content used for generating the PDF version of the resume.
 
 ## Development Conventions
 

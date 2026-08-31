@@ -2,7 +2,7 @@ data:
   - period: "2023.02 - Present"
     company: "CPRO"
     job_title:
-      ko: "웹 풀스텍 & AI 엔지니어"
+      ko: "백엔드 & AI 엔지니어"
       en: "Web Full-stack & AI Engineer"
     specs:
       - typescript
@@ -21,14 +21,14 @@ data:
     brief_description:
       - type: list
         inner:
-          - ko: "하루 약 500만 건의 트래픽을 처리하는 서비스의 데이터 파이프라인 관리 및 개선"
-            en: "Data pipeline management and improvement of a service that handles approximately 5 million traffic per day"
+          - ko: "하루 약 500만 건의 트래픽을 처리하는 서비스의 데이터 파이프라인 및 데이터 관리 시스템 개발"
+            en: "Developed data pipeline and data management system of a service that handles approximately 5 million traffic per day"
           - ko: "DB 쿼리 튜닝, 아키텍처 재설계 등을 통한 서비스 장애 및 병목 현상 해결"
             en: "Resolved service outages and bottlenecks through query optimization and architectural redesign"
           - ko: "서비스 운영 비용 절감 (AWS S3 비용 약 40% 절감)"
             en: "Service Cost Reduction"
-          - ko: "카메라 기반 Re-Identification (ReID) AI 모델 연구 개발 및 온디바이스 배포"
-            en: "Camera-based Re-Identification (ReID) AI Model Research, Development and on-device deployment"
+          - ko: "카메라 기반 Re-Identification AI 모델 연구 개발 및 온디바이스 배포"
+            en: "Camera-based Re-Identification AI Model Research, Development and on-device deployment"
     description:
       - type: paragraph
         inner:

@@ -78,7 +78,7 @@ use_qrcode: true
 
       <div class="work-experience-timeline">
         {%- for work_experience in site.data.about-me.work-experience.data -%}
-          <div class="work-experience-timeline-content-wrapper">
+          <div class="work-experience-timeline-content-wrapper avoid-page-break">
             <div class="work-experience-timeline-label">
               <div class="work-experience-timeline-period">
                 <span>{{ work_experience.period }}</span>
@@ -98,16 +98,7 @@ use_qrcode: true
                     {%- endunless -%}
                   {%- endfor -%}
                 </div>
-                <input type="checkbox" id="expand-work-experience-{{ forloop.index }}" class="expand-toggle" />
-                <div class="expandable">
-                  <div class="expandable-content">
-                    {%- include about-me/description.html description=work_experience.description language=language -%}
-                  </div>
-                </div>
-                <label for="expand-work-experience-{{ forloop.index }}" class="expand-label web-only">
-                  <span class="expand-more">자세히 보기</span>
-                  <span class="expand-less">간략히 보기</span>
-                </label>
+                {%- include about-me/description.html description=work_experience.description language=language -%}
               </div>
             </div>
           </div>
@@ -116,7 +107,7 @@ use_qrcode: true
     </div>
 
     <div>
-      <h2>Technical Activities</h2>
+      <h2>Other Experiences</h2>
       {%- for technical_activity in site.data.about-me.main.technical_activities -%}
         <b>{{ technical_activity.title[language] }}</b>
         {%- if technical_activity.period -%}
@@ -130,18 +121,18 @@ use_qrcode: true
     </div>
 
     <div class="projects">
-      <h2>Projects</h2>
+      <hr />
       {%- for project in site.data.about-me.projects.data -%}
         {%- if project.hide == true -%}
           {%- continue -%}
         {%- endif -%}
-        <div class="project">
-          <div class="preview avoid-page-break">
+        <div class="project avoid-page-break">
+          <div class="preview">
             <div class="image-container" onclick="openImageModal('{{ project.images[0].url }}', '{{ project.images[0].orientation }}')">
               <img class="{{ project.images[0].orientation }}" src="{{ project.images[0].url }}" alt="" />
             </div>
             <div class="preview-detail">
-              <h3>{{ project.title[language] }}</h3>
+              <h3>Project: {{ project.title[language] }}</h3>
               {%- if project.team -%}
                 {%- if project.team.name -%}
                   <div>
@@ -174,27 +165,18 @@ use_qrcode: true
               </div>
             </div>
           </div>
-          <input type="checkbox" id="expand-project-{{ forloop.index }}" class="expand-toggle" />
-          <div class="expandable">
-            <div class="expandable-content">
-              {%- if project.images.size > 1 -%}
-                <div class="image-list-container">
-                  {%- for image in project.images -%}
-                    {%- unless forloop.first -%}
-                      <div class="image-container" onclick="openImageModal('{{ image.url }}', '{{ image.orientation }}')">
-                        <img class="{{ image.orientation }}" src="{{ image.url }}" alt="" />
-                      </div>
-                    {%- endunless -%}
-                  {%- endfor -%}
-                </div>
-              {%- endif -%}
-              <div>{% include about-me/description.html description=project.description language=language %}</div>
+          {%- if project.images.size > 1 -%}
+            <div class="image-list-container">
+              {%- for image in project.images -%}
+                {%- unless forloop.first -%}
+                  <div class="image-container" onclick="openImageModal('{{ image.url }}', '{{ image.orientation }}')">
+                    <img class="{{ image.orientation }}" src="{{ image.url }}" alt="" />
+                  </div>
+                {%- endunless -%}
+              {%- endfor -%}
             </div>
-          </div>
-          <label for="expand-project-{{ forloop.index }}" class="expand-label web-only">
-            <span class="expand-more">자세히 보기</span>
-            <span class="expand-less">간략히 보기</span>
-          </label>
+          {%- endif -%}
+          <div>{% include about-me/description.html description=project.description language=language %}</div>
         </div>
         {%- unless forloop.last -%}
           <hr />

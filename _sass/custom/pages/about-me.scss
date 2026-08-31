@@ -3,7 +3,7 @@
   flex-direction: column;
 
   div.horizontal-spacer {
-    height: 1em;
+    height: 0.6em;
   }
 
   .qrcode {
@@ -189,7 +189,7 @@
     $work-experience-timeline-period-width: 7.8em;
 
     div.work-experience-timeline {
-      margin: 1em auto;
+      margin: 1em auto auto;
       position: relative;
 
       &::before {
@@ -419,6 +419,7 @@
       border-color: $muted-text-color;
       @media print {
         border-bottom: 1px solid $muted-text-color;
+        margin: 0.7em 0;
       }
     }
     .qrcode {

@@ -1,37 +1,26 @@
 translations:
   gpa:
     ko: "학점"
-    en: "GPA"
   team_size:
     ko: "팀 규모"
-    en: "Team Size"
   team_name:
     ko: "팀 이름"
-    en: "Team Name"
   development_period:
     ko: "개발 기간"
-    en: "Development Period"
   participated_period:
     ko: "참여 기간"
-    en: "Participated Period"
-  portfolio_phrase:
-    ko: "경력, 프로젝트 및 기술 관련 자세한 내용은 링크에서 확인하실 수 있습니다."
-    en: "For more details on my experience, projects, and skills, please visit the link."
 
 name:
   ko : "남주호"
   en : "Ju Ho Nam"
 job_title:
   ko: "백엔드 개발자"
-  en: "Backend Developer"
 title:
-  ko: "소프트웨어 & AI 엔지니어 남주호입니다."
-  en: "Hi, I'm Ju Ho Nam, a Software & AI Engineer."
+  ko: "소프트웨어 엔지니어 남주호입니다."
 description:
   - type: paragraph
     inner:
       ko: "수학을 전공하며 AI 모델 학습의 수학적 원리에 흥미를 느낀 것을 시작으로 프로그래밍에 관심을 갖게 되었습니다. 이론으로 배웠던 수학적 개념이 실제 문제 해결에 활용될 수 있다는 점이 큰 동기부여가 되었고, 이를 계기로 학원이나 부트캠프의 도움 없이 프로그래밍을 독학하며 진로를 전환했습니다. 이후 프론트엔드와 백엔드 개발을 거쳐 서비스의 설계부터 구현, 운영까지 경험을 쌓으며 소프트웨어 엔지니어로 성장했습니다."
-      en: "My interest in programming began with my fascination for the mathematical principles behind AI model training, which I studied during my mathematics major. The realization that the mathematical concepts I learned in theory could be applied to solve real-world problems was a significant motivator for me. This led me to self-study programming without the aid of academies or bootcamps, ultimately transitioning my career path. Since then, I have gained experience in both frontend and backend development, growing as a software engineer through hands-on involvement in designing, implementing, and operating services."
 contacts:
   - label: "Email"
     icon: "fas faa-fw fa-envelope"
@@ -65,73 +54,54 @@ skills:
 educations:
   - title:
       ko: "수학교육과 석사 학위 (중퇴)"
-      en: "Master's degree in Mathematics Education (Did not complete)"
     association:
       ko: "서울대학교 사범대학"
-      en: "Seoul National University College of Education"
     period: "March 2021 - June 2021"
     gpa: "3.65 / 4.3"
   - title:
       ko: "수학과 학사 학위"
-      en: "Bachelor's degree in Mathematics"
     association:
       ko: "University of Massachusetts Amherst<br />Commonwealth Honors College"
-      en: "University of Massachusetts Amherst<br />Commonwealth Honors College"
     period: "August 2014 - May 2020"
     gpa: "3.7 / 4.0"
 certificates:
   - title:
       ko: "PCCP Python Lv.4"
-      en: "PCCP Python Lv.4"
     agency:
       ko: "그렙"
-      en: "Grepp"
     period: "2023"
   - title:
       ko: "데이터분석 준전문가 (ADsP)"
-      en: "Advanced Data Analytics Semi-Professional (ADsP)"
     agency:
       ko: "한국데이터산업진흥원"
-      en: "Korea Data Agency"
     period: "2021"
   - title:
       ko: "SQL 개발자 (SQLD)"
-      en: "SQL Developer (SQLD)"
     agency:
       ko: "한국데이터산업진흥원"
-      en: "Korea Data Agency"
     period: "2021"
 
 technical_activities:
   - title:
       ko: "기술 대회 참여"
-      en: "Participation in Technical Competitions"
     description:
       - type: list
         inner:
           - ko: "오픈소스 개발자대회, 사이드임팩트, Kaggle 대회 참여 경험"
-            en: "Experience participating in Open Source Developer Competition, Side Impact, and Kaggle Competition"
           - sublist: true
             inner:
               - ko: "Kaggle 대회 \"NFL Big Data Bowl 2026 - Prediction\"에서 상위 7% 기록 (Ranked 118/1899)"
-                en: "Ranked 118/1899 (Top 7%) in the Kaggle competition \"NFL Big Data Bowl 2026 - Prediction\""
-              - ko: "Kaggle 대회 \"NVIDIA Nemotron Model Reasoning Challenge\"에서 LLM 모델 fine-tuning 경험 (Ranked 2225/4182)"
-                en: "Gained experience in fine-tuning the Nemotron model and improving model performance through the Kaggle competition \"NVIDIA Nemotron Model Reasoning Challenge\" (Ranked 2225/4182)"
   - title:
       ko: "기술 블로그 운영"
-      en: "Running a Technical Blog"
     period: "2021.10 - Present"
     description:
       - type: list
         inner:
-          - ko: "기술 블로그를 운영하며 탐구 내용을 꾸준히 기록"
-            en: "Running a technical blog to consistently document explorations and findings"
+          - ko: "<a href='https://juhonamnam.github.io/blog' target='_blank'>https://juhonamnam.github.io/blog</a>"
   - title:
       ko: "IT 초보 비전공자 스터디 모임"
-      en: "IT Beginner Non-CS Major Study Group"
-    period: "2021.06 - Present"
+    period: "2021.06 - 2024.06"
     description:
       - type: list
         inner:
           - ko: "최대 200명 규모의 IT 스터디 및 정보 공유 커뮤니티에서 운영진으로 활동"
-            en: "Active as an administrator in an IT study and information sharing community with up to 200 members"

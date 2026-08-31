@@ -27,6 +27,13 @@ use_qrcode: true
           </a>
         </div>
       {%- endfor -%}
+      <div class="horizontal-spacer"></div>
+      <div class="social-icons">
+        <a href="{{ site.url }}/about-me" rel="nofollow noopener noreferrer me">
+          <b>포트폴리오:</b>
+          <span>{{ site.url }}/about-me</span>
+        </a>
+      </div>
       <!--excerpt open-->
       {%- include about-me/description.html description=site.data.about-me.main.description language=language -%}
       <!--excerpt close-->
@@ -72,7 +79,7 @@ use_qrcode: true
 
       <div class="work-experience-timeline">
         {%- for work_experience in site.data.about-me.work-experience.data -%}
-          <div class="work-experience-timeline-content-wrapper">
+          <div class="work-experience-timeline-content-wrapper avoid-page-break">
             <div class="work-experience-timeline-label">
               <div class="work-experience-timeline-period">
                 <span>{{ work_experience.period }}</span>
@@ -103,7 +110,7 @@ use_qrcode: true
     </div>
 
     <div>
-      <h2>Technical Activities</h2>
+      <h2>Other Experiences</h2>
       {%- for technical_activity in site.data.about-me.main.technical_activities -%}
         <b>{{ technical_activity.title[language] }}</b>
         {%- if technical_activity.period -%}
@@ -117,13 +124,12 @@ use_qrcode: true
     </div>
 
     <div>
-      <h2>Projects</h2>
       {%- for project in site.data.about-me.projects.data -%}
         {%- if project.hide == true -%}
           {%- continue -%}
         {%- endif -%}
         <div>
-          <b>{{ project.title[language] }}</b> <small><em>{{ project.period.period_str }}</em></small>
+          <b>Project: {{ project.title[language] }}</b> <small><em>{{ project.period.period_str }}</em></small>
           <div>
             {%- for spec_key in project.specs -%}
               <small class="badge">{% include spec-icon.html spec_key=spec_key %}</small>
@@ -134,7 +140,9 @@ use_qrcode: true
             {% include about-me/description.html description=project.resume_description language=language %}
           </div>
         </div>
-        <div class="horizontal-spacer"></div>
+        {%- if forloop.last == false -%}
+          <div class="horizontal-spacer"></div>
+        {%- endif -%}
       {%- endfor -%}
     </div>
 
@@ -149,7 +157,7 @@ use_qrcode: true
         </div>
       </a>
       <small>
-        {{ site.data.about-me.main.translations.portfolio_phrase[language] }}
+        경력, 프로젝트 및 기술 관련 자세한 내용은 포트폴리오 링크를 통해 확인하실 수 있습니다.
         <br />
         {{ site.url }}/about-me/
       </small>

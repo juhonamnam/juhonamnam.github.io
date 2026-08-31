@@ -133,7 +133,7 @@ data:
 
       - type: heading
         inner:
-          ko: "문제 해결 사례1: 웹 페이지 로딩 시간 개선"
+          ko: "문제 해결 사례: 웹 페이지 로딩 시간 개선"
 
       - type: paragraph
         inner:

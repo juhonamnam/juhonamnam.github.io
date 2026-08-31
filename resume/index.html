@@ -93,7 +93,7 @@ use_qrcode: true
                   {%- endfor -%}
                 </div>
                 <div class="compact-list">
-                  {%- include about-me/description.html description=work_experience.brief_description language=language -%}
+                  {%- include about-me/description.html description=work_experience.resume_description language=language -%}
                 </div>
               </div>
             </div>
@@ -131,7 +131,7 @@ use_qrcode: true
             {%- endfor -%}
           </div>
           <div class="compact-list">
-            {% include about-me/description.html description=project.brief_description language=language %}
+            {% include about-me/description.html description=project.resume_description language=language %}
           </div>
         </div>
         <div class="horizontal-spacer"></div>

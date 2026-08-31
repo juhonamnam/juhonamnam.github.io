@@ -22,11 +22,11 @@ name:
   ko : "남주호"
   en : "Ju Ho Nam"
 job_title:
-  ko: "소프트웨어 & AI 엔지니어"
-  en: "Software & AI Engineer"
+  ko: "백엔드 개발자"
+  en: "Backend Developer
 title:
   ko: "소프트웨어 & AI 엔지니어 남주호입니다."
-  en: "Hi, I'm Ju Ho Nam, a Software & AI Engineer passionate about solving complex problems."
+  en: "Hi, I'm Ju Ho Nam, a Software & AI Engineer."
 description:
   - type: paragraph
     inner:

@@ -1,0 +1,11 @@
+_site
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+.git
+.bundle
+vendor
+node_modules
+Dockerfile
+docker-compose.yml
+.DS_Store

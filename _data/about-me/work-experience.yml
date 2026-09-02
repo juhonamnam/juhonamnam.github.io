@@ -29,7 +29,7 @@ data:
           - ko: "카메라 데이터 가공 과정을 처리하는 데이터 파이프라인 설계 및 구현"
           - ko: "데이터 콘텐츠 공통 처리 구조 설계하여 예외 상황 처리 및 데이터 불일치 문제 해결"
           - ko: "AWS 클라우드 기반 서비스 운영, 모니터링 및 비용 최적화 (AWS S3 비용 약 40% 절감)"
-          - ko: "DB 쿼리 프로파일링 및 스레드풀 분산을 통한 병목 현상 해결"
+          - ko: "MongoDB Aggregation 튜닝 및 스레드풀 분산을 통한 병목 현상 해결"
           - ko: "카메라 기반 Re-Identification AI 모델 연구 및 개발"
     description:
       - type: paragraph
@@ -50,7 +50,7 @@ data:
           - ko: "카메라 데이터 가공 과정을 처리하는 데이터 파이프라인 설계 및 구현"
           - ko: "데이터 콘텐츠 공통 처리 구조 설계하여 예외 상황 처리 및 데이터 불일치 문제 해결"
           - ko: "AWS 클라우드 기반 서비스 운영, 모니터링 및 비용 최적화 (AWS S3 비용 약 40% 절감)"
-          - ko: "DB 쿼리 프로파일링 및 스레드풀 분산을 통한 병목 현상 해결"
+          - ko: "MongoDB Aggregation 튜닝 및 스레드풀 분산을 통한 병목 현상 해결"
           - ko: "카메라 기반 Re-Identification AI 모델 연구 및 개발"
 
       - type: heading
@@ -59,30 +59,46 @@ data:
 
       - type: paragraph
         inner:
-          ko: "트래픽이 많이 몰리면서 서비스가 전반적으로 느려지는 현상이 있었고, 아래 두 가지 관점으로 문제를 분석하고 개선했습니다."
+          ko: "서비스가 확장됨에 따라 병목 현상이 발생했고, 아래 두 가지 관점으로 문제를 분석하고 개선했습니다."
 
-      - type: paragraph
+      - type: text
         inner:
-          ko: "MongoDB Profiler를 통해 MongoDB Aggregation의 비효율적 쿼리 구조 발견 후 개선"
+          ko: "<i>MongoDB Profiler를 통해 MongoDB Aggregation의 비효율적 쿼리 구조 발견 후 개선</i>"
       - type: list
         inner:
-          - ko: "<code>$match</code> 이전 <code>$lookup</code> 연산 수행으로 인해 full scan 발생"
-          - ko: "<code>$lookup</code> 대상의 인덱스 부재로 인해 full scan 발생"
-          - ko: "200ms 이상 소요되는 쿼리를 10ms 이하로 개선"
-      - type: paragraph
+          - ko: "<code>$match</code> 이전 <code>$lookup</code> 연산 수행으로 인해 COLLSCAN 발생"
+          - ko: "<code>$lookup</code> 대상의 인덱스 부재로 인해 COLLSCAN 발생"
+          - ko: "개선 이후 실행 시간 약 20배 단축 (200ms → 10ms)"
+      - type: text
         inner:
-          ko: "Node.js의 single-threaded 특성으로 인해 CPU-bound 작업이 전체 서버 성능 저하를 유발하는 문제 발견"
+          ko: "<i>Node.js의 single-threaded 특성으로 인해 CPU-bound 작업이 전체 서버 성능 저하를 유발하는 문제 발견</i>"
       - type: list
         inner:
           - ko: "Worker Thread Pool을 활용하여 CPU-bound 작업을 분산 처리하도록 개선"
 
       - type: heading
         inner:
-          ko: "문제 해결 사례 2: 데이터 파이프라인 구조 안정성 개선"
+          ko: "문제 해결 사례 2: 분산된 예외 처리 로직의 공통화"
 
       - type: paragraph
         inner:
-          ko: "매장 카메라의 네트워크 환경에 따라 카메라에서 수집되는 데이터가 일부 누락되는 상황이 발생합니다. 이에 따라 지연된 데이터가 반영되지 않거나, 콘텐츠별 처리 시점의 차이로 데이터 불일치가 발생하는 문제가 있었습니다. 이를 해결하기 위해 데이터의 전체 흐름을 공통으로 처리할 수 있는 모듈을 따로 설계하여 모든 예외 상황을 처리할 수 있도록 개선했고, 이를 통해 앞으로 추가되는 신규 콘텐츠에 대한 확장성도 확보할 수 있었습니다."
+          ko: "서비스상에 종종 발생하는 예외 상황에 대해 구조적으로 개선한 사례입니다."
+      - type: text
+        inner:
+          ko: "<i>기존의 문제점</i>"
+      - type: list
+        inner:
+          - ko: "매장 카메라의 네트워크 지연 또는 장애 복구로 인해 과거 시점의 데이터가 변경되는 상황이 자주 발생"
+          - ko: "콘텐츠별로 개별 예외 로직을 구현하는 방식으로 대응하면서 기술 부채로 누적"
+          - ko: "일부 예외 상황이 누락되어 콘텐츠별 데이터가 불일치하거나, 신규 콘텐츠 확장에 어려움 발생"
+
+      - type: text
+        inner:
+          ko: "<i>개선 사항</i>"
+      - type: list
+        inner:
+          - ko: "분산된 예외 처리 로직을 공통 모듈로 통합하여 일관된 데이터 처리 흐름 구축"
+          - ko: "재사용 가능한 공통 모듈을 통해 신규 콘텐츠 확장성 확보"
 
   - period: "2021.12 - 2023.01"
     company: "J&FIRST"
@@ -111,7 +127,7 @@ data:
           - ko: "React Hook Form 기반의 deeply nested form 구현"
           - ko: "팀 내 공통 소스코드 관리 및 개선"
           - ko: "캐싱 정책을 통한 페이지 로딩 시간 개선 (2400ms → 1300ms)"
-          - ko: "Next.js, GraphQL 등 신규 기술 선행 학습 및 활용 가이드 수립"
+          - ko: "Next.js, GraphQL 등 신규 기술 도입을 위한 선행 연구"
           - ko: "팀 내 또는 외부 개발팀과의 소스코드 충돌 해결"
           - ko: "Java Spring 기반의 백엔드 보조 업무 수행"
     description:
@@ -127,7 +143,7 @@ data:
           - ko: "React Hook Form 기반의 deeply nested form 구현"
           - ko: "팀 내 공통 소스코드 관리 및 개선"
           - ko: "캐싱 정책을 통한 페이지 로딩 시간 개선 (2400ms → 1300ms)"
-          - ko: "Next.js, GraphQL, Naver SmartEditor ONE (네이버 블로그 작성 시 사용되는 에디터) 등 신규 기술 선행 학습 및 활용 가이드 수립"
+          - ko: "Next.js, GraphQL, Naver SmartEditor ONE (네이버 블로그 작성 시 사용되는 에디터) 등 신규 기술 도입을 위한 선행 연구"
           - ko: "팀 내 또는 외부 개발팀과의 소스코드 충돌 해결"
           - ko: "Java Spring 기반의 백엔드 보조 업무 수행"
 
@@ -137,4 +153,23 @@ data:
 
       - type: paragraph
         inner:
-          ko: "타사에서 참여한 또 다른 LINE Plus 외주 프로젝트와 비교하여 페이지 로딩 시간이 많이 느리다는 피드백을 받았습니다. React 컴포넌트의 렌더링에 집중한 다른 동료들과는 달리, 저는 원인 분석을 먼저 하기 위해 inspect tool을 사용했습니다. 그 결과, JavaScript 실행으로 인한 지연은 극히 적었고, 대부분의 지연이 네트워크 요청으로 인한 것임을 확인했습니다. 이에 따라 캐싱 정책을 개선하여 페이지 로딩 시간을 2400ms에서 1300ms로 단축시켰습니다."
+          ko: "타사에서 진행한 유사 LINE Plus 외주 프로젝트 대비 페이지 로딩이 느리다는 피드백이 있었고, 원인을 분석하여 개선한 사례입니다."
+
+      - type: text
+        inner:
+          ko: "<i>원인 분석: 비활성화된 브라우저 캐싱</i>"
+      - type: list
+        inner:
+          - ko: "Inspect Tool을 활용하여 CPU 사용량 분포 분석: 대부분 유휴 상태임을 확인"
+          - ko: "<code>css</code>와 <code>js</code> 정적 리소스 다운로드에 상당 시간 소요"
+          - ko: "브라우저 캐싱을 전혀 사용하지 않아 매번 정적 리소스를 새로 다운로드하는 구조"
+          - ko: "소스코드 변경 사항 즉시 반영을 위해 <code>no-cache</code> 정책을 사용했던 것이 원인"
+
+      - type: text
+        inner:
+          ko: "<i>개선 사항: 소스코드 변경 사항 즉시 반영과 캐싱을 동시에 활용</i>"
+      - type: list
+        inner:
+          - ko: "Bundler 설정에서 정적 리소스 파일명에 hash를 적용하여 Cache Busting을 구현"
+          - ko: "캐싱 정책은 기존으로 복구"
+          - ko: "페이지 로딩 시간 약 45% 개선 (2400ms → 1300ms)"

@@ -124,12 +124,12 @@ data:
           ko: "What I did"
       - type: list
         inner:
+          - ko: "LINE 서비스 콘텐츠 관리 시스템의 웹 UI 개발"
           - ko: "React Hook Form 기반의 deeply nested form 구현"
           - ko: "페이지 로딩 시간 단축을 통한 사용자 경험 개선 (2400ms → 1300ms)"
-          - ko: "팀 내 공통 소스코드 관리 정책 수립"
           - ko: "Next.js, GraphQL, Naver SmartEditor ONE 등 신규 기술 도입을 위한 선행 연구"
+          - ko: "팀 내 공통 소스코드 관리 정책 수립"
           - ko: "팀 내 또는 외부 개발팀과의 소스코드 충돌 해결"
-          - ko: "Java Spring 기반의 백엔드 보조 업무 수행"
     description:
       - type: paragraph
         inner:
@@ -140,12 +140,12 @@ data:
           ko: "What I did"
       - type: list
         inner:
+          - ko: "LINE 서비스 콘텐츠 관리 시스템의 웹 UI 개발"
           - ko: "React Hook Form 기반의 deeply nested form 구현"
           - ko: "페이지 로딩 시간 단축을 통한 사용자 경험 개선 (2400ms → 1300ms)"
+          - ko: "Next.js, GraphQL, Naver SmartEditor ONE 등 신규 기술 도입을 위한 선행 연구"
           - ko: "팀 내 공통 소스코드 관리 정책 수립"
-          - ko: "Next.js, GraphQL, Naver SmartEditor ONE (네이버 블로그 작성 시 사용되는 에디터) 등 신규 기술 도입을 위한 선행 연구"
           - ko: "팀 내 또는 외부 개발팀과의 소스코드 충돌 해결"
-          - ko: "Java Spring 기반의 백엔드 보조 업무 수행"
 
       - type: heading
         inner:

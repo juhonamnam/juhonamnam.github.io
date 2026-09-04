@@ -192,7 +192,7 @@ data:
     resume_description:
       - type: list
         inner:
-          - ko: "투자 전략을 자동화한 가상화폐 트레이딩 봇 프로그램"
+          - ko: "UPbit API와 Telegram Bot API를 활용한 투자 전략을 자동화한 가상화폐 트레이딩 봇 프로그램"
     description:
       - type: paragraph
         inner:

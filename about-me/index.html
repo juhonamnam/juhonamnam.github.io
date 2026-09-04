@@ -130,7 +130,7 @@ use_qrcode: true
     </div>
 
     <div class="projects">
-      <hr />
+      <hr class="web-only" />
       {%- for project in site.data.about-me.projects.data -%}
         {%- if project.hide == true -%}
           {%- continue -%}

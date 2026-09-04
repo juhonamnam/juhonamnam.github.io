@@ -192,7 +192,7 @@ data:
     resume_description:
       - type: list
         inner:
-          - ko: "UPbit API와 Telegram Bot API를 활용한 투자 전략을 자동화한 가상화폐 트레이딩 봇 프로그램"
+          - ko: "Upbit API와 Telegram Bot API를 활용한 투자 전략을 자동화한 가상화폐 트레이딩 봇 프로그램"
     description:
       - type: paragraph
         inner:
@@ -201,5 +201,5 @@ data:
       - type: list
         inner:
           - ko: "래리 윌리엄스의 변동성 돌파 전략을 참고한 투자 알고리즘 설계"
-          - ko: "UPbit 거래소에서 WebSocket Client을 통해 실시간 가격 정보 수신"
+          - ko: "Upbit 거래소에서 WebSocket Client을 통해 실시간 가격 정보 수신"
           - ko: "Telegram Bot API를 통해 실시간 매수, 매도 시그널 전송"

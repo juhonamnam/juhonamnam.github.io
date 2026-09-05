@@ -65,11 +65,11 @@ educations:
     period: "August 2014 - May 2020"
     gpa: "3.7 / 4.0"
 certificates:
-  - title:
-      ko: "PCCP Python Lv.4"
-    agency:
-      ko: "그렙"
-    period: "2023"
+  # - title:
+  #     ko: "PCCP Python Lv.4"
+  #   agency:
+  #     ko: "그렙"
+  #   period: "2023"
   - title:
       ko: "데이터분석 준전문가 (ADsP)"
     agency:

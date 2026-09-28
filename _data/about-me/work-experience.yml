@@ -28,7 +28,7 @@ data:
           - ko: "SFTP 기반 데이터 전송 시스템 설계 구현"
           - ko: "시간별 데이터 집계 및 데이터 동기화 시스템 구축"
           - ko: "AWS 클라우드 기반 서비스 운영, 모니터링 및 비용 최적화 (AWS S3 비용 약 40% 절감)"
-          - ko: "Multi-camera tracking을 위한 Re-Identification AI 모델 연구·개발하여 실제 서비스 적용"
+          - ko: "Multi-camera tracking을 위한 Re-Identification AI 모델 연구·개발 및 실제 서비스 적용"
     description:
       - type: paragraph
         inner:
@@ -50,7 +50,7 @@ data:
           - ko: "SFTP 기반 데이터 전송 시스템 설계 구현"
           - ko: "시간별 데이터 집계 및 데이터 동기화 시스템 구축"
           - ko: "AWS 클라우드 기반 서비스 운영, 모니터링 및 비용 최적화 (AWS S3 비용 약 40% 절감)"
-          - ko: "Multi-camera tracking을 위한 Re-Identification AI 모델 연구·개발하여 실제 서비스 적용"
+          - ko: "Multi-camera tracking을 위한 Re-Identification AI 모델 연구·개발 및 실제 서비스 적용"
 
       - type: heading
         inner:
